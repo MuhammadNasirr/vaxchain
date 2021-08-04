@@ -64,6 +64,7 @@ export default function EmailSignUp({ navigation }) {
                     <TouchableOpacity
                         activeOpacity={0.6}
                         style={styles.singnUpButton}
+                        onPress={()=>navigation.navigate('mobileOTP')}
                     >
                         <Text style={{ fontWeight: "bold", color: "#ffff" }}>Sign Up</Text>
                     </TouchableOpacity>
