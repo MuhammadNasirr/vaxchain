@@ -5,12 +5,15 @@ import {
   View,
   TouchableOpacity,
   Modal,
+  Image
 } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
 import Entypo from 'react-native-vector-icons/Entypo';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import Fontisto from 'react-native-vector-icons/Fontisto';
+import { Icon } from "react-native-elements/dist/icons/Icon";
 
-
-export default function CustomModal({ visible, onClose, isButton, icon, mainText, descriptionText }) {
+export default function SelfieTake({ visible, onClose, isButton, icon, mainText, descriptionText }) {
   return (
     <Modal
       transparent
@@ -22,53 +25,49 @@ export default function CustomModal({ visible, onClose, isButton, icon, mainText
       }}>
       <View style={styles.modalBackGround}>
 
-        <View style={{ width: '80%', backgroundColor: '#ffff', borderRadius: 20, paddingBottom: 30, paddingTop: 10 }}>
+        <View style={{ width: '90%', backgroundColor: '#ffff', borderRadius: 20, paddingBottom: 30, paddingTop: 10 }}>
           <View style={styles.header}>
             <TouchableOpacity style={{ backgroundColor: '#ECECEC', width: '10%', justifyContent: 'center', alignItems: 'center', borderRadius: 5, alignSelf: 'flex-end', margin: 10, paddingVertical: 5 }} onPress={() => onClose()}>
               <Entypo name="cross" size={20} color="black" />
             </TouchableOpacity>
           </View>
           <View style={{ width: '100%', alignItems: 'center' }}>
-            {icon}
-            {/* <Ionicons name="md-thumbs-up-outline" size={RFPercentage(10)} color="#F5914E" /> */}
-            {/* <MaterialCommunityIcons name="party-popper" size={RFPercentage(10)} color="#F5914E" /> */}
-            <Text style={{ marginVertical: 10, fontSize: 20, textAlign: 'center', fontWeight: 'bold', color: '#F5914E', width: '80%' }}>
-              {/* You are Cancelling your{'\n'}Booking appointment,{'\n'}Please Confirm */}
-              {/* Congratulation you have{'\n'}already Completed your{'\n'}Covid-19 Vaccination */}
-              {/* You Booking Cancelling your{'\n'}Booking appointment,{'\n'}please confirm  */}
-              {/* You information{'\n'}is being Processed. */}
-              {mainText}
+
+            <Text style={{ marginVertical: 10, fontSize: 24, textAlign: 'center', fontWeight: 'bold', color: '#F5914E', width: '70%' }}>
+              How to Take the Correct Photo
             </Text>
-            <Text style={{ textAlign: 'center', width: '80%' }}>{descriptionText}</Text>
-            {
-              isButton &&
-              <TouchableOpacity style={{ backgroundColor: '#F5914E', width: '80%', alignSelf: 'center', alignItems: 'center', paddingVertical: 12, borderRadius: 10, marginTop: 20 }}>
-                {/* <Text style={{color:'#ffff',fontWeight:'bold'}}>Cancel</Text> */}
-                {/* <Text style={{color:'#ffff',fontWeight:'bold'}}>Go to Passport</Text> */}
-                <Text style={{ color: '#ffff', fontWeight: 'bold' }}>Go to Home</Text>
-              </TouchableOpacity>
-            }
-          </View>
-        </View>
-        {/* <View style={{alignItems: 'center'}}>
-          <View style={styles.header}>
-            <TouchableOpacity onPress={() => setVisible(false)}>
-              <Image
-                // source={require('./assets/x.png')}
-                style={{height: 30, width: 30}}
-              />
+            <Image source={require("../../assets/images/selfie1.png")} />
+
+            <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 20 }}>
+              <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
+              <Text style={{ marginLeft: 10 }}>Please present the QR Code for your 2nd dose with the following schedule</Text>
+            </View>
+            <Image source={require("../../assets/images/selfie2.png")} />
+            <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 5 }}>
+              <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
+              <Text style={{ marginLeft: 10 }}>Use your original ID. (Not a photocopy or scanned version)</Text>
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 5 }}>
+              <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
+              <Text style={{ marginLeft: 10 }}>ID details should be the same with your profile</Text>
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 5 }}>
+              <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
+              <Text style={{ marginLeft: 10 }}>Wait for 4 corners to light up when taking photo</Text>
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 5 }}>
+              <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
+              <Text style={{ marginLeft: 10 }}>Place behind a dark background</Text>
+            </View>
+            <TouchableOpacity
+              onPress={() => {
+                onClose()
+              }}
+              style={{ backgroundColor: '#F5914E', width: '80%', alignSelf: 'center', alignItems: 'center', paddingVertical: 12, borderRadius: 15, marginTop: 20 }}>
+              <Text style={{ color: '#ffff', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase' }}>{"GOT IT"}</Text>
             </TouchableOpacity>
           </View>
         </View>
-        <View style={{alignItems: 'center'}}>
-          <Image
-            // source={require('./assets/success.png')}
-            style={{height: 150, width: 150, marginVertical: 10}}
-          />
-        </View> */}
-
-
-
 
       </View>
     </Modal>

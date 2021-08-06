@@ -1,98 +1,172 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity } from 'react-native';
+import { TextInput } from 'react-native-gesture-handler';
+import { Header } from '../../Components';
 
 
 export default function MyAccount2(props) {
-
+  const [state, setState] = useState({
+    province: 'Pampanga',
+    city: 'Makati',
+    building: 'Bldg. 1',
+    house: '23',
+    street: '23D Jacinto St.',
+    barangay: 'West Rembo',
+    isEdit: false,
+    isSave: false,
+  })
 
   return (
 
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
 
-      <View style={{ width: '100%', flexDirection: 'row', marginTop: 10 }}>
-        <View style={{ width: '80%', alignItems: 'center' }}>
-          <Text style={{ fontWeight: 'bold' }}>
-            My account
-          </Text>
-        </View>
-        <View style={{ width: '20%', alignItems: 'center', flexDirection: 'row', justifyContent: 'space-around' }}>
-
-
-          <TouchableOpacity
-            style={styles.headerIcon}
-            activeOpacity={0.8}>
-            <SimpleLineIcons name="bell" size={18} color="#F5914E" />
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.headerIcon}
-            activeOpacity={0.8}>
-            <MaterialIcons name="perm-identity" size={18} color="#F5914E" />
-          </TouchableOpacity>
-
-        </View>
-
-      </View>
-
-
-
-
+      <Header title={"My Account"} bellIcon={true} back={true} transparent={true} profileIcon={true} />
 
       <View style={styles.body}>
 
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', marginBottom: 10 }}>
-          <TouchableOpacity style={{ backgroundColor: '#F7914F', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', borderRadius: 10, paddingHorizontal: 5, width: '45%', paddingVertical: 20 }}>
-
-            <Text style={{ color: '#ffff', fontWeight: '600' }}>1st Dosage</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{ backgroundColor: '#A7A7A7', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', borderRadius: 10, paddingHorizontal: 5, width: '45%', paddingVertical: 20 }}>
-
-            <Text style={{ color: '#ffff', fontWeight: '600' }}>1st Dosage</Text>
-          </TouchableOpacity>
-
-
-        </View>
-        <View style={{ backgroundColor: '#ffff', width: '90%', borderRadius: 10, paddingVertical: 10, paddingHorizontal: 5 }}>
+        <View style={{ backgroundColor: '#ffff', width: '90%', borderRadius: 25, padding: 20, marginTop: 20 }}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             <Text style={{ color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>
-              1st{'\n'}Dose
+              Personal{'\n'}Information
             </Text>
-            <TouchableOpacity style={{ backgroundColor: '#F7914F', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', borderRadius: 5, paddingHorizontal: 5 }}>
-              <MaterialIcons name="check-circle-outline" size={20} color="#ffff" />
-              <Text style={{ color: '#ffff' }}>vaccinated</Text>
+          </View>
+          <View style={{ width: '100%', paddingHorizontal: 5 }}>
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>Last name</Text>
+              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Bonifacio</Text>
+            </View>
+
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>First name</Text>
+              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Jose</Text>
+            </View>
+
+
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>Middle name</Text>
+              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Abad</Text>
+            </View>
+
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>Date of birth</Text>
+              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>10-10-89</Text>
+            </View>
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>Nationality</Text>
+              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Filipino</Text>
+            </View>
+          </View>
+
+        </View>
+        <View style={{ backgroundColor: '#ffff', width: '90%', borderRadius: 25, padding: 20, marginTop: 20 }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+            <Text style={{ color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>
+              Present{'\n'}Address
+            </Text>
+            <TouchableOpacity onPress={() => setState(pre => ({ ...pre, isEdit: true,isSave: false }))} style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <Image source={require("../../assets/images/edit.png")} />
+              <Text style={{ color: '#F5914E' }}>Edit</Text>
             </TouchableOpacity>
           </View>
-          <Text style={styles.title}>City /Orginazation Where{'\n'}you got Vaccinated:</Text>
-          <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>st.Lukes</Text>
-          </View>
-          <Text style={styles.title}>Location of Vaccination Center:</Text>
-          <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>23 Jacinto Street Global City</Text>
-          </View>
-          <Text style={styles.title}>Vaccination Manufacturer:</Text>
-          <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>Astra Zeneca</Text>
-          </View>
+          <View style={{ width: '100%', paddingHorizontal: 5 }}>
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>Province</Text>
+              <TextInput
+                editable={state.isEdit}
+                style={{
+                  backgroundColor: '#FFF5E9',
+                  paddingRight: 20, paddingTop: 10,
+                  height: 40, minWidth: 150, textAlign: 'right',
+                  borderRadius: 3, fontWeight: '600'
+                }} value={state.province}
+                placeholder={"Province"}
+                onChangeText={(e) => setState(pre => ({ ...pre, province: e }))} />
+            </View>
 
-          <Text style={styles.title}>Lot Number:</Text>
-          <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>000000</Text>
-          </View>
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>City</Text>
+              <TextInput
+                editable={state.isEdit}
+                style={{
+                  backgroundColor: '#FFF5E9',
+                  paddingRight: 20, paddingTop: 10,
+                  height: 40, minWidth: 150, textAlign: 'right',
+                  borderRadius: 3, fontWeight: '600'
+                }} value={state.city}
+                placeholder={"City"}
+                onChangeText={(e) => setState(pre => ({ ...pre, city: e }))} />
+            </View>
 
 
-          <Text style={styles.title}>Vaccinator:</Text>
-          <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>Jose Dela</Text>
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>Street</Text>
+              <TextInput
+                editable={state.isEdit}
+                style={{
+                  backgroundColor: '#FFF5E9',
+                  paddingRight: 20, paddingTop: 10,
+                  height: 40, minWidth: 150, textAlign: 'right',
+                  borderRadius: 3, fontWeight: '600'
+                }} value={state.street}
+                placeholder={"Street"}
+                onChangeText={(e) => setState(pre => ({ ...pre, street: e }))} />
+            </View>
+
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>Barangay</Text>
+              <TextInput
+                editable={state.isEdit}
+                style={{
+                  backgroundColor: '#FFF5E9',
+                  paddingRight: 20, paddingTop: 10,
+                  height: 40, minWidth: 150, textAlign: 'right',
+                  borderRadius: 3, fontWeight: '600'
+                }} value={state.barangay}
+                placeholder={"Barangay"}
+                onChangeText={(e) => setState(pre => ({ ...pre, barangay: e }))} />
+            </View>
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>House/Lot no.</Text>
+              <TextInput
+                editable={state.isEdit}
+                style={{
+                  backgroundColor: '#FFF5E9',
+                  paddingRight: 20, paddingTop: 10,
+                  height: 40, minWidth: 150, textAlign: 'right',
+                  borderRadius: 3, fontWeight: '600'
+                }} value={state.house}
+                placeholder={"House/Lot no."}
+                onChangeText={(e) => setState(pre => ({ ...pre, house: e }))} />
+            </View>
+            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ color: 'grey' }}>Building </Text>
+              <TextInput
+                editable={state.isEdit}
+                style={{
+                  backgroundColor: '#FFF5E9',
+                  paddingRight: 20, paddingTop: 10,
+                  height: 40, minWidth: 150, textAlign: 'right',
+                  borderRadius: 3, fontWeight: '600'
+                }} value={state.building}
+                placeholder={"Building"}
+                onChangeText={(e) => setState(pre => ({ ...pre, building: e }))} />
+            </View>
+            {
+              state.isEdit &&
+              <TouchableOpacity onPress={() => setState(pre => ({ ...pre, isEdit: false, isSave: true }))}>
+                <Text style={{ color: '#F5914E', textAlign: 'center', fontWeight: 'bold', fontSize: 16 }}>Save</Text>
+              </TouchableOpacity>
+            }
+            {
+              state.isSave &&
+              <Text style={{ color: '#F5914E', textAlign: 'center', fontWeight: 'bold', fontSize: 16 }}>You have saved your new address</Text>
+            }
           </View>
 
         </View>
       </View>
 
-    </View>
+    </ScrollView>
   );
 }
 
@@ -104,8 +178,6 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     height: '100%',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
     backgroundColor: '#EAEBEF'
   },
   mainInfo: {

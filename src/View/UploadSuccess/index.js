@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   StyleSheet,
   Text,
@@ -8,15 +8,22 @@ import { RFPercentage } from "react-native-responsive-fontsize";
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 export default function UploadSuccess({ navigation }) {
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('MainMenu')
+    }, 3000);
+
+  }, [])
   return (
-    
-      <View style={styles.container}>
-        {/* Image Container */}
-        
-        <FontAwesome5 name="check-circle" size={RFPercentage(15)} color="#fff" />
-            <Text style={styles.title}>Upload success</Text>
-      </View>
-   
+
+    <View style={styles.container}>
+      {/* Image Container */}
+
+      <FontAwesome5 name="check-circle" size={RFPercentage(15)} color="#fff" />
+      <Text style={styles.title}>Upload success</Text>
+    </View>
+
   );
 }
 
@@ -28,7 +35,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 
-  
+
   title: {
     fontSize: RFPercentage(5),
     fontWeight: "bold",

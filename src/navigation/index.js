@@ -1,7 +1,17 @@
 import React, { useEffect } from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { View, useWindowDimensions, TouchableOpacity, Text } from 'react-native';
-import { AuthLoading, Onboarding, Login, EmailSignUp, CheckEmail, ForgetPassword, PhoneSignUp, MobileOTP, SetPassword, Wallet, Home, Booking, IDVerificationScanDocument, PassportReaderScanner, MyAccount, MyAccount1, Selfie, UploadSuccess, VerificationScanDocumentConfirmation } from '../View';
+import {
+  AuthLoading, Onboarding, Login, EmailSignUp, CheckEmail, ForgetPassword, PhoneSignUp, MobileOTP, SetPassword, Wallet, Home, Booking, IDVerification, ScanDocument, PassportReaderScanner, MyAccount, MyAccount1, Selfie, UploadSuccess, ScanDocumentConfirmation, BasicInformation,
+  BasicInformationScreen2,
+  LoginSuccessful,
+  VaccinationRecord1,
+  VaccinationRecord2,
+  VaxchainPassportReaderAccountInformation,
+  VaxchainPassportReaderPersonalInformation,
+  VaxchainPassportReaderScanner,
+  Notfications
+} from '../View';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -35,8 +45,11 @@ function AppNavigator() {
 
   return (
     <NavigationContainer theme={MyTheme} >
-      <Stack.Navigator headerMode={"none"} initialRouteName={"AuthLoading"}>
+      <Stack.Navigator headerMode={"none"} initialRouteName={"Onboarding"}>
         <Stack.Screen name="Onboarding" component={Onboarding} />
+        <Stack.Screen name="LoginSuccessful" component={LoginSuccessful} />
+        <Stack.Screen name="BasicInformation" component={BasicInformation} />
+        <Stack.Screen name="BasicInformationScreen2" component={BasicInformationScreen2} />
         <Stack.Screen name="AuthLoading" component={AuthLoading} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="EmailSignUp" component={EmailSignUp} />
@@ -46,6 +59,11 @@ function AppNavigator() {
         <Stack.Screen name="CheckEmail" component={CheckEmail} />
         <Stack.Screen name="SetPassword" component={SetPassword} />
         <Stack.Screen name="MainMenu" component={MainMenu} />
+        <Stack.Screen name="IDVerification" component={IDVerification} />
+        <Stack.Screen name="Selfie" component={Selfie} />
+        <Stack.Screen name="UploadSuccess" component={UploadSuccess} />
+        <Stack.Screen name="ScanDocument" component={ScanDocument} />
+        <Stack.Screen name="ScanDocumentConfirmation" component={ScanDocumentConfirmation} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -56,13 +74,39 @@ function HomeStack() {
   return (
     <Stack.Navigator headerMode={"none"} initialRouteName={"Home"}>
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="IDVerificationScanDocument" component={IDVerificationScanDocument} />
+
       <Stack.Screen name="PassportReaderScanner" component={PassportReaderScanner} />
       <Stack.Screen name="MyAccount" component={MyAccount} />
       <Stack.Screen name="MyAccount1" component={MyAccount1} />
-      <Stack.Screen name="Selfie" component={Selfie} />
-      <Stack.Screen name="UploadSuccess" component={UploadSuccess} />
-      <Stack.Screen name="VerificationScanDocumentConfirmation" component={VerificationScanDocumentConfirmation} />
+      <Stack.Screen name="Notifications" component={Notfications} />
+    </Stack.Navigator>
+  );
+}
+
+function PassportStack() {
+
+  return (
+    <Stack.Navigator headerMode={"none"} initialRouteName={"Home"}>
+
+      <Stack.Screen name="VaxchainPassportReaderScanner" component={VaxchainPassportReaderScanner} />
+      <Stack.Screen name="PassportReaderScanner" component={PassportReaderScanner} />
+      <Stack.Screen name="VaccinationRecord1" component={VaccinationRecord1} />
+      <Stack.Screen name="VaccinationRecord2" component={VaccinationRecord2} />
+      <Stack.Screen name="VaxchainPassportReaderPersonalInformation" component={VaxchainPassportReaderPersonalInformation} />
+      <Stack.Screen name="VaxchainPassportReaderAccountInformation" component={VaxchainPassportReaderAccountInformation} />
+      <Stack.Screen name="Notifications" component={Notfications} />
+    </Stack.Navigator>
+  );
+}
+
+function BookingStack() {
+
+  return (
+    <Stack.Navigator headerMode={"none"} initialRouteName={"Home"}>
+
+      <Stack.Screen name="Booking" component={Booking} />
+      <Stack.Screen name="Notifications" component={Notfications} />
+
     </Stack.Navigator>
   );
 }
@@ -91,8 +135,8 @@ function BottomNavigation() {
       }}
     >
       <Tab.Screen name="Home" component={HomeStack} options={{ tabBarIcon: ({ color }) => (<Entypo name="home" size={25} color={color} />) }} />
-      <Tab.Screen name="Passport" component={EmailSignUp} options={{ tabBarIcon: ({ color }) => (<AntDesign name="qrcode" size={25} color={color} />) }} />
-      <Tab.Screen name="Booking" component={Booking} options={{ tabBarIcon: ({ color }) => (<FontAwesome name="calendar" size={25} color={color} />) }} />
+      <Tab.Screen name="Passport" component={PassportStack} options={{ tabBarIcon: ({ color }) => (<AntDesign name="qrcode" size={25} color={color} />) }} />
+      <Tab.Screen name="Booking" component={BookingStack} options={{ tabBarIcon: ({ color }) => (<FontAwesome name="calendar" size={25} color={color} />) }} />
       <Tab.Screen name="Wallet" component={Wallet} options={{ tabBarIcon: ({ color }) => (<Entypo name="wallet" size={25} color={color} />) }} />
     </Tab.Navigator>
 

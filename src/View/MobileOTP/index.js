@@ -39,7 +39,7 @@ export default function MobileOTP({ navigation }) {
           <TextInput keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
 
         </View>
-        <TouchableOpacity onPress={()=>navigation.navigate('MainMenu')} style={{ backgroundColor: '#ffff', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
+        <TouchableOpacity onPress={()=>navigation.navigate('BasicInformation')} style={{ backgroundColor: '#ffff', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
           <Text style={{ fontWeight: 'bold', color: 'black', textAlign: 'center' }}>Didn't receive the code ? send {'\n'} again in <Text style={{ color: '#F5914E' }}>32</Text> Seconds  </Text>
         </TouchableOpacity>
 

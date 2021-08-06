@@ -82,6 +82,7 @@ export default function Home({ navigation }) {
           >
             <TouchableOpacity
               activeOpacity={0.8}
+              onPress={() => navigation.navigate("VaxchainPassportReaderPersonalInformation")}
               style={styles.bookandRecordVaccination}
             >
               <Fontisto
@@ -97,6 +98,7 @@ export default function Home({ navigation }) {
             </TouchableOpacity>
             <TouchableOpacity
               activeOpacity={0.8}
+              onPress={() => navigation.navigate("Booking")}
               style={styles.bookandRecordVaccination}
             >
               <FontAwesome

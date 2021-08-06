@@ -73,6 +73,7 @@ export default function Wallet({ navigation }) {
           >
             <TouchableOpacity
               activeOpacity={0.8}
+              onPress={() => navigation.navigate('IDVerification')}
               style={styles.transferPayment}
             >
               <FontAwesome
