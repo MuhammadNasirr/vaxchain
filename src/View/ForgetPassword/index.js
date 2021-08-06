@@ -20,6 +20,7 @@ export default function ForgetPassword({ navigation }) {
                         textAlign: 'center',
                         marginBottom: 4,
                         alignSelf: 'flex-start',
+                        
 
                     }}
                 > Forget Your Password ?</Text>
@@ -31,7 +32,8 @@ export default function ForgetPassword({ navigation }) {
             {/* Login form  */}
 
             <View style={{ alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '50%' }}>
-                <TextInput keyboardType='email-address' placeholder="Email Address" style={{ backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10 }} />
+                <TextInput placeholderTextColor="#8D8D8D"
+            color='black' keyboardType='email-address' placeholder="Email Address" style={{ backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10 }} />
                 {/* <View style={{flexDirection:'row', justifyContent:'space-between', alignItems:'center', backgroundColor:'#F3F3F3',width:'80%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} >
                 <TextInput keyboardType='default' secureTextEntry={true} placeholder="Password" style={{width:'65%'}}/>
                 <Text style={{color:'#F5914E',fontSize:RFPercentage(1.4),width:'35%'}} onPress={()=>navigation.navigate('forgetPassword')}>Forget Password ?</Text>    

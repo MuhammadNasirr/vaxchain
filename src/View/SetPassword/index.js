@@ -37,8 +37,10 @@ export default function SetPassword({ navigation }) {
                 <TextInput keyboardType='default' secureTextEntry={true} placeholder="Password" style={{width:'65%'}}/>
                 <Text style={{color:'#F5914E',fontSize:RFPercentage(1.4),width:'35%'}} onPress={()=>navigation.navigate('forgetPassword')}>Forget Password ?</Text>    
             </View> */}
-                <TextInput keyboardType='default' placeholder="New Password" style={{ backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10 }} />
-                <TextInput keyboardType='default' placeholder="Re-type New Password" style={{ backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10, marginTop: 20 }} />
+                <TextInput placeholderTextColor="#8D8D8D"
+            color='black' keyboardType='default' placeholder="New Password" style={{ backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10 }} />
+                <TextInput placeholderTextColor="#8D8D8D"
+            color='black' keyboardType='default' placeholder="Re-type New Password" style={{ backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10, marginTop: 20 }} />
                 <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: '#F5914E', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}
                     onPress={() => {
                         navigation.navigate('setPassword')

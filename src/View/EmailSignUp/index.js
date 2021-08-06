@@ -37,24 +37,32 @@ export default function EmailSignUp({ navigation }) {
                         SignUp With Mobile No.
                     </Text>
                     <TextInput
+                    placeholderTextColor="#8D8D8D"
+            color='black'
                         keyboardType="email-address"
                         placeholder="Email Address"
                         style={[styles.input, { marginTop: 5 }]}
                     />
 
                     <TextInput
+                    placeholderTextColor="#8D8D8D"
+            color='black'
                         keyboardType="default"
                         placeholder="Username"
                         style={styles.input}
                     />
 
                     <TextInput
+                    placeholderTextColor="#8D8D8D"
+            color='black'
                         keyboardType="default"
                         secureTextEntry={true}
                         placeholder="Assign Password"
                         style={styles.input}
                     />
                     <TextInput
+                    placeholderTextColor="#8D8D8D"
+            color='black'
                         keyboardType="default"
                         secureTextEntry={true}
                         placeholder="Confirm Password"

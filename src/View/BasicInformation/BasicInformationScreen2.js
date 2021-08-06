@@ -53,13 +53,15 @@ export default function BasicInformation({ navigation }) {
 
         <TextInput
           keyboardType="default"
-
+          placeholderTextColor="#8D8D8D"
+          color='black'
           placeholder="Street Address"
           style={styles.input}
         />
         <TextInput
           keyboardType="default"
-
+          placeholderTextColor="#8D8D8D"
+          color='black'
           placeholder="Postal Code"
           style={styles.input}
         />

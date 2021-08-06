@@ -32,6 +32,8 @@ export default function BasicInformationScreen1({ navigation }) {
 
         <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
           <TextInput
+          placeholderTextColor="#8D8D8D"
+            color='black'
             placeholder="First Name"
             style={{
               marginTop: 5, backgroundColor: "#F3F3F3",
@@ -43,6 +45,8 @@ export default function BasicInformationScreen1({ navigation }) {
           />
 
           <TextInput
+          placeholderTextColor="#8D8D8D"
+            color='black'
             placeholder="Last Name"
             style={{
               marginTop: 5, backgroundColor: "#F3F3F3",
@@ -57,6 +61,8 @@ export default function BasicInformationScreen1({ navigation }) {
 
         <View style={{ width: '100%', flexDirection: 'row', marginTop: 20, justifyContent: 'space-between' }}>
           <TextInput
+          placeholderTextColor="#8D8D8D"
+            color='black'
             placeholder="Middle Name"
             style={{
               backgroundColor: "#F3F3F3",
@@ -68,6 +74,8 @@ export default function BasicInformationScreen1({ navigation }) {
           />
 
           <TextInput
+          placeholderTextColor="#8D8D8D"
+            color='black'
             placeholder="Date of Birth"
             style={{
               marginTop: 5, backgroundColor: "#F3F3F3",
@@ -85,6 +93,8 @@ export default function BasicInformationScreen1({ navigation }) {
 
 
         <TextInput
+        placeholderTextColor="#8D8D8D"
+            color='black'
           keyboardType="default"
 
           placeholder="Nationality"

@@ -32,6 +32,8 @@ export default function Login({ navigation }) {
           <TextInput
             keyboardType="email-address"
             placeholder="Email Address"
+            placeholderTextColor="#8D8D8D"
+            color='black'
             style={styles.input}
           />
           <View style={styles.passwordContainer}>
@@ -39,6 +41,8 @@ export default function Login({ navigation }) {
               keyboardType="default"
               secureTextEntry={true}
               placeholder="Password"
+              placeholderTextColor="#8D8D8D"
+              color='black'
               style={{ width: "65%" }}
             />
             <Text
@@ -110,15 +114,21 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   passwordContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
     backgroundColor: "#F3F3F3",
     width: "80%",
-    paddingVertical: 15,
-    paddingHorizontal: 10,
+    color:'black',
+    paddingVertical: 10,
+    paddingHorizontal: 8,
     borderRadius: 10,
-    marginTop: 20,
+     flexDirection: "row",
+     justifyContent: "space-between",
+     alignItems: "center",
+    // backgroundColor: "#F3F3F3",
+    // width: "80%",
+    // paddingVertical: 15,
+    // paddingHorizontal: 10,
+    // borderRadius: 10,
+     marginTop: 20,
   },
   logInButton: {
     backgroundColor: "#F5914E",

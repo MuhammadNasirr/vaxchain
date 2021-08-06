@@ -31,12 +31,18 @@ export default function MobileOTP({ navigation }) {
 
         <View style={{ alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', width: '90%', marginTop: 50 }}>
 
-          <TextInput keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
-          <TextInput keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
-          <TextInput keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
-          <TextInput keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
-          <TextInput keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
-          <TextInput keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+          <TextInput placeholderTextColor="#8D8D8D"
+            color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+          <TextInput placeholderTextColor="#8D8D8D"
+            color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+          <TextInput placeholderTextColor="#8D8D8D"
+            color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+          <TextInput placeholderTextColor="#8D8D8D"
+            color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+          <TextInput placeholderTextColor="#8D8D8D"
+            color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+          <TextInput placeholderTextColor="#8D8D8D"
+            color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{ backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
 
         </View>
         <TouchableOpacity onPress={()=>navigation.navigate('BasicInformation')} style={{ backgroundColor: '#ffff', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
