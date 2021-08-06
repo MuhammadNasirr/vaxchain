@@ -31,44 +31,44 @@ export default function QRCodeModal({ visible, onClose, mainText, isButton, butt
           </View>
           <View style={{ width: '100%', alignItems: 'center' }}>
             {icon}
-            <Text style={{ marginVertical: 10, fontSize: 20, textAlign: 'center', fontWeight: 'bold', color: '#F5914E', width: '70%' }}>
+            <Text style={{fontFamily:'Poppins-Regular', marginVertical: 10, fontSize: 20, textAlign: 'center', fontWeight: 'bold', color: '#F5914E', width: '70%' }}>
               {mainText}
             </Text>
-            <Text style={{ textAlign: 'center', width: '80%' }}>{descriptionText}</Text>
+            <Text style={{fontFamily:'Poppins-Regular', textAlign: 'center', width: '80%' }}>{descriptionText}</Text>
             <AntDesign name="qrcode" size={RFPercentage(18)} color="black" />
 
 
             <View style={{ width: '90%', paddingHorizontal: 5, marginTop: 20 }}>
               <View style={{ width: '100%', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
-                <Text style={{ color: 'grey' }}>Location</Text>
-                <Text style={{ backgroundColor: '#FFF5E9', width: 150, textAlign: 'right', paddingTop: 10, paddingRight: 20, borderRadius: 3, fontWeight: '600', height: 40 }}>Quenzen City</Text>
+                <Text style={{fontFamily:'Poppins-Regular', color: 'grey' }}>Location</Text>
+                <Text style={{fontFamily:'Poppins-Regular', backgroundColor: '#FFF5E9', width: 150, textAlign: 'right', paddingTop: 10, paddingRight: 20, borderRadius: 3, fontWeight: '600', height: 40 }}>Quenzen City</Text>
               </View>
 
               <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
-                <Text style={{ color: 'grey' }}>Vaccination Center</Text>
-                <Text style={{ backgroundColor: '#FFF5E9', width: 150, textAlign: 'right', paddingTop: 10, paddingRight: 20, borderRadius: 3, fontWeight: '600', height: 40 }}>Aratena Center</Text>
+                <Text style={{fontFamily:'Poppins-Regular', color: 'grey' }}>Vaccination Center</Text>
+                <Text style={{ fontFamily:'Poppins-Regular',backgroundColor: '#FFF5E9', width: 150, textAlign: 'right', paddingTop: 10, paddingRight: 20, borderRadius: 3, fontWeight: '600', height: 40 }}>Aratena Center</Text>
               </View>
 
 
               <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
-                <Text style={{ color: 'grey' }}>Date</Text>
-                <Text style={{ backgroundColor: '#FFF5E9', width: 150, textAlign: 'right', paddingTop: 10, paddingRight: 20, borderRadius: 3, fontWeight: '600', height: 40 }}>5-july-2021</Text>
+                <Text style={{fontFamily:'Poppins-Regular', color: 'grey' }}>Date</Text>
+                <Text style={{fontFamily:'Poppins-Regular', backgroundColor: '#FFF5E9', width: 150, textAlign: 'right', paddingTop: 10, paddingRight: 20, borderRadius: 3, fontWeight: '600', height: 40 }}>5-july-2021</Text>
               </View>
 
               <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
-                <Text style={{ color: 'grey' }}>Time</Text>
-                <Text style={{ backgroundColor: '#FFF5E9', width: 150, textAlign: 'right', paddingTop: 10, paddingRight: 20, borderRadius: 3, fontWeight: '600', height: 40 }}>8:00 am</Text>
+                <Text style={{fontFamily:'Poppins-Regular', color: 'grey' }}>Time</Text>
+                <Text style={{ fontFamily:'Poppins-Regular',backgroundColor: '#FFF5E9', width: 150, textAlign: 'right', paddingTop: 10, paddingRight: 20, borderRadius: 3, fontWeight: '600', height: 40 }}>8:00 am</Text>
               </View>
             </View>
-            <Text style={{ color: 'grey', fontSize: 16, marginTop: 10, width: '80%', textAlign: 'center' }}>Please wait for the notification Confirming your booking Schedule</Text>
+            <Text style={{fontFamily:'Poppins-Regular', color: 'grey', fontSize: 16, marginTop: 10, width: '80%', textAlign: 'center' }}>Please wait for the notification Confirming your booking Schedule</Text>
             {
               isButton ?
                 <TouchableOpacity onPress={buttonPress} style={{ backgroundColor: '#F5914E', width: '80%', alignSelf: 'center', alignItems: 'center', paddingVertical: 12, borderRadius: 15, marginTop: 20 }}>
-                  <Text style={{ color: '#ffff', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase' }}>{buttonText}</Text>
+                  <Text style={{fontFamily:'Poppins-Regular', color: '#ffff', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase' }}>{buttonText}</Text>
                 </TouchableOpacity>
                 :
                 <TouchableOpacity onPress={buttonPress} style={{ width: '100%', alignItems: 'center' }}>
-                  <Text style={{ color: '#F5914E', width: '80%', textAlign: 'center', marginTop: 20, fontWeight: 'bold', textDecorationLine: 'underline', fontSize: 18 }}>Cancel</Text>
+                  <Text style={{fontFamily:'Poppins-Regular', color: '#F5914E', width: '80%', textAlign: 'center', marginTop: 20, fontWeight: 'bold', textDecorationLine: 'underline', fontSize: 18 }}>Cancel</Text>
                 </TouchableOpacity>
             }
           </View>

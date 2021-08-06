@@ -31,22 +31,22 @@ export default function MyAccount(props) {
 
       <View style={styles.body}>
 
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', marginBottom: 10 }}>
-          <TouchableOpacity style={{ backgroundColor: state.verified ? '#50AC2F' : '#F7914F', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', borderRadius: 15, paddingHorizontal: 5, width: '45%', paddingVertical: 20 }}>
+        <View style={{ fontFamily:'Poppins-Regular',flexDirection: 'row', justifyContent: 'space-between', width: '90%', marginBottom: 10 }}>
+          <TouchableOpacity style={{ fontFamily:'Poppins-Regular',backgroundColor: state.verified ? '#50AC2F' : '#F7914F', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', borderRadius: 15, paddingHorizontal: 5, width: '45%', paddingVertical: 20 }}>
 
-            <Text style={{ color: '#ffff', fontWeight: 'bold', fontSize: 16 }}>1st Dosage</Text>
+            <Text style={{ fontFamily:'Poppins-Regular',color: '#ffff', fontWeight: 'bold', fontSize: 16 }}>1st Dosage</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={{ backgroundColor: '#A7A7A7', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', borderRadius: 15, paddingHorizontal: 5, width: '45%', paddingVertical: 20 }}>
+          <TouchableOpacity style={{ fontFamily:'Poppins-Regular',backgroundColor: '#A7A7A7', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', borderRadius: 15, paddingHorizontal: 5, width: '45%', paddingVertical: 20 }}>
 
-            <Text style={{ color: '#ffff', fontWeight: 'bold', fontSize: 16 }}>2nd Dosage</Text>
+            <Text style={{ fontFamily:'Poppins-Regular',color: '#ffff', fontWeight: 'bold', fontSize: 16 }}>2nd Dosage</Text>
           </TouchableOpacity>
 
 
         </View>
-        <View style={{ backgroundColor: '#ffff', width: '90%', borderRadius: 25, padding: 20, marginTop: 20 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-            <Text style={{ color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>
+        <View style={{ fontFamily:'Poppins-Regular',backgroundColor: '#ffff', width: '90%', borderRadius: 25, padding: 20, marginTop: 20 }}>
+          <View style={{ fontFamily:'Poppins-Regular',flexDirection: 'row', justifyContent: 'space-between' }}>
+            <Text style={{ fontFamily:'Poppins-Regular',color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>
               1st{'\n'}Dosage
             </Text>
             <TouchableOpacity onPress={() => setstate(pre => ({ ...pre, isVerfication: state.verified ? false : true }))} style={{
@@ -55,35 +55,35 @@ export default function MyAccount(props) {
               {
                 state.verified ? <>
                   <MaterialIcons name="check-circle-outline" size={20} color="#ffff" />
-                  <Text style={{ color: '#ffff', fontWeight: 'bold', marginLeft: 5 }}>Vaccinated</Text>
+                  <Text style={{ fontFamily:'Poppins-Regular',color: '#ffff', fontWeight: 'bold', marginLeft: 5 }}>Vaccinated</Text>
                 </>
                   :
-                  <Text style={{ color: '#ffff', fontWeight: 'bold' }}>Verify</Text>
+                  <Text style={{ fontFamily:'Poppins-Regular',color: '#ffff', fontWeight: 'bold' }}>Verify</Text>
               }
             </TouchableOpacity>
           </View>
           <Text style={styles.title}>City /Orginazation Where{'\n'}you got Vaccinated:</Text>
           <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>st.Lukes</Text>
+            <Text style={{ fontFamily:'Poppins-Regular',color: 'black' }}>st.Lukes</Text>
           </View>
           <Text style={styles.title}>Location of Vaccination Center:</Text>
           <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>23 Jacinto Street Global City</Text>
+            <Text style={{ fontFamily:'Poppins-Regular',color: 'black' }}>23 Jacinto Street Global City</Text>
           </View>
           <Text style={styles.title}>Vaccination Manufacturer:</Text>
           <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>Astra Zeneca</Text>
+            <Text style={{ fontFamily:'Poppins-Regular',color: 'black' }}>Astra Zeneca</Text>
           </View>
 
           <Text style={styles.title}>Lot Number:</Text>
           <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>000000</Text>
+            <Text style={{ fontFamily:'Poppins-Regular',color: 'black' }}>000000</Text>
           </View>
 
 
           <Text style={styles.title}>Vaccinator:</Text>
           <View style={styles.infoBox}>
-            <Text style={{ color: 'black' }}>Jose Dela</Text>
+            <Text style={{ fontFamily:'Poppins-Regular',color: 'black' }}>Jose Dela</Text>
           </View>
 
         </View>
@@ -113,6 +113,7 @@ export default function MyAccount(props) {
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily:'Poppins-Regular',
     flex: 1,
     width: '100%',
     height: '100%',
@@ -121,12 +122,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#EAEBEF'
   },
   mainInfo: {
+    fontFamily:'Poppins-Regular',
     // backgroundColor:'red',
     width: '100%',
     flexDirection: 'row',
     paddingVertical: 10
   },
   mainInfoImage: {
+    fontFamily:'Poppins-Regular',
     marginHorizontal: 10,
     borderRadius: 500,
     // backgroundColor:'green',
@@ -134,6 +137,7 @@ const styles = StyleSheet.create({
     borderColor: '#4AC2C1'
   },
   Image: {
+    fontFamily:'Poppins-Regular',
     margin: 4,
     resizeMode: 'contain',
     width: 150,
@@ -143,6 +147,7 @@ const styles = StyleSheet.create({
 
   },
   infoBox: {
+    fontFamily:'Poppins-Regular',
     // borderColor:'#C2C2C2',
     // borderWidth:1,
     backgroundColor: '#FFF5E9',
@@ -152,19 +157,22 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   mainInfoText: {
+    fontFamily:'Poppins-Regular',
     // backgroundColor:'orange',
     justifyContent: 'center',
     alignItems: 'center',
     //  width:'100%'
   },
   username: {
+    fontFamily:'Poppins-Regular',
     fontSize: 20,
     fontWeight: 'bold',
     // marginTop: 10,
     marginLeft: 5,
     color: '#4AC2C1'
   },
-  headerIcon: { backgroundColor: "#ffff", borderRadius: 5, padding: 5 },
+  headerIcon: {
+    fontFamily:'Poppins-Regular', backgroundColor: "#ffff", borderRadius: 5, padding: 5 },
 
   // MainImage:{
   //     width:130,
@@ -178,12 +186,14 @@ const styles = StyleSheet.create({
   //     fontWeight:'bold',
   // },
   body: {
+    fontFamily:'Poppins-Regular',
     width: '100%',
     padding: 20,
     paddingBottom: 100,
     alignItems: 'center'
   },
   title: {
+    fontFamily:'Poppins-Regular',
     //  fontWeight: 'bold',
     fontSize: 16,
     color: 'grey',

@@ -120,7 +120,8 @@ const styles = StyleSheet.create({
     color: "#F5914E",
     alignSelf: "flex-start",
     marginBottom: 15,
-    fontSize: 18
+    fontSize: 18,
+    fontFamily:'Poppins-Regular',
 
   },
   input: {

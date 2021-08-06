@@ -39,12 +39,12 @@ export default function IDVerification({ navigation }) {
 
       <View style={styles.body}>
 
-        <View style={{ width: '90%', marginBottom: 10 }}>
-          <Text style={{ color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>ID Verification</Text>
-          <Text style={{ color: '#858585', fontWeight: 'bold', fontSize: 18 }}>for processing</Text>
+        <View style={{fontFamily:'Poppins-Regular', width: '90%', marginBottom: 10 }}>
+          <Text style={{fontFamily:'Poppins-Regular', color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>ID Verification</Text>
+          <Text style={{fontFamily:'Poppins-Regular', color: '#858585', fontWeight: 'bold', fontSize: 18 }}>for processing</Text>
 
         </View>
-        <View style={{
+        <View style={{fontFamily:'Poppins-Regular',
           backgroundColor: '##FFFFFF',
           shadowColor: "#000",
           shadowOffset: {
@@ -58,13 +58,13 @@ export default function IDVerification({ navigation }) {
           width: '100%', borderRadius: 25, padding: 20, marginTop: 20
         }}>
 
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '90%' }}>
-            <Text style={{ color: '#B0B0B0', fontSize: 16 }}>Type of ID</Text>
-            <View style={{ backgroundColor: '#FDF6E8', borderRadius: 5 }}>
+          <View style={{fontFamily:'Poppins-Regular', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '90%' }}>
+            <Text style={{fontFamily:'Poppins-Regular', color: '#B0B0B0', fontSize: 16 }}>Type of ID</Text>
+            <View style={{fontFamily:'Poppins-Regular', backgroundColor: '#FDF6E8', borderRadius: 5 }}>
               <Picker
                 mode={"dropdown"}
                 // selectedValue={selectedValue}
-                style={{ height: 40, width: 150 }}
+                style={{fontFamily:'Poppins-Regular', height: 40, width: 150 }}
               // onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
               >
                 <Picker.Item label="Choose ID" value="Choose ID" />
@@ -73,34 +73,34 @@ export default function IDVerification({ navigation }) {
 
             </View>
           </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '90%', marginTop: 20 }}>
-            <Text style={{ color: '#B0B0B0', fontSize: 16 }}>ID No.</Text>
+          <View style={{fontFamily:'Poppins-Regular', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '90%', marginTop: 20 }}>
+            <Text style={{fontFamily:'Poppins-Regular', color: '#B0B0B0', fontSize: 16 }}>ID No.</Text>
             <TextInput
 
               style={[styles.infoBox, { height: 40, width: 150, paddingVertical: 0 }]}
             />
           </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '90%', marginTop: 20 }}>
-            <Text style={{ color: '#B0B0B0', fontSize: 16 }}>ID Pic (front)</Text>
+          <View style={{fontFamily:'Poppins-Regular', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '90%', marginTop: 20 }}>
+            <Text style={{fontFamily:'Poppins-Regular', color: '#B0B0B0', fontSize: 16 }}>ID Pic (front)</Text>
           </View>
-          <TouchableOpacity onPress={() => setstate(pre => ({ ...pre, selfieTake: true }))} style={{ width: '100%', alignItems: 'center', marginTop: 20 }}>
+          <TouchableOpacity onPress={() => setstate(pre => ({ ...pre, selfieTake: true }))} style={{fontFamily:'Poppins-Regular', width: '100%', alignItems: 'center', marginTop: 20 }}>
             <Image source={require("../../assets/images/selfieCard.png")} />
           </TouchableOpacity>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '90%', marginTop: 20 }}>
-            <Text style={{ color: '#B0B0B0', fontSize: 16 }}>ID Pic (back)</Text>
+          <View style={{fontFamily:'Poppins-Regular', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '90%', marginTop: 20 }}>
+            <Text style={{fontFamily:'Poppins-Regular', color: '#B0B0B0', fontSize: 16 }}>ID Pic (back)</Text>
           </View>
-          <TouchableOpacity onPress={() => setstate(pre => ({ ...pre, selfieTake: true }))} style={{ width: '100%', alignItems: 'center', marginTop: 20 }}>
+          <TouchableOpacity onPress={() => setstate(pre => ({ ...pre, selfieTake: true }))} style={{fontFamily:'Poppins-Regular', width: '100%', alignItems: 'center', marginTop: 20 }}>
             <Image source={require("../../assets/images/selfieCard.png")} />
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={() => setstate(pre => ({ ...pre, isVerfication: true }))} style={{
+        <TouchableOpacity onPress={() => setstate(pre => ({ ...pre, isVerfication: true }))} style={{fontFamily:'Poppins-Regular',
           backgroundColor: '#F7914F', width: '100%', justifyContent: 'center', alignItems: 'center', borderRadius: 15, marginTop: 50, height: 50
         }}>
-          <Text style={{ color: '#ffff', fontWeight: 'bold', fontSize: 18 }}>Verify</Text>
+          <Text style={{fontFamily:'Poppins-Regular', color: '#ffff', fontWeight: 'bold', fontSize: 18 }}>Verify</Text>
         </TouchableOpacity>
-        <View style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: 20, width: '95%' }}>
-          <Icon containerStyle={{ marginRight: 10 }} color={"#F7914F"} name={'info'} type={"foundation"} />
-          <Text style={{ marginLeft: 0 }}>
+        <View style={{fontFamily:'Poppins-Regular', flexDirection: 'row', alignItems: 'flex-start', marginTop: 20, width: '95%' }}>
+          <Icon containerStyle={{fontFamily:'Poppins-Regular', marginRight: 10 }} color={"#F7914F"} name={'info'} type={"foundation"} />
+          <Text style={{fontFamily:'Poppins-Regular', marginLeft: 0 }}>
             This information is used for identity verification only and will be kept
             secure by VAXCHAIN in accordance with RepublicAct 10173 Data Privacy
             Act of Philpines
@@ -133,9 +133,10 @@ const styles = StyleSheet.create({
   container: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#FCFCFC'
+    backgroundColor: '#FCFCFC',fontFamily:'Poppins-Regular',
   },
   body: {
+    fontFamily:'Poppins-Regular',
     width: '100%',
     padding: 20,
     marginTop: 50,
@@ -143,6 +144,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   title: {
+    fontFamily:'Poppins-Regular',
     fontSize: 16,
     color: 'grey',
     paddingTop: 8,
@@ -150,6 +152,7 @@ const styles = StyleSheet.create({
     paddingLeft: 5
   },
   infoBox: {
+    fontFamily:'Poppins-Regular',
     backgroundColor: '#FFF5E9',
     paddingVertical: 8,
     borderRadius: 4,

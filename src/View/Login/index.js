@@ -87,24 +87,27 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    fontFamily:'Poppins-Regular'
   },
 
-  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff" },
-  imageContainer: { width: "50%", height: 200 },
-  image: { width: "100%", height: "100%", resizeMode: "contain" },
-  screenTitleContainer: { width: "100%", alignItems: "center" },
+  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff",fontFamily:'Poppins-Regular' },
+  imageContainer: { width: "50%", height: 200 ,fontFamily:'Poppins-Regular'},
+  image: { width: "100%", height: "100%", resizeMode: "contain" ,fontFamily:'Poppins-Regular'},
+  screenTitleContainer: { width: "100%", alignItems: "center" ,fontFamily:'Poppins-Regular'},
   title: {
     fontSize: RFPercentage(5),
     fontWeight: "bold",
     color: "#F5914E",
     marginBottom: 4,
+    fontFamily:'Poppins-Regular'
   },
-  titleTagline: { textAlign: "center", fontWeight: "bold" },
+  titleTagline: { textAlign: "center", fontWeight: "bold" ,fontFamily:'Poppins-Regular'},
   LoginForm: {
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
     marginTop: 50,
+    fontFamily:'Poppins-Regular'
   },
   input: {
     backgroundColor: "#F3F3F3",
@@ -112,6 +115,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 10,
     borderRadius: 10,
+    fontFamily:'Poppins-Regular'
   },
   passwordContainer: {
     backgroundColor: "#F3F3F3",
@@ -123,6 +127,7 @@ const styles = StyleSheet.create({
      flexDirection: "row",
      justifyContent: "space-between",
      alignItems: "center",
+     fontFamily:'Poppins-Regular',
     // backgroundColor: "#F3F3F3",
     // width: "80%",
     // paddingVertical: 15,
@@ -138,10 +143,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 20,
+    fontFamily:'Poppins-Regular'
   },
   forgetPasswordText: {
     color: "#F5914E",
     fontSize: RFPercentage(1.4),
     width: "35%",
+    fontFamily:'Poppins-Regular'
   },
 });

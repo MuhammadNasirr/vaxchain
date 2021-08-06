@@ -36,6 +36,7 @@ export default function BasicInformationScreen1({ navigation }) {
             color='black'
             placeholder="First Name"
             style={{
+              fontFamily:'Poppins-Regular',
               marginTop: 5, backgroundColor: "#F3F3F3",
               width: "48%",
               paddingVertical: 15,
@@ -156,7 +157,9 @@ const styles = StyleSheet.create({
     color: "#F5914E",
     alignSelf: "flex-start",
     marginBottom: 15,
-    fontSize: 18
+    fontSize: 18,
+    fontFamily:'Poppins-Regular',
+    
 
   },
   input: {

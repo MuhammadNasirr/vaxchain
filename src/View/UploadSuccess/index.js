@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F79150",
     alignItems: "center",
     justifyContent: "center",
+    fontFamily:'Poppins-Regular',
   },
 
 
@@ -40,6 +41,7 @@ const styles = StyleSheet.create({
     fontSize: RFPercentage(5),
     fontWeight: "bold",
     color: "#ffff",
+    fontFamily:'Poppins-Regular',
     // marginBottom: 4,
   },
 

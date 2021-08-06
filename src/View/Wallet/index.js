@@ -140,14 +140,16 @@ const styles = StyleSheet.create({
     height: "100%",
     //  marginTop:20,
     width: "100%",
+    fontFamily:'Poppins-Regular',
   },
 
-  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff" },
+  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff" ,fontFamily:'Poppins-Regular',},
   backgroundImage: {
     flex: 1,
     width: "100%",
     height: "100%",
     resizeMode: "cover",
+    fontFamily:'Poppins-Regular',
   },
   Header: {
     width: "100%",
@@ -156,12 +158,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    fontFamily:'Poppins-Regular',
   },
-  drawericonView: { width: "10%", alignItems: "center" },
+  drawericonView: { width: "10%", alignItems: "center",fontFamily:'Poppins-Regular', },
   headerTitleView: {
     justifyContent: "center",
     alignItems: "center",
     width: "70%",
+    fontFamily:'Poppins-Regular',
   },
   HeaderTitle: {
     color: "#ffff",
@@ -169,29 +173,32 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: RFPercentage(2),
     alignSelf: "center",
+    fontFamily:'Poppins-Regular',
   },
   headerIconsView: {
     flexDirection: "row",
     width: "20%",
     justifyContent: "space-around",
+    fontFamily:'Poppins-Regular',
   },
 
-  headerIcon: { backgroundColor: "#ffff", borderRadius: 5, padding: 5 },
-  body: { width: "100%", alignItems: "center", marginTop: 10 },
+  headerIcon: { backgroundColor: "#ffff", borderRadius: 5, padding: 5 ,fontFamily:'Poppins-Regular',},
+  body: { width: "100%", alignItems: "center", marginTop: 10 ,fontFamily:'Poppins-Regular',},
   bodyTitle: {
     color: "#ffff",
     fontWeight: "bold",
     fontSize: RFPercentage(3),
+    fontFamily:'Poppins-Regular',
   },
-  BodySubTitle: { color: "#ffff", fontSize: RFPercentage(5), fontWeight: 'bold' },
-  paymentTransferView: { width: "100%", alignItems: "center", paddingVertical: 20, marginTop: '50%' },
+  BodySubTitle: { color: "#ffff", fontSize: RFPercentage(5), fontWeight: 'bold' ,fontFamily:'Poppins-Regular',},
+  paymentTransferView: { width: "100%", alignItems: "center", paddingVertical: 20, marginTop: '50%' ,fontFamily:'Poppins-Regular',},
   transferPayment: {
     backgroundColor: "#ffff",
     width: "40%",
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: 25,
-    borderRadius: 15,
+    borderRadius: 15,fontFamily:'Poppins-Regular',
     marginVertical: 5,
     shadowColor: "#000",
     shadowOffset: {
@@ -206,11 +213,13 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#F5914E",
     fontSize: RFPercentage(2),
+    fontFamily:'Poppins-Regular',
     marginTop: 20,
   },
-  qrCodeContainer: { width: '100%', paddingVertical: 15 },
-  qrCodeHeading: { color: '#F5914E', marginLeft: 10 },
+  qrCodeContainer: { width: '100%', paddingVertical: 15,fontFamily:'Poppins-Regular', },
+  qrCodeHeading: { color: '#F5914E', marginLeft: 10 ,fontFamily:'Poppins-Regular',},
   qrCodeView: {
+    fontFamily:'Poppins-Regular',
     width: '95%', backgroundColor: '#ffff', alignSelf: 'center', borderRadius: 10, flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 5, paddingVertical: 10, shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -220,6 +229,6 @@ const styles = StyleSheet.create({
     shadowRadius: 2.2,
     elevation: 2,
   },
-  qrCode: { alignItems: 'center', justifyContent: 'center' },
-  qrCodeText: { fontSize: RFPercentage(1.3), textAlign: 'center', color: '#333333' }
+  qrCode: {fontFamily:'Poppins-Regular', alignItems: 'center', justifyContent: 'center' },
+  qrCodeText: { fontFamily:'Poppins-Regular',fontSize: RFPercentage(1.3), textAlign: 'center', color: '#333333' }
 });

@@ -16,9 +16,10 @@ export default function LoginSuccessful({ navigation }) {
     <ScrollView style={styles.scroll}>
       <View style={styles.container}>
 
-        <View style={{
+        <View style={{fontFamily:'Poppins-Regular',
           backgroundColor: '#ffff', width: '90%', justifyContent: 'center', alignItems: 'center', borderRadius: 15, paddingVertical: 20, shadowColor: "#000",
           shadowOffset: {
+            fontFamily:'Poppins-Regular',
             width: 0,
             height: 2,
           },
@@ -28,15 +29,15 @@ export default function LoginSuccessful({ navigation }) {
           marginVertical: 50
         }}>
           <MaterialCommunityIcons name="thumb-up" size={RFPercentage(10)} color="#F5914E" />
-          <Text style={{ fontSize: RFPercentage(3), color: '#F5914E', fontWeight: 'bold' }}>congratulations!</Text>
-          <Text style={{ alignSelf: 'center', width: '80%', textAlign: 'center', marginTop: 10, color: 'grey' }}>your account is basic verified is now basic you can verify your account starting vaxchain pasportor book the vachination with local government unit </Text>
+          <Text style={{fontFamily:'Poppins-Regular', fontSize: RFPercentage(3), color: '#F5914E', fontWeight: 'bold' }}>congratulations!</Text>
+          <Text style={{fontFamily:'Poppins-Regular', alignSelf: 'center', width: '80%', textAlign: 'center', marginTop: 10, color: 'grey' }}>your account is basic verified is now basic you can verify your account starting vaxchain pasportor book the vachination with local government unit </Text>
           <TouchableOpacity onPress={() => navigation.navigate('MainMenu')} activeOpacity={0.6} style={styles.singnUpButton}>
-            <Text style={{ fontWeight: "bold", color: "#ffff" }}>Go to home</Text>
+            <Text style={{fontFamily:'Poppins-Regular', fontWeight: "bold", color: "#ffff" }}>Go to home</Text>
           </TouchableOpacity>
         </View>
 
 
-        <View style={{
+        <View style={{fontFamily:'Poppins-Regular',
           backgroundColor: '#ffff', width: '90%', justifyContent: 'center', alignItems: 'center', borderRadius: 15, paddingVertical: 50, marginBottom: 20, shadowColor: "#000",
           shadowOffset: {
             width: 0,
@@ -47,10 +48,10 @@ export default function LoginSuccessful({ navigation }) {
           elevation: 3,
         }}>
 
-          <Text style={{ fontSize: RFPercentage(3), color: '#F5914E', fontWeight: 'bold' }}>Unlock Your Digital Wallet</Text>
-          <Text style={{ alignSelf: 'center', width: '80%', textAlign: 'center', marginTop: 10, color: 'grey' }}>your account is basic verified is now basic you can verify your account starting vaxchain pasportor book the vachination with local government unit </Text>
+          <Text style={{fontFamily:'Poppins-Regular', fontSize: RFPercentage(3), color: '#F5914E', fontWeight: 'bold' }}>Unlock Your Digital Wallet</Text>
+          <Text style={{fontFamily:'Poppins-Regular', alignSelf: 'center', width: '80%', textAlign: 'center', marginTop: 10, color: 'grey' }}>your account is basic verified is now basic you can verify your account starting vaxchain pasportor book the vachination with local government unit </Text>
           <TouchableOpacity onPress={() => navigation.navigate('IDVerification')} activeOpacity={0.6} style={styles.singnUpButton}>
-            <Text style={{ fontWeight: "bold", color: "#ffff" }}>Unlock Verify-Id</Text>
+            <Text style={{fontFamily:'Poppins-Regular', fontWeight: "bold", color: "#ffff" }}>Unlock Verify-Id</Text>
           </TouchableOpacity>
         </View>
 
@@ -61,23 +62,31 @@ export default function LoginSuccessful({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily:'Poppins-Regular',
     flex: 1,
     backgroundColor: "#F7F7F9",
     alignItems: "center",
     justifyContent: "center",
   },
-  scroll: { height: "100%", width: "100%", backgroundColor: '#F7F7F9' },
-  imageContainer: { width: "50%", height: 200 },
-  image: { width: "100%", height: "100%", resizeMode: "contain" },
-  screenTitleContainer: { width: "100%", alignItems: "center" },
+  scroll: {
+    fontFamily:'Poppins-Regular', height: "100%", width: "100%", backgroundColor: '#F7F7F9' },
+  imageContainer: {
+    fontFamily:'Poppins-Regular', width: "50%", height: 200 },
+  image: {
+    fontFamily:'Poppins-Regular', width: "100%", height: "100%", resizeMode: "contain" },
+  screenTitleContainer: {
+    fontFamily:'Poppins-Regular', width: "100%", alignItems: "center" },
   title: {
+    fontFamily:'Poppins-Regular',
     fontSize: RFPercentage(5),
     fontWeight: "bold",
     color: "#F5914E",
     marginBottom: 4,
   },
-  titleTagline: { textAlign: "center", fontWeight: "bold" },
+  titleTagline: {
+    fontFamily:'Poppins-Regular', textAlign: "center", fontWeight: "bold" },
   singnUpContainer: {
+    fontFamily:'Poppins-Regular',
     alignItems: "center",
     justifyContent: "center",
     width: "80%",
@@ -85,12 +94,14 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
   emailorphonenumber: {
+    fontFamily:'Poppins-Regular',
     fontWeight: "bold",
     color: "#F5914E",
     alignSelf: "flex-start",
     marginBottom: 10,
   },
   input: {
+    fontFamily:'Poppins-Regular',
     backgroundColor: "#F3F3F3",
     width: "50%",
     paddingVertical: 15,
@@ -99,6 +110,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   singnUpButton: {
+    fontFamily:'Poppins-Regular',
     backgroundColor: "#F5914E",
     width: "80%",
     height: 50,

@@ -46,7 +46,7 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
 
         {/* body */}
         <View
-          style={{
+          style={{fontFamily:'Poppins-Regular',
             backgroundColor: '#ffff',
             width: '90%',
             alignItems: 'center',
@@ -62,13 +62,13 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
   }
           }}>
           
-          <View style={{ width: '92%' ,marginTop:15}}>
-            <Text style={{ color: '#F5914E', fontWeight: 'bold' }}>
+          <View style={{fontFamily:'Poppins-Regular', width: '92%' ,marginTop:15}}>
+            <Text style={{fontFamily:'Poppins-Regular', color: '#F5914E', fontWeight: 'bold' }}>
               Account{'\n'}Information
             </Text>
            
             <View
-              style={{
+              style={{fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -78,12 +78,12 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
                 marginTop: 15,
                 
               }}>
-              <Text style={{ color: '#8B8B8B' }}>Username</Text>
-              <Text style={{ fontWeight: 'bold' }}>LBR23</Text>
+              <Text style={{fontFamily:'Poppins-Regular', color: '#8B8B8B' }}>Username</Text>
+              <Text style={{fontFamily:'Poppins-Regular', fontWeight: 'bold' }}>LBR23</Text>
             </View>
            
             <View
-              style={{
+              style={{fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -93,12 +93,12 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
                 marginTop: 15,
                 
               }}>
-              <Text style={{ color: '#8B8B8B' }}>Last Name</Text>
-              <Text style={{ fontWeight: 'bold' }}>Banifico</Text>
+              <Text style={{fontFamily:'Poppins-Regular', color: '#8B8B8B' }}>Last Name</Text>
+              <Text style={{fontFamily:'Poppins-Regular', fontWeight: 'bold' }}>Banifico</Text>
             </View>
 
              <View
-              style={{
+              style={{fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -108,14 +108,14 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
                 marginTop: 15,
                 
               }}>
-              <Text style={{ color: '#8B8B8B' }}>First Name</Text>
-              <Text style={{ fontWeight: 'bold' }}>Jose</Text>
+              <Text style={{fontFamily:'Poppins-Regular', color: '#8B8B8B' }}>First Name</Text>
+              <Text style={{fontFamily:'Poppins-Regular', fontWeight: 'bold' }}>Jose</Text>
             </View>
 
             
 
              <View
-              style={{
+              style={{fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -125,14 +125,14 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
                 marginTop: 15,
                 
               }}>
-              <Text style={{ color: '#8B8B8B' }}>Middle Name</Text>
-              <Text style={{ fontWeight: 'bold' }}>Abad</Text>
+              <Text style={{fontFamily:'Poppins-Regular', color: '#8B8B8B' }}>Middle Name</Text>
+              <Text style={{fontFamily:'Poppins-Regular', fontWeight: 'bold' }}>Abad</Text>
             </View>
 
 
 
              <View
-              style={{
+              style={{fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -142,14 +142,14 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
                 marginTop: 15,
                 
               }}>
-              <Text style={{ color: '#8B8B8B' }}>ID</Text>
-              <Text style={{ fontWeight: 'bold' }}>123785</Text>
+              <Text style={{fontFamily:'Poppins-Regular', color: '#8B8B8B' }}>ID</Text>
+              <Text style={{fontFamily:'Poppins-Regular', fontWeight: 'bold' }}>123785</Text>
             </View>
 
 
 
              <View
-              style={{
+              style={{fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -159,12 +159,12 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
                 marginTop: 15,
                 
               }}>
-              <Text style={{ color: '#8B8B8B' }}>Log-In Time</Text>
-              <Text style={{ fontWeight: 'bold' }}>10:00 AM</Text>
+              <Text style={{fontFamily:'Poppins-Regular', color: '#8B8B8B' }}>Log-In Time</Text>
+              <Text style={{fontFamily:'Poppins-Regular', fontWeight: 'bold' }}>10:00 AM</Text>
             </View>
 
         <View
-              style={{
+              style={{fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -174,8 +174,8 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
                 marginTop: 15,
                 
               }}>
-              <Text style={{ color: '#8B8B8B' }}>Duration</Text>
-              <Text style={{ fontWeight: 'bold' }}>2 Hours 15 Minutes</Text>
+              <Text style={{fontFamily:'Poppins-Regular', color: '#8B8B8B' }}>Duration</Text>
+              <Text style={{fontFamily:'Poppins-Regular', fontWeight: 'bold' }}>2 Hours 15 Minutes</Text>
             </View>
 
           
@@ -189,6 +189,7 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily:'Poppins-Regular',
     // flex: 1,
     //  backgroundColor: "#ffff",
     alignItems: 'center',
@@ -201,14 +202,17 @@ const styles = StyleSheet.create({
     width: '100%',
   },
 
-  scroll: { height: '100%', width: '100%', backgroundColor: '#ffff' },
+  scroll: {
+    fontFamily:'Poppins-Regular', height: '100%', width: '100%', backgroundColor: '#ffff' },
   backgroundImage: {
+    fontFamily:'Poppins-Regular',
     flex: 1,
     width: '100%',
     height: '100%',
     resizeMode: 'cover',
   },
   Header: {
+    fontFamily:'Poppins-Regular',
     width: '100%',
     position: 'absolute',
     top: 40,
@@ -216,13 +220,16 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
-  drawericonView: { width: '10%', alignItems: 'center' },
+  drawericonView: {
+    fontFamily:'Poppins-Regular', width: '10%', alignItems: 'center' },
   headerTitleView: {
+    fontFamily:'Poppins-Regular',
     justifyContent: 'center',
     alignItems: 'center',
     width: '70%',
   },
   HeaderTitle: {
+    fontFamily:'Poppins-Regular',
     color: '#ffff',
     textAlign: 'center',
     fontWeight: 'bold',
@@ -230,24 +237,30 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   headerIconsView: {
+    fontFamily:'Poppins-Regular',
     flexDirection: 'row',
     width: '20%',
     justifyContent: 'space-around',
   },
 
-  headerIcon: { backgroundColor: '#ffff', borderRadius: 5, padding: 5 },
-  body: { width: '100%', alignItems: 'center', marginTop: 100 },
+  headerIcon: {
+    fontFamily:'Poppins-Regular', backgroundColor: '#ffff', borderRadius: 5, padding: 5 },
+  body: {
+    fontFamily:'Poppins-Regular', width: '100%', alignItems: 'center', marginTop: 100 },
   bodyTitle: {
+    fontFamily:'Poppins-Regular',
     color: '#ffff',
     fontWeight: 'bold',
     fontSize: RFPercentage(3),
   },
   BodySubTitle: {
+    fontFamily:'Poppins-Regular',
     color: '#ffff',
     fontSize: RFPercentage(1.8),
     marginBottom: 35,
   },
   selectionView: {
+    fontFamily:'Poppins-Regular',
     width: '85%',
     alignItems: 'center',
     paddingVertical: 20,
@@ -257,6 +270,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   bookandRecordVaccination: {
+    fontFamily:'Poppins-Regular',
     backgroundColor: '#ffff',
     width: '40%',
     justifyContent: 'center',
@@ -266,6 +280,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     shadowColor: '#000',
     shadowOffset: {
+      fontFamily:'Poppins-Regular',
       width: 0,
       height: 2,
     },
@@ -274,14 +289,18 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   bookandRecordVaccinationText: {
+    fontFamily:'Poppins-Regular',
     textAlign: 'center',
     color: '#F5914E',
     fontSize: RFPercentage(2),
     marginTop: 20,
   },
-  qrCodeContainer: { width: '100%', paddingVertical: 15 },
-  qrCodeHeading: { color: '#F5914E', marginLeft: 10, fontWeight: 'bold' },
+  qrCodeContainer: {
+    fontFamily:'Poppins-Regular', width: '100%', paddingVertical: 15 },
+  qrCodeHeading: {
+    fontFamily:'Poppins-Regular', color: '#F5914E', marginLeft: 10, fontWeight: 'bold' },
   qrCodeView: {
+    fontFamily:'Poppins-Regular',
     width: '95%',
     backgroundColor: '#ffff',
     alignSelf: 'center',
@@ -292,6 +311,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     shadowColor: '#000',
     shadowOffset: {
+      fontFamily:'Poppins-Regular',
       width: 0,
       height: 1,
     },
@@ -299,8 +319,10 @@ const styles = StyleSheet.create({
     shadowRadius: 2.2,
     elevation: 2,
   },
-  qrCode: { alignItems: 'center', justifyContent: 'center' },
+  qrCode: {
+    fontFamily:'Poppins-Regular', alignItems: 'center', justifyContent: 'center' },
   qrCodeText: {
+    fontFamily:'Poppins-Regular',
     fontSize: RFPercentage(1.3),
     textAlign: 'center',
     color: '#333333',

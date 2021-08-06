@@ -86,35 +86,45 @@ export default function PhoneSignUp({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily:'Poppins-Regular',
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
-  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff" },
-  imageContainer: { width: "50%", height: 200 },
-  image: { width: "100%", height: "100%", resizeMode: "contain" },
-  screenTitleContainer: { width: "100%", alignItems: "center" },
+  scroll: {
+    fontFamily:'Poppins-Regular', height: "100%", width: "100%", backgroundColor: "#ffff" },
+  imageContainer: {
+    fontFamily:'Poppins-Regular', width: "50%", height: 200 },
+  image: {
+    fontFamily:'Poppins-Regular', width: "100%", height: "100%", resizeMode: "contain" },
+  screenTitleContainer: {
+    fontFamily:'Poppins-Regular', width: "100%", alignItems: "center" },
   title: {
+    fontFamily:'Poppins-Regular',
     fontSize: RFPercentage(5),
     fontWeight: "bold",
     color: "#F5914E",
     marginBottom: 4,
   },
-  titleTagline: { textAlign: "center", fontWeight: "bold" },
+  titleTagline: {
+    fontFamily:'Poppins-Regular', textAlign: "center", fontWeight: "bold" },
   singnUpContainer: {
+    fontFamily:'Poppins-Regular',
     alignItems: "center",
     justifyContent: "center",
     width: "80%",
     marginTop: 50,
   },
   emailorphonenumber: {
+    fontFamily:'Poppins-Regular',
     fontWeight: "bold",
     color: "#F5914E",
     alignSelf: "flex-end",
     marginBottom: 10,
   },
   input: {
+    fontFamily:'Poppins-Regular',
     backgroundColor: "#F3F3F3",
     width: "100%",
     paddingVertical: 15,
@@ -192,6 +202,7 @@ const styles = StyleSheet.create({
 
 // const styles = StyleSheet.create({
 //   container: {
+
 //     flex: 1,
 //     backgroundColor: '#fff',
 //     alignItems: 'center',

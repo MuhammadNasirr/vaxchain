@@ -207,14 +207,16 @@ const styles = StyleSheet.create({
     height: "100%",
     //  marginTop:20,
     width: "100%",
+    fontFamily:'Poppins-Regular'
   },
 
-  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff" },
+  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff",fontFamily:'Poppins-Regular' },
   backgroundImage: {
     flex: 1,
     width: "100%",
     height: "100%",
     resizeMode: "cover",
+    fontFamily:'Poppins-Regular'
   },
   Header: {
     width: "100%",
@@ -223,12 +225,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    fontFamily:'Poppins-Regular'
   },
   drawericonView: { width: "10%", alignItems: "center" },
   headerTitleView: {
     justifyContent: "center",
     alignItems: "center",
     width: "70%",
+    fontFamily:'Poppins-Regular'
   },
   HeaderTitle: {
     color: "#ffff",
@@ -236,22 +240,25 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: RFPercentage(2),
     alignSelf: "center",
+    fontFamily:'Poppins-Regular'
   },
   headerIconsView: {
     flexDirection: "row",
     width: "20%",
     justifyContent: "space-around",
+    fontFamily:'Poppins-Regular'
   },
 
-  headerIcon: { backgroundColor: "#ffff", borderRadius: 5, padding: 5 },
-  body: { width: "100%", alignItems: "center", marginTop: 100 },
+  headerIcon: { backgroundColor: "#ffff", borderRadius: 5, padding: 5,fontFamily:'Poppins-Regular' },
+  body: { width: "100%", alignItems: "center", marginTop: 100 ,fontFamily:'Poppins-Regular'},
   bodyTitle: {
     color: "#ffff",
     fontWeight: "bold",
     fontSize: RFPercentage(3),
+    fontFamily:'Poppins-Regular'
   },
-  BodySubTitle: { color: "#ffff", fontSize: RFPercentage(1.8) },
-  vaccinationView: { width: "100%", alignItems: "center", paddingVertical: 20 },
+  BodySubTitle: { color: "#ffff", fontSize: RFPercentage(1.8) ,fontFamily:'Poppins-Regular'},
+  vaccinationView: { width: "100%", alignItems: "center", paddingVertical: 20 ,fontFamily:'Poppins-Regular'},
   bookandRecordVaccination: {
     backgroundColor: "#ffff",
     width: "40%",
@@ -268,15 +275,17 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 2.2,
     elevation: 3,
+    fontFamily:'Poppins-Regular'
   },
   bookandRecordVaccinationText: {
     textAlign: "center",
     color: "#F5914E",
     fontSize: RFPercentage(2),
     marginTop: 20,
+    fontFamily:'Poppins-Regular'
   },
-  qrCodeContainer: { width: '100%', paddingVertical: 15 },
-  qrCodeHeading: { color: '#F5914E', marginLeft: 10, fontWeight: 'bold' },
+  qrCodeContainer: { width: '100%', paddingVertical: 15 ,fontFamily:'Poppins-Regular'},
+  qrCodeHeading: { color: '#F5914E', marginLeft: 10, fontWeight: 'bold',fontFamily:'Poppins-Regular' },
   qrCodeView: {
     width: '95%', backgroundColor: '#ffff', alignSelf: 'center', borderRadius: 10, flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 5, paddingVertical: 10, shadowColor: "#000",
     shadowOffset: {
@@ -286,14 +295,16 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 2.2,
     elevation: 2,
+    fontFamily:'Poppins-Regular'
   },
-  qrCode: { alignItems: 'center', justifyContent: 'center' },
-  qrCodeText: { fontSize: RFPercentage(1.3), textAlign: 'center', color: '#333333' },
+  qrCode: { alignItems: 'center', justifyContent: 'center',fontFamily:'Poppins-Regular' },
+  qrCodeText: { fontSize: RFPercentage(1.3), textAlign: 'center', color: '#333333' ,fontFamily:'Poppins-Regular'},
   modalBackGround: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.1)',
     justifyContent: 'center',
     alignItems: 'center',
+    fontFamily:'Poppins-Regular'
   },
   modalContainer: {
     width: '80%',
@@ -302,6 +313,7 @@ const styles = StyleSheet.create({
     paddingVertical: 30,
     borderRadius: 20,
     elevation: 20,
+    fontFamily:'Poppins-Regular'
   },
   // header: {
   //   width: '100%',

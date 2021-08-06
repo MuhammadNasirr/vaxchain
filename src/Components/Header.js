@@ -27,7 +27,7 @@ export default function Header({ title, bellIcon, back, transparent, profileIcon
                     : <View />
             }
             <View style={{ alignItems: 'center' }}>
-                <Text style={{ color: transparent ? 'black' : '#fff', fontWeight: 'bold', fontSize: 20 }}>
+                <Text style={{ color: transparent ? 'black' : '#fff', fontWeight: 'bold', fontSize: 20,fontFamily:'Poppins-Regular' }}>
                     {title}
                 </Text>
             </View>

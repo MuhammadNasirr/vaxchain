@@ -33,38 +33,38 @@ export default function SelfieTake({ visible, onClose, isButton, icon, mainText,
           </View>
           <View style={{ width: '100%', alignItems: 'center' }}>
 
-            <Text style={{ marginVertical: 10, fontSize: 24, textAlign: 'center', fontWeight: 'bold', color: '#F5914E', width: '70%' }}>
+            <Text style={{fontFamily:'Poppins-Regular', marginVertical: 10, fontSize: 24, textAlign: 'center', fontWeight: 'bold', color: '#F5914E', width: '70%' }}>
               How to Take the Correct Photo
             </Text>
             <Image source={require("../../assets/images/selfie1.png")} />
 
             <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 20 }}>
               <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
-              <Text style={{ marginLeft: 10 }}>Please present the QR Code for your 2nd dose with the following schedule</Text>
+              <Text style={{fontFamily:'Poppins-Regular', marginLeft: 10 }}>Please present the QR Code for your 2nd dose with the following schedule</Text>
             </View>
             <Image source={require("../../assets/images/selfie2.png")} />
             <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 5 }}>
               <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
-              <Text style={{ marginLeft: 10 }}>Use your original ID. (Not a photocopy or scanned version)</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',marginLeft: 10 }}>Use your original ID. (Not a photocopy or scanned version)</Text>
             </View>
             <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 5 }}>
               <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
-              <Text style={{ marginLeft: 10 }}>ID details should be the same with your profile</Text>
+              <Text style={{fontFamily:'Poppins-Regular', marginLeft: 10 }}>ID details should be the same with your profile</Text>
             </View>
             <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 5 }}>
               <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
-              <Text style={{ marginLeft: 10 }}>Wait for 4 corners to light up when taking photo</Text>
+              <Text style={{fontFamily:'Poppins-Regular', marginLeft: 10 }}>Wait for 4 corners to light up when taking photo</Text>
             </View>
             <View style={{ flexDirection: 'row', alignItems: 'flex-start', width: '90%', marginVertical: 5 }}>
               <Icon type={"entypo"} name={"dot-single"} color={"#000"} size={30} />
-              <Text style={{ marginLeft: 10 }}>Place behind a dark background</Text>
+              <Text style={{fontFamily:'Poppins-Regular', marginLeft: 10 }}>Place behind a dark background</Text>
             </View>
             <TouchableOpacity
               onPress={() => {
                 onClose()
               }}
               style={{ backgroundColor: '#F5914E', width: '80%', alignSelf: 'center', alignItems: 'center', paddingVertical: 12, borderRadius: 15, marginTop: 20 }}>
-              <Text style={{ color: '#ffff', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase' }}>{"GOT IT"}</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',color: '#ffff', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase' }}>{"GOT IT"}</Text>
             </TouchableOpacity>
           </View>
         </View>

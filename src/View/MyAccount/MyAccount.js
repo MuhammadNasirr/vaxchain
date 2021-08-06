@@ -24,53 +24,53 @@ export default function MyAccount2(props) {
 
       <View style={styles.body}>
 
-        <View style={{ backgroundColor: '#ffff', width: '90%', borderRadius: 25, padding: 20, marginTop: 20 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-            <Text style={{ color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>
+        <View style={{ fontFamily:'Poppins-Regular',backgroundColor: '#ffff', width: '90%', borderRadius: 25, padding: 20, marginTop: 20 }}>
+          <View style={{ fontFamily:'Poppins-Regular',flexDirection: 'row', justifyContent: 'space-between' }}>
+            <Text style={{ fontFamily:'Poppins-Regular',color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>
               Personal{'\n'}Information
             </Text>
           </View>
-          <View style={{ width: '100%', paddingHorizontal: 5 }}>
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>Last name</Text>
-              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Bonifacio</Text>
+          <View style={{ fontFamily:'Poppins-Regular',width: '100%', paddingHorizontal: 5 }}>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>Last name</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Bonifacio</Text>
             </View>
 
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>First name</Text>
-              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Jose</Text>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>First name</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Jose</Text>
             </View>
 
 
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>Middle name</Text>
-              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Abad</Text>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>Middle name</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Abad</Text>
             </View>
 
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>Date of birth</Text>
-              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>10-10-89</Text>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>Date of birth</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>10-10-89</Text>
             </View>
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>Nationality</Text>
-              <Text style={{ backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Filipino</Text>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>Nationality</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',backgroundColor: '#FFF5E9', paddingRight: 20, paddingTop: 10, height: 40, minWidth: 150, textAlign: 'right', borderRadius: 3, fontWeight: '600' }}>Filipino</Text>
             </View>
           </View>
 
         </View>
-        <View style={{ backgroundColor: '#ffff', width: '90%', borderRadius: 25, padding: 20, marginTop: 20 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-            <Text style={{ color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>
+        <View style={{ fontFamily:'Poppins-Regular',backgroundColor: '#ffff', width: '90%', borderRadius: 25, padding: 20, marginTop: 20 }}>
+          <View style={{ fontFamily:'Poppins-Regular',flexDirection: 'row', justifyContent: 'space-between' }}>
+            <Text style={{ fontFamily:'Poppins-Regular',color: '#F5914E', fontWeight: 'bold', fontSize: 20 }}>
               Present{'\n'}Address
             </Text>
-            <TouchableOpacity onPress={() => setState(pre => ({ ...pre, isEdit: true,isSave: false }))} style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <TouchableOpacity onPress={() => setState(pre => ({ ...pre, isEdit: true,isSave: false }))} style={{ fontFamily:'Poppins-Regular',flexDirection: 'row', alignItems: 'center' }}>
               <Image source={require("../../assets/images/edit.png")} />
-              <Text style={{ color: '#F5914E' }}>Edit</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',color: '#F5914E' }}>Edit</Text>
             </TouchableOpacity>
           </View>
-          <View style={{ width: '100%', paddingHorizontal: 5 }}>
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>Province</Text>
+          <View style={{ fontFamily:'Poppins-Regular',width: '100%', paddingHorizontal: 5 }}>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>Province</Text>
               <TextInput
                 editable={state.isEdit}
                 style={{
@@ -83,8 +83,8 @@ export default function MyAccount2(props) {
                 onChangeText={(e) => setState(pre => ({ ...pre, province: e }))} />
             </View>
 
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>City</Text>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>City</Text>
               <TextInput
                 editable={state.isEdit}
                 style={{
@@ -98,8 +98,8 @@ export default function MyAccount2(props) {
             </View>
 
 
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>Street</Text>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>Street</Text>
               <TextInput
                 editable={state.isEdit}
                 style={{
@@ -112,8 +112,8 @@ export default function MyAccount2(props) {
                 onChangeText={(e) => setState(pre => ({ ...pre, street: e }))} />
             </View>
 
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>Barangay</Text>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>Barangay</Text>
               <TextInput
                 editable={state.isEdit}
                 style={{
@@ -125,8 +125,8 @@ export default function MyAccount2(props) {
                 placeholder={"Barangay"}
                 onChangeText={(e) => setState(pre => ({ ...pre, barangay: e }))} />
             </View>
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>House/Lot no.</Text>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>House/Lot no.</Text>
               <TextInput
                 editable={state.isEdit}
                 style={{
@@ -138,8 +138,8 @@ export default function MyAccount2(props) {
                 placeholder={"House/Lot no."}
                 onChangeText={(e) => setState(pre => ({ ...pre, house: e }))} />
             </View>
-            <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
-              <Text style={{ color: 'grey' }}>Building </Text>
+            <View style={{ fontFamily:'Poppins-Regular',width: '100%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, height: 50, marginTop: 10 }}>
+              <Text style={{ fontFamily:'Poppins-Regular',color: 'grey' }}>Building </Text>
               <TextInput
                 editable={state.isEdit}
                 style={{
@@ -154,12 +154,12 @@ export default function MyAccount2(props) {
             {
               state.isEdit &&
               <TouchableOpacity onPress={() => setState(pre => ({ ...pre, isEdit: false, isSave: true }))}>
-                <Text style={{ color: '#F5914E', textAlign: 'center', fontWeight: 'bold', fontSize: 16 }}>Save</Text>
+                <Text style={{ fontFamily:'Poppins-Regular',color: '#F5914E', textAlign: 'center', fontWeight: 'bold', fontSize: 16 }}>Save</Text>
               </TouchableOpacity>
             }
             {
               state.isSave &&
-              <Text style={{ color: '#F5914E', textAlign: 'center', fontWeight: 'bold', fontSize: 16 }}>You have saved your new address</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',color: '#F5914E', textAlign: 'center', fontWeight: 'bold', fontSize: 16 }}>You have saved your new address</Text>
             }
           </View>
 
@@ -175,18 +175,21 @@ export default function MyAccount2(props) {
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily:'Poppins-Regular',
     flex: 1,
     width: '100%',
     height: '100%',
     backgroundColor: '#EAEBEF'
   },
   mainInfo: {
+    fontFamily:'Poppins-Regular',
     // backgroundColor:'red',
     width: '100%',
     flexDirection: 'row',
     paddingVertical: 10
   },
   mainInfoImage: {
+    fontFamily:'Poppins-Regular',
     marginHorizontal: 10,
     borderRadius: 500,
     // backgroundColor:'green',
@@ -194,6 +197,7 @@ const styles = StyleSheet.create({
     borderColor: '#4AC2C1'
   },
   Image: {
+    fontFamily:'Poppins-Regular',
     margin: 4,
     resizeMode: 'contain',
     width: 150,
@@ -203,6 +207,7 @@ const styles = StyleSheet.create({
 
   },
   infoBox: {
+    fontFamily:'Poppins-Regular',
     // borderColor:'#C2C2C2',
     // borderWidth:1,
     backgroundColor: '#FFF5E9',
@@ -211,19 +216,22 @@ const styles = StyleSheet.create({
     paddingLeft: 5
   },
   mainInfoText: {
+    fontFamily:'Poppins-Regular',
     // backgroundColor:'orange',
     justifyContent: 'center',
     alignItems: 'center',
     //  width:'100%'
   },
   username: {
+    fontFamily:'Poppins-Regular',
     fontSize: 20,
     fontWeight: 'bold',
     // marginTop: 10,
     marginLeft: 5,
     color: '#4AC2C1'
   },
-  headerIcon: { backgroundColor: "#ffff", borderRadius: 5, padding: 5 },
+  headerIcon: {
+    fontFamily:'Poppins-Regular', backgroundColor: "#ffff", borderRadius: 5, padding: 5 },
 
   // MainImage:{
   //     width:130,
@@ -237,12 +245,14 @@ const styles = StyleSheet.create({
   //     fontWeight:'bold',
   // },
   body: {
+    fontFamily:'Poppins-Regular',
     width: '100%',
     padding: 20,
     paddingBottom: 100,
     alignItems: 'center'
   },
   title: {
+    fontFamily:'Poppins-Regular',
     //  fontWeight: 'bold',
     fontSize: 16,
     color: 'grey',

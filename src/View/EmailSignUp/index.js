@@ -91,45 +91,63 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         alignItems: "center",
         justifyContent: "center",
+        fontFamily:'Poppins-Regular',
+    fontFamily:'Poppins-Regular',
     },
-    scroll: { height: "100%", width: "100%", backgroundColor: "#ffff" },
-    imageContainer: { width: "50%", height: 200 },
-    image: { width: "100%", height: "100%", resizeMode: "contain" },
-    screenTitleContainer: { width: "100%", alignItems: "center" },
+fontFamily:'Poppins-Regular',    scroll: { fontFamily:'Poppins-Regular',height: "100%", width: "100%", backgroundColor: "#ffff" 
+},
+fontFamily:'Poppins-Regular',    imageContainer: {fontFamily:'Poppins-Regular', width: "50%", height: 200 
+},
+fontFamily:'Poppins-Regular',    image: {fontFamily:'Poppins-Regular', width: "100%", height: "100%", resizeMode: "contain" 
+},
+fontFamily:'Poppins-Regular',    screenTitleContainer: { fontFamily:'Poppins-Regular',width: "100%", alignItems: "center" 
+},
     title: {
         fontSize: RFPercentage(5),
         fontWeight: "bold",
         color: "#F5914E",
         marginBottom: 4,
+        fontFamily:'Poppins-Regular',
+        fontFamily:'Poppins-Regular',
+    fontFamily:'Poppins-Regular',
     },
-    titleTagline: { textAlign: "center", fontWeight: "bold" },
+fontFamily:'Poppins-Regular',    titleTagline: {fontFamily:'Poppins-Regular', textAlign: "center", fontWeight: "bold" 
+},
     singnUpContainer: {
         alignItems: "center",
         justifyContent: "center",
         width: "80%",
         marginTop: 50,
+        fontFamily:'Poppins-Regular',
+    fontFamily:'Poppins-Regular',
     },
     emailorphonenumber: {
         fontWeight: "bold",
         color: "#F5914E",
         alignSelf: "flex-end",
         marginBottom: 10,
+        fontFamily:'Poppins-Regular',
+    fontFamily:'Poppins-Regular',
     },
     input: {
         backgroundColor: "#F3F3F3",
+        fontFamily:'Poppins-Regular',
         width: "100%",
         paddingVertical: 15,
         paddingHorizontal: 10,
         borderRadius: 10,
         marginTop: 20,
+    fontFamily:'Poppins-Regular',
     },
     singnUpButton: {
         backgroundColor: "#F5914E",
         width: "100%",
         paddingVertical: 15,
+        fontFamily:'Poppins-Regular',
         borderRadius: 10,
         justifyContent: "center",
         alignItems: "center",
         marginTop: 20,
+    fontFamily:'Poppins-Regular',
     }
 });

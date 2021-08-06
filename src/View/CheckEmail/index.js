@@ -14,6 +14,7 @@ export default function CheckEmail({ navigation }) {
             <View style={{ width: '100%', alignItems: 'center', marginLeft: 30, marginTop: 40 }}>
                 <Text
                     style={{
+                        fontFamily:'Poppins-Regular',
                         fontSize: RFPercentage(3),
                         fontWeight: 'bold',
                         color: '#F5914E',
@@ -23,8 +24,8 @@ export default function CheckEmail({ navigation }) {
 
                     }}
                 > Check your email</Text>
-                <Text style={{ alignSelf: 'flex-start', textAlign: 'justify', marginTop: 10, color: 'grey', fontWeight: '100' }}> Recovery email with reset password {'\n'} instructions has been sent to {'\n'} joseabaadboifico@gmail.com </Text>
-                <Text style={{ alignSelf: 'flex-start', textAlign: 'justify', marginTop: 30, color: 'grey', fontWeight: '100' }}> if you don't see the password recovery email {'\n'} in your inbox , check your spam folder</Text>
+                <Text style={{ fontFamily:'Poppins-Regular',alignSelf: 'flex-start', textAlign: 'justify', marginTop: 10, color: 'grey', fontWeight: '100' }}> Recovery email with reset password {'\n'} instructions has been sent to {'\n'} joseabaadboifico@gmail.com </Text>
+                <Text style={{ fontFamily:'Poppins-Regular',alignSelf: 'flex-start', textAlign: 'justify', marginTop: 30, color: 'grey', fontWeight: '100' }}> if you don't see the password recovery email {'\n'} in your inbox , check your spam folder</Text>
 
 
             </View>
@@ -43,10 +44,10 @@ export default function CheckEmail({ navigation }) {
                         navigation.navigate('SetPassword')
                     }}
                 >
-                    <Text style={{ fontWeight: 'bold', color: '#ffff' }}>Open email app</Text>
+                    <Text style={{fontFamily:'Poppins-Regular', fontWeight: 'bold', color: '#ffff' }}>Open email app</Text>
                 </TouchableOpacity>
                 <View style={{ backgroundColor: '#ffff', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
-                    <Text style={{ fontWeight: 'bold', color: 'grey' }} onPress={() => navigation.navigate('EmailSignUp')}>Skip, I'll confirm Later</Text>
+                    <Text style={{fontFamily:'Poppins-Regular', fontWeight: 'bold', color: 'grey' }} onPress={() => navigation.navigate('EmailSignUp')}>Skip, I'll confirm Later</Text>
                 </View>
             </View>
             {/* <View style={{backgroundColor:'#ffff',width:'80%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}}>
