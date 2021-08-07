@@ -34,7 +34,7 @@ export default function VaxchainPassportReaderAccountInformation({ navigation })
             </TouchableOpacity>
           </View>
           <View style={styles.headerTitleView}>
-            <Text style={styles.HeaderTitle}>VaxChain Passport Reader</Text>
+            {/* <Text style={styles.HeaderTitle}>VaxChain Passport Reader</Text> */}
           </View>
           <View style={styles.headerIconsView}>
 

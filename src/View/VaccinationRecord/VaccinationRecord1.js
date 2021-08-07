@@ -83,13 +83,13 @@ export default function VaccinationRecord({ navigation }) {
               color="#50AC2F"
             />
             <Text
-              style={{ fontFamily: 'Poppins-Bold', color: '#50AC2F', fontSize: 30, }}>
+              style={{ fontFamily: 'Rubik-Bold', color: '#50AC2F', fontSize: 32, }}>
               vaccinated
             </Text>
           </View>
           <View style={{ width: '92%', marginTop: 15 }}>
-            <Text style={{ fontFamily: 'Poppins-Regular', color: '#F5914E', fontSize: 20 }}>
-              Personal{'\n'}Information
+            <Text style={{ fontFamily: 'Rubik-Bold', color: '#F5914E', fontSize: 17 }}>
+              Personal{'\n'}<Text style={{fontSize: 20}}>Information</Text>
             </Text>
             <View
               style={{
@@ -104,7 +104,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Last Name</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>Banifico</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>Banifico</Text>
             </View>
 
             <View
@@ -120,7 +120,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>First Name</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>Jose</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>Jose</Text>
             </View>
 
 
@@ -138,7 +138,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Middle Name</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>Abad</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>Abad</Text>
             </View>
 
 
@@ -156,7 +156,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Date of Birth</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>10-8-81</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>10-8-81</Text>
             </View>
 
 
@@ -174,7 +174,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Sex</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>Male</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>Male</Text>
             </View>
 
             <View
@@ -190,7 +190,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Category</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>A3</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>A3</Text>
             </View>
 
             <View
@@ -206,7 +206,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Passport</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>EB121212</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>EB121212</Text>
             </View>
           </View>
         </View>
@@ -228,9 +228,10 @@ export default function VaccinationRecord({ navigation }) {
             marginTop: 30
           }}>
           <View style={{ width: '92%', marginTop: 15 }}>
-            <Text style={{ fontFamily: 'Poppins-Regular', color: '#F5914E', fontSize: 20 }}>
-              Vaccination{'\n'}Details
+          <Text style={{ fontFamily: 'Rubik-Bold', color: '#F5914E', fontSize: 17 }}>
+          Vaccination{'\n'}<Text style={{fontSize: 20}}>Details</Text>
             </Text>
+            
             <View
               style={{
                 flexDirection: 'row',
@@ -249,7 +250,7 @@ export default function VaccinationRecord({ navigation }) {
                 <Picker
                   mode={"dropdown"}
                   // selectedValue={selectedValue}
-                  style={{ fontFamily: 'Poppins-Regular', height: 40, minWidth: 150 }}
+                  style={{ fontFamily: 'Poppins-Bold', height: 40, minWidth: 150 }}
                 // onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
                 >
                   <Picker.Item label="COVID-19" value="COVID-19" />
@@ -271,7 +272,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Dosage Seq:</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', textAlign: 'right' }}>1st Dosage: May 17, 2021{'\n'}
+              <Text style={{ fontFamily: 'Poppins-Bold', textAlign: 'right' }}>1st Dosage: May 17, 2021{'\n'}
                 2nd Dosage: July 9, 2021</Text>
             </View>
             <View
@@ -287,7 +288,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Manufacturer</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>Astra Zeneca</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>Astra Zeneca</Text>
             </View>
 
 
@@ -305,7 +306,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Lot No:</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>ABV7279</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>ABV7279</Text>
             </View>
 
 
@@ -323,7 +324,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Administered by:</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>Quezon City
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>Quezon City
                 Health Department</Text>
             </View>
 
@@ -340,7 +341,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Local Reference:</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>43353</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>43353</Text>
             </View>
 
             <View
@@ -356,7 +357,7 @@ export default function VaccinationRecord({ navigation }) {
 
               }}>
               <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585' }}>Passport</Text>
-              <Text style={{ fontFamily: 'Poppins-Regular', }}>EB121212</Text>
+              <Text style={{ fontFamily: 'Poppins-Bold', }}>EB121212</Text>
             </View>
           </View>
         </View>
@@ -370,7 +371,7 @@ export default function VaccinationRecord({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily: 'Poppins-Regular',
+    
     // flex: 1,
     //  backgroundColor: "#ffff",
     alignItems: 'center',
@@ -384,17 +385,17 @@ const styles = StyleSheet.create({
   },
 
   scroll: {
-    fontFamily: 'Poppins-Regular', height: '100%', width: '100%', backgroundColor: '#ffff'
+     height: '100%', width: '100%', backgroundColor: '#ffff'
   },
   backgroundImage: {
-    fontFamily: 'Poppins-Regular',
+    
     flex: 1,
     width: '100%',
     height: 300,
     resizeMode: 'cover',
   },
   Header: {
-    fontFamily: 'Poppins-Regular',
+    
     width: '100%',
     position: 'absolute',
     top: 40,
@@ -403,10 +404,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   drawericonView: {
-    fontFamily: 'Poppins-Regular', width: '10%', alignItems: 'center'
+     width: '10%', alignItems: 'center'
   },
   headerTitleView: {
-    fontFamily: 'Poppins-Regular',
+   
     justifyContent: 'center',
     alignItems: 'center',
     width: '70%',
@@ -420,17 +421,17 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   headerIconsView: {
-    fontFamily: 'Poppins-Regular',
+    
     flexDirection: 'row',
     width: '20%',
     justifyContent: 'space-around',
   },
 
   headerIcon: {
-    fontFamily: 'Poppins-Regular', backgroundColor: '#ffff', borderRadius: 5, padding: 5
+   backgroundColor: '#ffff', borderRadius: 5, padding: 5
   },
   body: {
-    fontFamily: 'Poppins-Regular', width: '100%', alignItems: 'center', marginTop: 100
+     width: '100%', alignItems: 'center', marginTop: 100
   },
   bodyTitle: {
     fontFamily: 'Poppins-Regular',

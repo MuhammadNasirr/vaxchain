@@ -140,16 +140,16 @@ const styles = StyleSheet.create({
     height: "100%",
     //  marginTop:20,
     width: "100%",
-    fontFamily: 'Poppins-Regular',
+    
   },
 
-  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff", fontFamily: 'Poppins-Regular', },
+  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff",  },
   backgroundImage: {
     flex: 1,
     width: "100%",
     height: "100%",
     resizeMode: "cover",
-    fontFamily: 'Poppins-Regular',
+   
   },
   Header: {
     width: "100%",
@@ -158,14 +158,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    fontFamily: 'Poppins-Regular',
+    
   },
-  drawericonView: { width: "10%", alignItems: "center", fontFamily: 'Poppins-Regular', },
+  drawericonView: { width: "10%", alignItems: "center",  },
   headerTitleView: {
     justifyContent: "center",
     alignItems: "center",
     width: "70%",
-    fontFamily: 'Poppins-Regular',
+   
   },
   HeaderTitle: {
     color: "#ffff",
@@ -178,18 +178,18 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     width: "20%",
     justifyContent: "space-around",
-    fontFamily: 'Poppins-Regular',
+   
   },
 
-  headerIcon: { backgroundColor: "#ffff", borderRadius: 5, padding: 5, fontFamily: 'Poppins-Regular', },
-  body: { width: "100%", alignItems: "center", marginTop: 10, fontFamily: 'Poppins-Regular', },
+  headerIcon: { backgroundColor: "#ffff", borderRadius: 5, padding: 5,},
+  body: { width: "100%", alignItems: "center", marginTop: 10,  },
   bodyTitle: {
     color: "#ffff",
-    fontFamily:'Poppins-Bold',
+    fontFamily:'Rubik-Bold',
     fontSize: RFPercentage(3),
   },
-  BodySubTitle: { color: "#ffff", fontSize: RFPercentage(5),  fontFamily: 'Poppins-Regular', },
-  paymentTransferView: { width: "100%", alignItems: "center", paddingVertical: 20, marginTop: '50%', fontFamily: 'Poppins-Regular', },
+  BodySubTitle: { color: "#ffff", fontSize: RFPercentage(5), fontFamily:'Rubik-Bold',marginTop:20 },
+  paymentTransferView: { width: "100%", alignItems: "center", paddingVertical: 20, marginTop: '50%', },
   transferPayment: {
     backgroundColor: "#ffff",
     width: "40%",
@@ -211,7 +211,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#F5914E",
     fontSize: RFPercentage(2),
-    fontFamily: 'Poppins-Regular',
+    fontFamily:'Rubik-Regular',
     marginTop: 20,
   },
   qrCodeContainer: { width: '100%', paddingVertical: 15, fontFamily: 'Poppins-Regular', },

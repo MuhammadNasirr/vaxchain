@@ -14,7 +14,7 @@ export default function SetPassword({ navigation }) {
             <View style={{ width: '100%', alignItems: 'center', marginLeft: 30, marginTop: 40 }}>
                 <Text
                     style={{
-                        fontFamily: 'Poppins-Bold',
+                        fontFamily: 'Rubik-Bold',
                         fontSize: RFPercentage(3),
                         
                         color: '#F5914E',
@@ -47,13 +47,11 @@ export default function SetPassword({ navigation }) {
                         navigation.navigate('setPassword')
                     }}
                 >
-                    <Text style={{ fontFamily: 'Poppins-Bold',  color: '#ffff' }}>Set New Password</Text>
+                    <Text style={{ fontFamily: 'Rubik-Bold',  color: '#ffff' }}>Set New Password</Text>
                 </TouchableOpacity>
 
             </View>
-            {/* <View style={{fontFamily:'Poppins-Regular',backgroundColor:'#ffff',width:'80%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}}>
-            <Text style={{color:'black',textAlign:'center'}}>Didn't receive the code ? send {'\n'} again in <Text style={{color:'#F5914E'}}>32</Text> Seconds  </Text>    
-        </View> */}
+         
 
 
         </View>

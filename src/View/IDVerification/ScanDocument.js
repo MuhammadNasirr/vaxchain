@@ -25,7 +25,7 @@ export default function ScanDocument({ navigation }) {
 
       <View style={{ paddingVertical: 20, backgroundColor: "#ffff", width: '100%' }}>
 
-        <Text style={{ fontFamily: 'Poppins-Regular', color: "#F79150", alignSelf: "center", fontSize: 16,  marginBottom: 10 }}>Scan Document</Text>
+        <Text style={{ fontFamily: 'Rubik-Bold', color: "#F79150", alignSelf: "center", fontSize: 16,  marginBottom: 10 }}>Scan document</Text>
 
         <Text style={{ fontFamily: 'Poppins-Regular', color: "grey", alignSelf: "center", textAlign: 'center', width: '80%' }}>Place your document with in the frame untill all edges are aligned and captured automatically</Text>
 

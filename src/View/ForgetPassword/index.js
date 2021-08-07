@@ -24,7 +24,7 @@ export default function ForgetPassword({ navigation }) {
 
                     }}
                 > Forget Your Password ?</Text>
-                <Text style={{ fontFamily: 'Poppins-Regular', alignSelf: 'flex-start', textAlign: 'justify', marginTop: 10, color: 'grey', fontWeight: '100' }}> No Worries. Enter Your registered email. and {'\n'} we will send you password recovery {'\n'} instructions.</Text>
+                <Text style={{lineHeight:19, fontFamily: 'Rubik-Regular', alignSelf: 'flex-start', textAlign: 'justify', marginTop: 10, color: '#858585', fontWeight: '100',fontSize:RFPercentage(2) }}> No Worries. Enter Your registered email. and {'\n'} we will send you password recovery {'\n'} instructions.</Text>
 
 
             </View>
@@ -33,7 +33,7 @@ export default function ForgetPassword({ navigation }) {
 
             <View style={{ fontFamily: 'Poppins-Regular', alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '50%' }}>
                 <TextInput placeholderTextColor="#8D8D8D"
-                    color='black' keyboardType='email-address' placeholder="Email Address" style={{ fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10 }} />
+                    color='black' keyboardType='email-address' placeholder="Email Address" style={{ fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10 ,fontFamily: 'Rubik-Regular'}} />
                 {/* <View style={{fontFamily:'Poppins-Regular',flexDirection:'row', justifyContent:'space-between', alignItems:'center', backgroundColor:'#F3F3F3',width:'80%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} >
                 <TextInput keyboardType='default' secureTextEntry={true} placeholder="Password" style={{fontFamily:'Poppins-Regular',width:'65%'}}/>
                 <Text style={{fontFamily:'Poppins-Regular',color:'#F5914E',fontSize:RFPercentage(1.4),width:'35%'}} onPress={()=>navigation.navigate('forgetPassword')}>Forget Password ?</Text>    
@@ -44,14 +44,11 @@ export default function ForgetPassword({ navigation }) {
                         navigation.navigate('CheckEmail')
                     }}
                 >
-                    <Text style={{ fontFamily: 'Poppins-Bold', color: '#fff' }}>sent reset Email</Text>
+                    <Text style={{ fontFamily: 'Rubik-Bold', color: '#fff' }}>Sent reset email</Text>
                 </TouchableOpacity>
 
             </View>
-            {/* <View style={{backgroundColor:'#ffff',width:'80%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}}>
-            <Text style={{color:'black',textAlign:'center'}}>Didn't receive the code ? send {'\n'} again in <Text style={{color:'#F5914E'}}>32</Text> Seconds  </Text>    
-        </View> */}
-
+            
 
         </View>
 

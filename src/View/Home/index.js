@@ -252,10 +252,10 @@ const styles = StyleSheet.create({
   body: { width: "100%", alignItems: "center", marginTop: 100 ,fontFamily:'Poppins-Regular'},
   bodyTitle: {
     color: "#ffff",
-    fontFamily:'Poppins-Bold',
+    fontFamily:'Rubik-Bold',
     fontSize: RFPercentage(3),
   },
-  BodySubTitle: { color: "#ffff", fontSize: RFPercentage(1.8) ,fontFamily:'Poppins-Regular'},
+  BodySubTitle: { color: "#ffff", fontSize: RFPercentage(1.8) ,fontFamily:'Rubik-Regular'},
   vaccinationView: { width: "100%", alignItems: "center", paddingVertical: 20 ,fontFamily:'Poppins-Regular'},
   bookandRecordVaccination: {
     backgroundColor: "#ffff",
@@ -280,10 +280,10 @@ const styles = StyleSheet.create({
     color: "#F5914E",
     fontSize: RFPercentage(2),
     marginTop: 20,
-    fontFamily:'Poppins-Regular'
+    fontFamily:'Rubik-Regular'
   },
-  qrCodeContainer: { width: '100%', paddingVertical: 15 ,fontFamily:'Poppins-Regular'},
-  qrCodeHeading: { color: '#F5914E', marginLeft: 10, fontFamily:'Poppins-Regular' },
+  qrCodeContainer: { width: '100%', paddingVertical: 15 ,},
+  qrCodeHeading: { color: '#F5914E', marginLeft: 10,fontFamily:'Rubik-Bold' ,marginBottom:10},
   qrCodeView: {
     width: '95%', backgroundColor: '#ffff', alignSelf: 'center', borderRadius: 10, flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 5, paddingVertical: 10, shadowColor: "#000",
     shadowOffset: {

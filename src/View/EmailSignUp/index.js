@@ -34,7 +34,7 @@ export default function EmailSignUp({ navigation }) {
                         style={styles.emailorphonenumber}
                         onPress={() => navigation.navigate("PhoneSignUp")}
                     >
-                        SignUp With Mobile No.
+                        Sign up with Mobile No.
                     </Text>
                     <TextInput
                         placeholderTextColor="#8D8D8D"
@@ -106,13 +106,17 @@ const styles = StyleSheet.create({
         width: "100%", alignItems: "center"
     },
     title: {
-        fontSize: RFPercentage(5),
+        fontFamily: 'Poppins-Regular',
+        fontSize: RFPercentage(5.5),
+        fontFamily:'Rubik-Bold',
         color: "#F5914E",
         marginBottom: 4,
-        fontFamily: 'Poppins-Bold',
-    }, titleTagline: {
-        fontFamily: 'Poppins-Bold', textAlign: "center", 
-    },
+      },
+      
+      titleTagline: {
+        // fontFamily: 'Poppins-Regular',
+        width: "100%", alignItems: "center" , textAlign: "center", 
+      },
     singnUpContainer: {
         alignItems: "center",
         justifyContent: "center",

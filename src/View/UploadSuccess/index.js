@@ -21,7 +21,7 @@ export default function UploadSuccess({ navigation }) {
       {/* Image Container */}
 
       <FontAwesome5 name="check-circle" size={RFPercentage(15)} color="#fff" />
-      <Text style={styles.title}>Upload success</Text>
+      <Text style={styles.title}>Upload success!</Text>
     </View>
 
   );
@@ -36,9 +36,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: RFPercentage(5),
-    fontFamily:'Poppins-Bold',
+    fontFamily:'Rubik-Bold',
     color: "#ffff",
-    fontFamily:'Poppins-Regular',
+   
   },
 
 });

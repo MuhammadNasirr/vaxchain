@@ -46,13 +46,13 @@ export default function VaxchainPassportReaderScanner({ navigation }) {
         {/* Login form  */}
         <View style={styles.LoginForm}>
 
-          <Text>Scan Vacciation QR Code</Text>
+          
           <Image
-            style={{ fontFamily: 'Poppins-Regular', marginVertical: 20 }}
+            style={{  marginVertical: 20 }}
             source={require("../../assets/images/scanner.png")}
           />
           {/* <MaterialCommunityIcons name="image-filter-center-focus-weak" size={RFPercentage(30)} color="#F5914E" /> */}
-          <Text style={{ fontFamily: 'Poppins-Regular', textAlign: 'center', width: '80%', marginTop: 20 }}>Please Move your camera to capture QR Code from other devices</Text>
+          <Text style={{ fontFamily: 'Poppins-Regular', textAlign: 'center', width: '80%', marginTop: 20,color:'#8B8B8B' }}>Please move your camera to capture QR Code from other devices</Text>
 
         </View>
       </View>
@@ -62,25 +62,25 @@ export default function VaxchainPassportReaderScanner({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily: 'Poppins-Regular',
+    
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
 
-  scroll: { fontFamily: 'Poppins-Regular', height: "90%", width: "100%", backgroundColor: "#ffff" },
-  imageContainer: { fontFamily: 'Poppins-Regular', width: "50%", height: 50, marginTop: 40 },
-  image: { fontFamily: 'Poppins-Regular', width: "100%", height: "100%", resizeMode: "contain" },
-  screenTitleContainer: { fontFamily: 'Poppins-Regular', width: "100%", alignItems: "center" },
+  scroll: {  height: "90%", width: "100%", backgroundColor: "#ffff" },
+  imageContainer: {  width: "50%", height: 50, marginTop: 40 },
+  image: {  width: "100%", height: "100%", resizeMode: "contain" },
+  screenTitleContainer: {  width: "100%", alignItems: "center" },
   title: {
-    fontFamily: 'Poppins-Regular',
+    
     fontSize: RFPercentage(3),
-    fontFamily:'Poppins-Bold',
+    fontFamily:'Rubik-Bold',
     color: "#F5914E",
     marginBottom: 30,
   },
-  titleTagline: { fontFamily: 'Poppins-Regular', textAlign: "center", fontFamily:'Poppins-Bold', fontSize: RFPercentage(3), width: '80%' },
+  titleTagline: {  fontFamily:'Rubik-Bold', textAlign: "center",  fontSize: RFPercentage(3), width: '80%' },
   LoginForm: {
     fontFamily: 'Poppins-Regular',
     alignItems: "center",

@@ -101,12 +101,12 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
               }}>
                 <MaterialIcons name="check-circle" size={50} color="#50AC2F" />
                 <Text style={{
-                  fontFamily: 'Poppins-Bold', color: '#50AC2F', fontSize: 30,
+                  fontFamily: 'Rubik-Bold', color: '#50AC2F', fontSize: 30,
                 }}>vaccinated</Text>
               </View>
 
               <Text style={{
-                fontFamily: 'Poppins-Regular', fontSize: 15
+                fontFamily: 'Rubik-Bold', fontSize: 15
               }}>Astra Zansica</Text>
 
             </TouchableOpacity>
@@ -190,7 +190,7 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily: 'Poppins-Regular',
+    
     // flex: 1,
     //  backgroundColor: "#ffff",
     alignItems: 'center',
@@ -205,17 +205,17 @@ const styles = StyleSheet.create({
   },
 
   scroll: {
-    fontFamily: 'Poppins-Regular', height: '100%', width: '100%', backgroundColor: '#ffff'
+     height: '100%', width: '100%', backgroundColor: '#ffff'
   },
   backgroundImage: {
-    fontFamily: 'Poppins-Regular',
+    
     flex: 1,
     width: '100%',
     height: '100%',
     resizeMode: 'cover',
   },
   Header: {
-    fontFamily: 'Poppins-Regular',
+    
     width: '100%',
     position: 'absolute',
     top: 40,
@@ -224,10 +224,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   drawericonView: {
-    fontFamily: 'Poppins-Regular', width: '10%', alignItems: 'center'
+     width: '10%', alignItems: 'center'
   },
   headerTitleView: {
-    fontFamily: 'Poppins-Regular',
+  
     justifyContent: 'center',
     alignItems: 'center',
     width: '70%',
@@ -248,19 +248,19 @@ const styles = StyleSheet.create({
   },
 
   headerIcon: {
-    fontFamily: 'Poppins-Regular', backgroundColor: '#ffff', borderRadius: 5, padding: 5
+    backgroundColor: '#ffff', borderRadius: 5, padding: 5
   },
   body: {
-    fontFamily: 'Poppins-Regular', width: '100%', alignItems: 'center', marginTop: 100
+    width: '100%', alignItems: 'center', marginTop: 100
   },
   bodyTitle: {
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Rubik-Bold',
     color: '#ffff',
 
     fontSize: RFPercentage(3),
   },
   BodySubTitle: {
-    fontFamily: 'Poppins-Regular', color: '#ffff', fontSize: RFPercentage(1.8), marginBottom: 0
+    fontFamily: 'Rubik-light', color: '#ffff', fontSize: RFPercentage(1.8), marginBottom: 0
   },
   selectionView: {
     fontFamily: 'Poppins-Regular',
@@ -299,7 +299,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   qrCodeContainer: {
-    fontFamily: 'Poppins-Regular', width: '100%', paddingVertical: 15
+     width: '100%', paddingVertical: 15
   },
   qrCodeHeading: {
     fontFamily: 'Poppins-Regular', color: '#F5914E', marginLeft: 10,

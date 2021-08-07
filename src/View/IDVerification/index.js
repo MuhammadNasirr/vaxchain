@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import { CustomModal, SelfieTake } from "../../Components";
 import { Icon } from 'react-native-elements';
-
+import { RFPercentage } from "react-native-responsive-fontsize";
 export default function IDVerification({ navigation }) {
 
   const [state, setstate] = useState({
@@ -40,8 +40,8 @@ export default function IDVerification({ navigation }) {
       <View style={styles.body}>
 
         <View style={{ fontFamily: 'Poppins-Regular', width: '90%', marginBottom: 10 }}>
-          <Text style={{ fontFamily: 'Poppins-Regular', color: '#F5914E',  fontSize: 20 }}>ID Verification</Text>
-          <Text style={{ fontFamily: 'Poppins-Regular', color: '#858585',  fontSize: 18 }}>for processing</Text>
+          <Text style={{ fontFamily: 'Rubik-Bold', color: '#F5914E',  fontSize: 20 }}>ID Verification</Text>
+          <Text style={{ fontFamily: 'Poppins-Bold', color: '#858585',  fontSize: 18 }}>for processing</Text>
 
         </View>
         <View style={{
@@ -98,11 +98,11 @@ export default function IDVerification({ navigation }) {
           fontFamily: 'Poppins-Regular',
           backgroundColor: '#F7914F', width: '100%', justifyContent: 'center', alignItems: 'center', borderRadius: 15, marginTop: 50, height: 50
         }}>
-          <Text style={{ fontFamily: 'Poppins-Regular', color: '#ffff',  fontSize: 18 }}>Verify</Text>
+          <Text style={{ fontFamily: 'Poppins-Bold', color: '#ffff',  fontSize: 18 }}>Verify</Text>
         </TouchableOpacity>
-        <View style={{ fontFamily: 'Poppins-Regular', flexDirection: 'row', alignItems: 'flex-start', marginTop: 20, width: '95%' }}>
+        <View style={{  flexDirection: 'row', alignItems: 'flex-start', marginTop: 20, width: '95%' }}>
           <Icon containerStyle={{ fontFamily: 'Poppins-Regular', marginRight: 10 }} color={"#F7914F"} name={'info'} type={"foundation"} />
-          <Text style={{ fontFamily: 'Poppins-Regular', marginLeft: 0 }}>
+          <Text style={{  marginLeft: 0 ,color:"#8a8a8a",fontSize:RFPercentage(1.3)}}>
             This information is used for identity verification only and will be kept
             secure by VAXCHAIN in accordance with RepublicAct 10173 Data Privacy
             Act of Philpines

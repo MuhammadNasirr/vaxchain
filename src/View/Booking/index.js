@@ -123,10 +123,10 @@ export default function Booking({ navigation }) {
                 >
                     Book Vaccination
                 </Text>
-                <View style={{ backgroundColor: '#FDF6E8', borderRadius: 5 }}>
+                <View style={{ backgroundColor: '#FDF6E8', borderRadius: 5,alignItems:'center' }}>
                     <Picker
                         // selectedValue={selectedValue}
-                        style={{ height: 50, width: 150 }}
+                        style={{ height: 50, width: 150,fontFamily:'Rubik-Regular' }}
                     // onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
                     >
                         <Picker.Item label="COVID-19" value="COVID-19" />
@@ -141,11 +141,11 @@ export default function Booking({ navigation }) {
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '95%' }}>
 
                         <Text style={{fontFamily:'Poppins-Regular', color: '#B0B0B0' }}>Selection Location</Text>
-                        <View style={{ backgroundColor: '#FDF6E8', borderRadius: 5 }}>
+                        <View style={{ backgroundColor: '#FDF6E8', borderRadius: 5, }}>
                             <Picker
                                 mode={"dropdown"}
                                 // selectedValue={selectedValue}
-                                style={{ height: 40, minWidth: 200 }}
+                                style={{ height: 40, minWidth: 200 ,}}
                             // onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
                             >
                                 <Picker.Item label="Quizin City" value="Quizin City" />
@@ -158,7 +158,7 @@ export default function Booking({ navigation }) {
 
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '95%', marginVertical: 10 }}>
 
-                        <Text style={{fontFamily:'Poppins-Regular', color: '#B0B0B0' }}>Selection Vaccination{'\n'}Center</Text>
+                        <Text style={{fontFamily:'Poppins-Regular', color: '#B0B0B0' }}>Selection Vaccination{'\n'}Centre</Text>
                         <View style={{ backgroundColor: '#FDF6E8', borderRadius: 5 }}>
                             <Picker
                                 mode={"dropdown"}
@@ -220,7 +220,7 @@ export default function Booking({ navigation }) {
                         onPress={() => setState(pre => ({ ...pre, isBooking: true }))}
                         activeOpacity={0.6} style={styles.logInButton}
                     >
-                        <Text style={{ fontFamily:'Poppins-Bold', color: "#ffff", fontSize: 16 }}>Book now</Text>
+                        <Text style={{ fontFamily:'Rubik-Bold', color: "#ffff", fontSize: 16 }}>Book Now</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -288,7 +288,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         height: "100%",
         width: "100%",
-        fontFamily:'Poppins-Regular',
+        
     },
     logInButton: {
         backgroundColor: "#F5914E",
@@ -298,7 +298,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         marginTop: 20,
-        fontFamily:'Poppins-Regular',
+       
     },
 
     scroll: { height: "100%", width: "100%", backgroundColor: "#ffff" },
@@ -307,7 +307,7 @@ const styles = StyleSheet.create({
         width: "100%",
         height: 300,
         resizeMode: "cover",
-        fontFamily:'Poppins-Regular',
+        
     },
     Header: {
         width: "100%",
@@ -316,14 +316,14 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        fontFamily:'Poppins-Regular',
+        
     },
     drawericonView: { width: "10%", alignItems: "center" },
     headerTitleView: {
         justifyContent: "center",
         alignItems: "center",
         width: "70%",
-        fontFamily:'Poppins-Regular',
+        
     },
     HeaderTitle: {
         color: "#ffff",
@@ -336,14 +336,14 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         width: "20%",
         justifyContent: "space-around",
-        fontFamily:'Poppins-Regular',
+    
     },
 
-    headerIcon: { fontFamily:'Poppins-Regular',backgroundColor: "#ffff", borderRadius: 5, padding: 5 },
-    body: { fontFamily:'Poppins-Regular',width: "100%", alignItems: "center", marginTop: -180 },
+    headerIcon: { backgroundColor: "#ffff", borderRadius: 5, padding: 5 },
+    body: { width: "100%", alignItems: "center", marginTop: -180 },
     bodyTitle: {
         color: "#ffff",
-        fontFamily:'Poppins-Bold',
+        fontFamily:'Rubik-Bold',
         fontSize: RFPercentage(3),
     },
     BodySubTitle: { color: "#ffff", fontSize: RFPercentage(1.8) },
@@ -357,7 +357,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.1,
         shadowRadius: 2.2,
-        elevation: 2,fontFamily:'Poppins-Regular',
+        elevation: 2,
         marginBottom: 20,
         alignItems: "center", paddingVertical: 20, backgroundColor: '#fff', borderRadius: 20,
     },
@@ -368,7 +368,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         paddingVertical: 25,
         borderRadius: 15,
-        marginVertical: 5,fontFamily:'Poppins-Regular',
+        marginVertical: 5,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -385,7 +385,7 @@ const styles = StyleSheet.create({
         fontSize: RFPercentage(2),
         marginTop: 20,
     },
-    qrCodeContainer: { fontFamily:'Poppins-Regular',width: '100%', paddingVertical: 15 },
+    qrCodeContainer: { width: '100%', paddingVertical: 15 },
     qrCodeHeading: { fontFamily:'Poppins-Regular',color: '#F5914E', marginLeft: 10, fontWeight: 'bold' },
     qrCodeView: {
         fontFamily:'Poppins-Regular',
@@ -398,6 +398,6 @@ const styles = StyleSheet.create({
         shadowRadius: 2.2,
         elevation: 2,
     },
-    qrCode: { fontFamily:'Poppins-Regular',alignItems: 'center', justifyContent: 'center' },
+    qrCode: { alignItems: 'center', justifyContent: 'center' },
     qrCodeText: {fontFamily:'Poppins-Regular', fontSize: RFPercentage(1.3), textAlign: 'center', color: '#333333' }
 });

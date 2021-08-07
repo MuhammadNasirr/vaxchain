@@ -34,12 +34,12 @@ export default function PhoneSignUp({ navigation }) {
             style={styles.emailorphonenumber}
             onPress={() => navigation.navigate("EmailSignUp")}
           >
-            SignUp With Email.
+            Sign up with Email.
           </Text>
           <TextInput
             placeholderTextColor="#8D8D8D"
             color='black'
-            keyboardType='phone-pad' placeholder="Mobile Number"
+            keyboardType='phone-pad' placeholder="Mobile no."
             style={[styles.input, { marginTop: 5 }]}
           />
 
@@ -106,13 +106,15 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: 'Poppins-Regular',
-    fontSize: RFPercentage(5),
-    fontFamily:'Poppins-Bold',
+    fontSize: RFPercentage(5.5),
+    fontFamily:'Rubik-Bold',
     color: "#F5914E",
     marginBottom: 4,
   },
+  
   titleTagline: {
-    fontFamily: 'Poppins-Regular', textAlign: "center", fontWeight: "bold"
+    // fontFamily: 'Poppins-Regular',
+    width: "100%", alignItems: "center" , textAlign: "center", 
   },
   singnUpContainer: {
     fontFamily: 'Poppins-Regular',
@@ -149,67 +151,3 @@ const styles = StyleSheet.create({
 
 
 
-
-// import React from 'react';
-// import { StyleSheet, Text, View,TouchableOpacity,Image , TextInput,ScrollView} from 'react-native';
-// import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
-
-
-// export default function App({navigation}) {
-//   return (
-//     <ScrollView style={{height:'100%',width:'100%',backgroundColor:'#ffff'}}>
-//     <View style={styles.container}>
-
-//         {/* Image Container */}
-//         <View style={{width:'50%',height:200}}>
-//             <Image source={require('../../assets/images/logo-v.png')} style={{width:'100%',height:'100%',resizeMode:'contain'}}/>
-//         </View>
-//         {/* Screen Title */}
-//         <View style={{width:'100%',alignItems:'center'}}>
-//             <Text 
-//             style={{
-//                 fontSize:RFPercentage(5),
-//                 
-//                 color:'#F5914E',
-//                 marginBottom:4
-//             }}
-//             >Welcome</Text>
-
-//             <Text style={{textAlign:'center',fontWeight:'bold'}}>To your Health Vaccination Platform</Text>    
-//         </View>  
-
-//         {/* Login form  */}
-
-//         <View style={{alignItems:'center',justifyContent:'center',width:'80%',marginTop:50}}>
-//         <Text style={{color:'#F5914E',alignSelf:'flex-end',marginBottom:10}} onPress={()=>navigation.navigate('EmailSignUp')}>SignUp With Email</Text>    
-//             <TextInput keyboardType='phone-pad' placeholder="Mobile Number" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10}} />
-
-
-//             <TextInput keyboardType='default'  placeholder="Username" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} />
-
-//             <TextInput keyboardType='default' secureTextEntry={true} placeholder="Assign Password" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} />
-//             <TextInput keyboardType='default' secureTextEntry={true} placeholder="Confirm Password" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} />
-
-//         <TouchableOpacity activeOpacity={0.6} style={{backgroundColor:'#F5914E',width:'100%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}} onPress={()=>navigation.navigate('mobileOTP')}>
-//             <Text style={{color:'#ffff'}}>Sign Up</Text>    
-//         </TouchableOpacity>    
-//         {/* <View style={{backgroundColor:'#ffff',width:'80%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}}>
-//             <Text style={{color:'#F5914E'}}>SignUp</Text>    
-//         </View> */}
-//         </View>
-
-
-//     </View>
-//     </ScrollView>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });

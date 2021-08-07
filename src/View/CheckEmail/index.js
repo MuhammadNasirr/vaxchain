@@ -14,7 +14,7 @@ export default function CheckEmail({ navigation }) {
             <View style={{ width: '100%', alignItems: 'center', marginLeft: 30, marginTop: 40 }}>
                 <Text
                     style={{
-                        fontFamily: 'Poppins-Bold',
+                        fontFamily: 'Rubik-Bold',
                         fontSize: RFPercentage(3),
                         
                         color: '#F5914E',
@@ -44,15 +44,13 @@ export default function CheckEmail({ navigation }) {
                         navigation.navigate('SetPassword')
                     }}
                 >
-                    <Text style={{ fontFamily: 'Poppins-Bold',  color: '#ffff' }}>Open email app</Text>
+                    <Text style={{ fontFamily: 'Rubik-Bold',  color: '#ffff' }}>Open email app</Text>
                 </TouchableOpacity>
                 <View style={{ backgroundColor: '#ffff', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
-                    <Text style={{ fontFamily: 'Poppins-Regular',  color: 'grey' }} onPress={() => navigation.navigate('EmailSignUp')}>Skip, I'll confirm Later</Text>
+                    <Text style={{ fontFamily: 'Rubik-Bold',  color: 'grey' }} onPress={() => navigation.navigate('EmailSignUp')}>Skip, I'll confirm Later</Text>
                 </View>
             </View>
-            {/* <View style={{backgroundColor:'#ffff',width:'80%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}}>
-            <Text style={{color:'black',textAlign:'center'}}>Didn't receive the code ? send {'\n'} again in <Text style={{color:'#F5914E'}}>32</Text> Seconds  </Text>    
-        </View> */}
+          
 
 
         </View>

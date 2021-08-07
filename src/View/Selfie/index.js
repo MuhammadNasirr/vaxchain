@@ -27,7 +27,7 @@ export default function Selfie({ navigation }) {
       <View style={{ paddingVertical: 20, backgroundColor: "#ffff", width: '100%', alignItems: 'center', justifyContent: 'center' }}>
 
 
-        <Text style={{ fontFamily: 'Poppins-Regular', color: "grey", alignSelf: "center", marginBottom: 20 }}>please frame your face in a square</Text>
+        <Text style={{ fontFamily: 'Poppins-Regular', color: "#8a8a8a", alignSelf: "center", marginBottom: 20 }}>please frame your face in a square</Text>
 
         <TouchableOpacity onPress={() => navigation.navigate('UploadSuccess')} style={{ justifyContent: 'center', height: 50, backgroundColor: "#F79150", width: '80%', borderRadius: 15, alignSelf: 'center' }}>
           <Text style={{ fontFamily: 'Poppins-Regular', color: "#ffff", alignSelf: "center", fontWeight: 'bold' }}>TAKE SELFIE</Text>

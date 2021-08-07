@@ -23,7 +23,7 @@ export default function Login({ navigation }) {
           <Text style={styles.title}>Welcome</Text>
 
           <Text style={styles.titleTagline}>
-            To your Health Vaccination Platform
+            to your Health Vaccination Platform
           </Text>
         </View>
 
@@ -31,7 +31,7 @@ export default function Login({ navigation }) {
         <View style={styles.LoginForm}>
           <TextInput
             keyboardType="email-address"
-            placeholder="Email Address"
+            placeholder="Email address"
             placeholderTextColor="#8D8D8D"
             color='black'
             style={styles.input}
@@ -43,7 +43,7 @@ export default function Login({ navigation }) {
               placeholder="Password"
               placeholderTextColor="#8D8D8D"
               color='black'
-              style={{ width: "65%" }}
+              style={{ width: "65%",fontFamily: 'Rubik-Regular' }}
             />
             <Text
               style={styles.forgetPasswordText}
@@ -55,7 +55,7 @@ export default function Login({ navigation }) {
 
           <TouchableOpacity activeOpacity={0.6} style={styles.logInButton}
             onPress={() => navigation.navigate("MainMenu")}>
-            <Text style={{ fontFamily: 'Poppins-Bold', color: "#fff", fontSize: 16 }}>Log In</Text>
+            <Text style={{ fontFamily: 'Poppins-Bold', color: "#fff", fontSize: 16 }}>Log in</Text>
           </TouchableOpacity>
           <View
             style={{
@@ -72,7 +72,7 @@ export default function Login({ navigation }) {
               style={{ fontFamily: 'Poppins-Bold', color: "#F5914E" }}
               onPress={() => navigation.navigate("EmailSignUp")}
             >
-              SignUp
+              Sign Up
             </Text>
           </View>
         </View>
@@ -95,12 +95,13 @@ const styles = StyleSheet.create({
   image: { width: "100%", height: "100%", resizeMode: "contain", fontFamily: 'Poppins-Regular' },
   screenTitleContainer: { width: "100%", alignItems: "center", fontFamily: 'Poppins-Regular' },
   title: {
-    fontSize: RFPercentage(5),
+    fontSize: RFPercentage(5.5),
     color: "#F5914E",
     marginBottom: 4,
-    fontFamily: 'Poppins-Bold'
+    // fontFamily: 'Poppins-Bold'
+    fontFamily:'Rubik-Bold'
   },
-  titleTagline: { textAlign: "center", fontFamily: 'Poppins-Regular' },
+  titleTagline: { textAlign: "center", },
   LoginForm: {
     alignItems: "center",
     justifyContent: "center",
@@ -120,7 +121,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F3F3F3",
     width: "80%",
     color: 'black',
-    paddingVertical: 5,
+    paddingVertical: 3,
     paddingHorizontal: 8,
     borderRadius: 10,
     flexDirection: "row",
@@ -142,6 +143,6 @@ const styles = StyleSheet.create({
     color: "#F5914E",
     fontSize: RFPercentage(1.4),
     width: "35%",
-    fontFamily: 'Poppins-Regular'
+    fontFamily: 'Rubik-Regular'
   },
 });
