@@ -130,7 +130,6 @@ function BottomNavigation() {
         style: {
           backgroundColor: '#ffff',
           height: 50,
-          fontFamily:'Poppins-Regular',
 
         },
       }}
@@ -148,10 +147,14 @@ function BottomNavigation() {
 
 const CustomDrawer = (props) => {
   return (
-    <View style={{fontFamily:'Poppins-Regular', backgroundColor: '#EC5317', flex: 1 }}>
+    <View style={{
+      backgroundColor: '#EC5317', flex: 1
+    }}>
       <DrawerContentScrollView>
         <TouchableOpacity onPress={() => props.navigation.closeDrawer()} activeOpacity={0.8}
-          style={{fontFamily:'Poppins-Regular', marginLeft: 10, marginTop: 8 }}
+          style={{
+            marginLeft: 10, marginTop: 8
+          }}
         >
           <MaterialCommunityIcons
             name="menu-open"
@@ -160,27 +163,49 @@ const CustomDrawer = (props) => {
 
           />
         </TouchableOpacity>
-        <View style={{fontFamily:'Poppins-Regular', alignSelf: 'center', width: '100%', marginTop: 30 }}>
-          <TouchableOpacity onPress={() => props.navigation.navigate('MyAccount')} style={{fontFamily:'Poppins-Regular', alignSelf: 'center', width: '70%', flexDirection: 'row', justifyContent: 'space-between' }}>
-            <Text style={{fontFamily:'Poppins-Regular', fontFamily:'Poppins-Regular',color: '#ffff' }}>
+        <View style={{
+          alignSelf: 'center', width: '100%', marginTop: 30
+        }}>
+          <TouchableOpacity onPress={() => props.navigation.navigate('MyAccount')} style={{
+            alignSelf: 'center', width: '70%', flexDirection: 'row', justifyContent: 'space-between'
+          }}>
+            <Text style={{
+              fontFamily: 'Poppins-Regular',
+              color: '#ffff'
+            }}>
               My Vaccination Details
             </Text>
             <MaterialIcons name="keyboard-arrow-right" size={24} color="#ffff" />
           </TouchableOpacity>
-          <TouchableOpacity style={{fontFamily:'Poppins-Regular', alignSelf: 'center', width: '70%', flexDirection: 'row', justifyContent: 'space-between', marginVertical: 15, marginBottom: 0 }}>
-            <Text style={{fontFamily:'Poppins-Regular', fontFamily:'Poppins-Regular',color: '#ffff' }}>
+          <TouchableOpacity style={{
+            alignSelf: 'center', width: '70%', flexDirection: 'row', justifyContent: 'space-between', marginVertical: 15, marginBottom: 0
+          }}>
+            <Text style={{
+              fontFamily: 'Poppins-Regular',
+              color: '#ffff'
+            }}>
               Legal
             </Text>
             <MaterialIcons name="keyboard-arrow-right" size={24} color="#ffff" />
           </TouchableOpacity>
-          <TouchableOpacity style={{fontFamily:'Poppins-Regular', alignSelf: 'center', width: '70%', flexDirection: 'row', justifyContent: 'space-between', marginVertical: 15 }}>
-            <Text style={{fontFamily:'Poppins-Regular',fontFamily:'Poppins-Regular', color: '#ffff' }}>
+          <TouchableOpacity style={{
+            alignSelf: 'center', width: '70%', flexDirection: 'row', justifyContent: 'space-between', marginVertical: 15
+          }}>
+            <Text style={{
+              fontFamily: 'Poppins-Regular',
+              color: '#ffff'
+            }}>
               Change Password
             </Text>
             <MaterialIcons name="keyboard-arrow-right" size={24} color="#ffff" />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => props.navigation.navigate('Login')} style={{fontFamily:'Poppins-Regular', alignSelf: 'center', width: '70%', flexDirection: 'row', justifyContent: 'space-between' }}>
-            <Text style={{fontFamily:'Poppins-Regular', fontFamily:'Poppins-Regular',color: '#ffff' }}>
+          <TouchableOpacity onPress={() => props.navigation.navigate('Login')} style={{
+            alignSelf: 'center', width: '70%', flexDirection: 'row', justifyContent: 'space-between'
+          }}>
+            <Text style={{
+              fontFamily: 'Poppins-Regular',
+              color: '#ffff'
+            }}>
               Logout
             </Text>
             <MaterialIcons name="keyboard-arrow-right" size={24} color="#ffff" />
@@ -204,8 +229,6 @@ function MainMenu() {
   return (
     <Drawer.Navigator initialRouteName="Home"
 
-      drawerStyle={{fontFamily:'Poppins-Regular',
-      }}
       drawerType={drawerType}
       edgeWidth={100}
       drawerContent={(props) => <CustomDrawer {...props} />}

@@ -15,10 +15,10 @@ export default function PassportReaderScanner({ navigation }) {
       <View style={styles.container}>
         {/* Image Container */}
         <View style={styles.imageContainer}>
-          <Image 
-          // source={{uri:'https://www.pikpng.com/pngl/m/59-596262_wolf-png-logo-for-free-download-on-wolf.png'}}
-           source={require("../../assets/images/logo-v.png")} 
-          style={styles.image} />
+          <Image
+            // source={{uri:'https://www.pikpng.com/pngl/m/59-596262_wolf-png-logo-for-free-download-on-wolf.png'}}
+            source={require("../../assets/images/logo-v.png")}
+            style={styles.image} />
         </View>
         {/* Screen Title */}
         <View style={styles.screenTitleContainer}>
@@ -31,11 +31,11 @@ export default function PassportReaderScanner({ navigation }) {
 
         {/* Login form  */}
         <View style={styles.LoginForm}>
-          
+
           <Text>Scan Vacciation QR Code</Text>
           <MaterialCommunityIcons name="image-filter-center-focus-weak" size={RFPercentage(30)} color="#F5914E" />
-          <Text style={{textAlign:'center',fontFamily:'Poppins-Regular',}}>Please Move your camera to capture QR Code from other devices</Text>
-          
+          <Text style={{ textAlign: 'center', fontFamily: 'Poppins-Regular', }}>Please Move your camera to capture QR Code from other devices</Text>
+
         </View>
       </View>
     </ScrollView>
@@ -44,7 +44,7 @@ export default function PassportReaderScanner({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
@@ -52,31 +52,35 @@ const styles = StyleSheet.create({
   },
 
   scroll: {
-    fontFamily:'Poppins-Regular', height: "100%", width: "100%", backgroundColor: "#ffff" },
+    fontFamily: 'Poppins-Regular', height: "100%", width: "100%", backgroundColor: "#ffff"
+  },
   imageContainer: {
-    fontFamily:'Poppins-Regular', width: "50%", height: 200 },
+    fontFamily: 'Poppins-Regular', width: "50%", height: 200
+  },
   image: {
-    fontFamily:'Poppins-Regular', width: "100%", height: "100%", resizeMode: "contain" },
+    fontFamily: 'Poppins-Regular', width: "100%", height: "100%", resizeMode: "contain"
+  },
   screenTitleContainer: {
-    fontFamily:'Poppins-Regular', width: "100%", alignItems: "center" },
+    fontFamily: 'Poppins-Regular', width: "100%", alignItems: "center"
+  },
   title: {
-    fontFamily:'Poppins-Regular',
     fontSize: RFPercentage(3),
-    fontWeight: "bold",
+    fontFamily:'Poppins-Bold',
     color: "#F5914E",
     marginBottom: 4,
   },
   titleTagline: {
-    fontFamily:'Poppins-Regular', textAlign: "center", fontWeight: "bold",fontSize: RFPercentage(4), },
+    fontFamily: 'Poppins-Regular', textAlign: "center", fontFamily:'Poppins-Bold', fontSize: RFPercentage(4),
+  },
   LoginForm: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
     marginTop: 50,
   },
   input: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     backgroundColor: "#F3F3F3",
     width: "80%",
     paddingVertical: 15,
@@ -84,7 +88,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   passwordContainer: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -96,7 +100,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   logInButton: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     backgroundColor: "#F5914E",
     width: "80%",
     paddingVertical: 15,
@@ -106,7 +110,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   forgetPasswordText: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     color: "#F5914E",
     fontSize: RFPercentage(1.4),
     width: "35%",

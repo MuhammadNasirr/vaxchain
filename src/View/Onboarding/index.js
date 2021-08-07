@@ -20,7 +20,7 @@ function OnBoarding({ navigation }) {
     }
     const _renderItem = ({ item }) => {
         return (
-            <ImageBackground style={{fontFamily:'Poppins-Regular', width: '100%', height: '100%', flex: 1 }} source={item.image}>
+            <ImageBackground style={{ width: '100%', height: '100%', flex: 1 }} source={item.image}>
             </ImageBackground>
         );
     };
@@ -36,11 +36,11 @@ function OnBoarding({ navigation }) {
             onSkip={_signIn}
             onDone={_signIn}
             bottomButton
-            activeDotStyle={{fontFamily:'Poppins-Regular', width: 20, height: 5, backgroundColor: '#fff' }}
+            activeDotStyle={{ width: 20, height: 5, backgroundColor: '#fff' }}
             renderItem={_renderItem}
             data={entries}
-            dotStyle={{fontFamily:'Poppins-Regular', width: 10, height: 5, backgroundColor: 'rgba(255,255,255,0.3)' }}
-            paginationStyle={{fontFamily:'Poppins-Regular', color: '#121767' }}
+            dotStyle={{ width: 10, height: 5, backgroundColor: 'rgba(255,255,255,0.3)' }}
+            paginationStyle={{ color: '#121767' }}
         />
     );
 }

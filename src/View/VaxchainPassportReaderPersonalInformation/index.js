@@ -54,11 +54,12 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
             <Text style={styles.bodyTitle}>Jose Abad Banifico</Text>
             <Text style={styles.BodySubTitle}>
               Passport no: <Text style={{
-                fontFamily:'Poppins-Regular', fontWeight: "bold" }}>EB1221213</Text>
+                fontFamily: 'Poppins-Regular', fontWeight: "bold"
+              }}>EB1221213</Text>
             </Text>
             <Image source={{ uri: 'https://i.pinimg.com/originals/67/ce/66/67ce6630f3e288e5dc9dd6f37a707da8.jpg' }}
               style={{
-                fontFamily:'Poppins-Regular',
+                fontFamily: 'Poppins-Regular',
                 width: 150,
                 height: 150,
                 resizeMode: 'cover',
@@ -69,7 +70,7 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
 
 
             <TouchableOpacity onPress={() => navigation.navigate('VaccinationRecord1')} style={{
-              fontFamily:'Poppins-Regular',
+              fontFamily: 'Poppins-Regular',
               backgroundColor: '#ffff',
               justifyContent: 'space-between',
               width: '80%',
@@ -82,7 +83,7 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
               paddingHorizontal: 10,
               shadowColor: '#000',
               shadowOffset: {
-                fontFamily:'Poppins-Regular',
+                fontFamily: 'Poppins-Regular',
                 width: 1,
                 height: 2,
               },
@@ -96,20 +97,23 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
 
 
               <View style={{
-                fontFamily:'Poppins-Regular', backgroundColor: '#ffff', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', paddingHorizontal: 5 }}>
+                backgroundColor: '#ffff', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', paddingHorizontal: 5
+              }}>
                 <MaterialIcons name="check-circle" size={50} color="#50AC2F" />
                 <Text style={{
-                  fontFamily:'Poppins-Regular', color: '#50AC2F', fontSize: 30, fontWeight: 'bold' }}>vaccinated</Text>
+                  fontFamily: 'Poppins-Bold', color: '#50AC2F', fontSize: 30,
+                }}>vaccinated</Text>
               </View>
 
               <Text style={{
-                fontFamily:'Poppins-Regular', fontWeight: 'bold', fontSize: 15 }}>Astra Zanica</Text>
+                fontFamily: 'Poppins-Regular', fontSize: 15
+              }}>Astra Zansica</Text>
 
             </TouchableOpacity>
 
             <View
               style={{
-                fontFamily:'Poppins-Regular',
+                fontFamily: 'Poppins-Regular',
                 backgroundColor: '#ffff',
                 width: '90%',
                 flexDirection: 'row',
@@ -122,7 +126,7 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
                 paddingHorizontal: 10,
                 shadowColor: '#000',
                 shadowOffset: {
-                  fontFamily:'Poppins-Regular',
+                  fontFamily: 'Poppins-Regular',
                   width: 1,
                   height: 2,
                 },
@@ -131,9 +135,11 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
                 elevation: 1,
               }}>
               <Text style={{
-                fontFamily:'Poppins-Regular', color: 'grey' }}>First Dose</Text>
+                fontFamily: 'Poppins-Regular', color: 'grey'
+              }}>First Dose</Text>
               <Text style={{
-                fontFamily:'Poppins-Regular', color: 'black', fontWeight: 'bold' }}>5-May-2021</Text>
+                fontFamily: 'Poppins-Regular', color: 'black',
+              }}>5-May-2021</Text>
 
 
 
@@ -143,7 +149,7 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
 
             <View
               style={{
-                fontFamily:'Poppins-Regular',
+                fontFamily: 'Poppins-Regular',
                 backgroundColor: '#ffff',
                 width: '90%',
                 flexDirection: 'row',
@@ -165,9 +171,11 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
                 elevation: 1,
               }}>
               <Text style={{
-                fontFamily:'Poppins-Regular', color: 'grey' }}>Second Dose</Text>
+                fontFamily: 'Poppins-Regular', color: 'grey'
+              }}>Second Dose</Text>
               <Text style={{
-                fontFamily:'Poppins-Regular', color: 'black', fontWeight: 'bold' }}>9-Aug-2021</Text>
+                fontFamily: 'Poppins-Regular', color: 'black',
+              }}>9-Aug-2021</Text>
 
 
 
@@ -182,7 +190,7 @@ export default function VaxchainPassportReaderPersonalInformation({ navigation }
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     // flex: 1,
     //  backgroundColor: "#ffff",
     alignItems: 'center',
@@ -197,16 +205,17 @@ const styles = StyleSheet.create({
   },
 
   scroll: {
-    fontFamily:'Poppins-Regular', height: '100%', width: '100%', backgroundColor: '#ffff' },
+    fontFamily: 'Poppins-Regular', height: '100%', width: '100%', backgroundColor: '#ffff'
+  },
   backgroundImage: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     flex: 1,
     width: '100%',
     height: '100%',
     resizeMode: 'cover',
   },
   Header: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     width: '100%',
     position: 'absolute',
     top: 40,
@@ -215,42 +224,46 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   drawericonView: {
-    fontFamily:'Poppins-Regular', width: '10%', alignItems: 'center' },
+    fontFamily: 'Poppins-Regular', width: '10%', alignItems: 'center'
+  },
   headerTitleView: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     justifyContent: 'center',
     alignItems: 'center',
     width: '70%',
   },
   HeaderTitle: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     color: '#ffff',
     textAlign: 'center',
-    fontWeight: 'bold',
+
     fontSize: RFPercentage(2),
     alignSelf: 'center',
   },
   headerIconsView: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     flexDirection: 'row',
     width: '20%',
     justifyContent: 'space-around',
   },
 
   headerIcon: {
-    fontFamily:'Poppins-Regular', backgroundColor: '#ffff', borderRadius: 5, padding: 5 },
+    fontFamily: 'Poppins-Regular', backgroundColor: '#ffff', borderRadius: 5, padding: 5
+  },
   body: {
-    fontFamily:'Poppins-Regular', width: '100%', alignItems: 'center', marginTop: 100 },
+    fontFamily: 'Poppins-Regular', width: '100%', alignItems: 'center', marginTop: 100
+  },
   bodyTitle: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Bold',
     color: '#ffff',
-    fontWeight: 'bold',
+
     fontSize: RFPercentage(3),
   },
   BodySubTitle: {
-    fontFamily:'Poppins-Regular', color: '#ffff', fontSize: RFPercentage(1.8), marginBottom: 0 },
+    fontFamily: 'Poppins-Regular', color: '#ffff', fontSize: RFPercentage(1.8), marginBottom: 0
+  },
   selectionView: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     width: '85%',
     alignItems: 'center',
     paddingVertical: 20,
@@ -260,7 +273,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   bookandRecordVaccination: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     backgroundColor: '#ffff',
     width: '40%',
     justifyContent: 'center',
@@ -270,7 +283,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     shadowColor: '#000',
     shadowOffset: {
-      fontFamily:'Poppins-Regular',
+      fontFamily: 'Poppins-Regular',
       width: 0,
       height: 2,
     },
@@ -279,18 +292,20 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   bookandRecordVaccinationText: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     textAlign: 'center',
     color: '#F5914E',
     fontSize: RFPercentage(2),
     marginTop: 20,
   },
   qrCodeContainer: {
-    fontFamily:'Poppins-Regular', width: '100%', paddingVertical: 15 },
+    fontFamily: 'Poppins-Regular', width: '100%', paddingVertical: 15
+  },
   qrCodeHeading: {
-    fontFamily:'Poppins-Regular', color: '#F5914E', marginLeft: 10, fontWeight: 'bold' },
+    fontFamily: 'Poppins-Regular', color: '#F5914E', marginLeft: 10,
+  },
   qrCodeView: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     width: '95%',
     backgroundColor: '#ffff',
     alignSelf: 'center',
@@ -301,7 +316,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     shadowColor: '#000',
     shadowOffset: {
-      fontFamily:'Poppins-Regular',
+      fontFamily: 'Poppins-Regular',
       width: 0,
       height: 1,
     },
@@ -310,9 +325,10 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   qrCode: {
-    fontFamily:'Poppins-Regular', alignItems: 'center', justifyContent: 'center' },
+    fontFamily: 'Poppins-Regular', alignItems: 'center', justifyContent: 'center'
+  },
   qrCodeText: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     fontSize: RFPercentage(1.3),
     textAlign: 'center',
     color: '#333333',

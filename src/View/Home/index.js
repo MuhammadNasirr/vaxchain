@@ -154,7 +154,7 @@ export default function Home({ navigation }) {
               <Fontisto name="injection-syringe" size={RFPercentage(10)} color="#F5914E" />
               {/* <Ionicons name="md-thumbs-up-outline" size={RFPercentage(10)} color="#F5914E" /> */}
               {/* <MaterialCommunityIcons name="party-popper" size={RFPercentage(10)} color="#F5914E" /> */}
-              <Text style={{ marginVertical: 10, fontSize: 20, textAlign: 'center', fontWeight: 'bold', color: '#F5914E' }}>
+              <Text style={{ marginVertical: 10, fontSize: 20, textAlign: 'center',  color: '#F5914E' }}>
                 {/* You are Cancelling your{'\n'}Booking appointment,{'\n'}Please Confirm */}
                 {/* Congratulation you have{'\n'}already Completed your{'\n'}Covid-19 Vaccination */}
                 {/* You Booking Cancelling your{'\n'}Booking appointment,{'\n'}please confirm  */}
@@ -237,10 +237,9 @@ const styles = StyleSheet.create({
   HeaderTitle: {
     color: "#ffff",
     textAlign: "center",
-    fontWeight: "bold",
+    fontFamily:'Poppins-Bold',
     fontSize: RFPercentage(2),
     alignSelf: "center",
-    fontFamily:'Poppins-Regular'
   },
   headerIconsView: {
     flexDirection: "row",
@@ -253,9 +252,8 @@ const styles = StyleSheet.create({
   body: { width: "100%", alignItems: "center", marginTop: 100 ,fontFamily:'Poppins-Regular'},
   bodyTitle: {
     color: "#ffff",
-    fontWeight: "bold",
+    fontFamily:'Poppins-Bold',
     fontSize: RFPercentage(3),
-    fontFamily:'Poppins-Regular'
   },
   BodySubTitle: { color: "#ffff", fontSize: RFPercentage(1.8) ,fontFamily:'Poppins-Regular'},
   vaccinationView: { width: "100%", alignItems: "center", paddingVertical: 20 ,fontFamily:'Poppins-Regular'},
@@ -285,7 +283,7 @@ const styles = StyleSheet.create({
     fontFamily:'Poppins-Regular'
   },
   qrCodeContainer: { width: '100%', paddingVertical: 15 ,fontFamily:'Poppins-Regular'},
-  qrCodeHeading: { color: '#F5914E', marginLeft: 10, fontWeight: 'bold',fontFamily:'Poppins-Regular' },
+  qrCodeHeading: { color: '#F5914E', marginLeft: 10, fontFamily:'Poppins-Regular' },
   qrCodeView: {
     width: '95%', backgroundColor: '#ffff', alignSelf: 'center', borderRadius: 10, flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 5, paddingVertical: 10, shadowColor: "#000",
     shadowOffset: {

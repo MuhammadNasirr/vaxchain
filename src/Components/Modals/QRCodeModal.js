@@ -31,7 +31,7 @@ export default function QRCodeModal({ visible, onClose, mainText, isButton, butt
           </View>
           <View style={{ width: '100%', alignItems: 'center' }}>
             {icon}
-            <Text style={{fontFamily:'Poppins-Regular', marginVertical: 10, fontSize: 20, textAlign: 'center', fontWeight: 'bold', color: '#F5914E', width: '70%' }}>
+            <Text style={{fontFamily:'Poppins-Regular', marginVertical: 10, fontSize: 20, textAlign: 'center',  color: '#F5914E', width: '70%' }}>
               {mainText}
             </Text>
             <Text style={{fontFamily:'Poppins-Regular', textAlign: 'center', width: '80%' }}>{descriptionText}</Text>
@@ -64,11 +64,11 @@ export default function QRCodeModal({ visible, onClose, mainText, isButton, butt
             {
               isButton ?
                 <TouchableOpacity onPress={buttonPress} style={{ backgroundColor: '#F5914E', width: '80%', alignSelf: 'center', alignItems: 'center', paddingVertical: 12, borderRadius: 15, marginTop: 20 }}>
-                  <Text style={{fontFamily:'Poppins-Regular', color: '#ffff', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase' }}>{buttonText}</Text>
+                  <Text style={{fontFamily:'Poppins-Regular', color: '#ffff',  fontSize: 16, textTransform: 'uppercase' }}>{buttonText}</Text>
                 </TouchableOpacity>
                 :
                 <TouchableOpacity onPress={buttonPress} style={{ width: '100%', alignItems: 'center' }}>
-                  <Text style={{fontFamily:'Poppins-Regular', color: '#F5914E', width: '80%', textAlign: 'center', marginTop: 20, fontWeight: 'bold', textDecorationLine: 'underline', fontSize: 18 }}>Cancel</Text>
+                  <Text style={{fontFamily:'Poppins-Regular', color: '#F5914E', width: '80%', textAlign: 'center', marginTop: 20,  textDecorationLine: 'underline', fontSize: 18 }}>Cancel</Text>
                 </TouchableOpacity>
             }
           </View>

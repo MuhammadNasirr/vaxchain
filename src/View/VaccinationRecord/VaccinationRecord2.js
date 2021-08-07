@@ -82,19 +82,18 @@ export default function VaccinationRecord2({ navigation }) {
             />
             <Text
               style={{
-                fontFamily:'Poppins-Regular', color: '#50AC2F', fontSize: 30, fontWeight: 'bold' }}>
+                fontFamily:'Poppins-Bold', color: '#50AC2F', fontSize: 30, }}>
               vaccinated
             </Text>
           </View>
           <View style={{
             fontFamily:'Poppins-Regular', width: '92%' ,marginTop:15}}>
             <Text style={{
-              fontFamily:'Poppins-Regular', color: '#F5914E', fontWeight: 'bold' }}>
+              fontFamily:'Poppins-Regular', color: '#F5914E', }}>
               Personal{'\n'}Information
             </Text>
             <View
               style={{
-                fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -112,7 +111,6 @@ export default function VaccinationRecord2({ navigation }) {
 
              <View
               style={{
-                fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -132,7 +130,6 @@ export default function VaccinationRecord2({ navigation }) {
 
              <View
               style={{
-                fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -152,7 +149,6 @@ export default function VaccinationRecord2({ navigation }) {
 
              <View
               style={{
-                fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -172,7 +168,6 @@ export default function VaccinationRecord2({ navigation }) {
 
              <View
               style={{
-                fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -190,7 +185,6 @@ export default function VaccinationRecord2({ navigation }) {
 
         <View
               style={{
-                fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -208,7 +202,6 @@ export default function VaccinationRecord2({ navigation }) {
 
           <View
               style={{
-                fontFamily:'Poppins-Regular',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 backgroundColor: '#ffff',
@@ -277,7 +270,7 @@ const styles = StyleSheet.create({
     fontFamily:'Poppins-Regular',
     color: '#ffff',
     textAlign: 'center',
-    fontWeight: 'bold',
+    
     fontSize: RFPercentage(2),
     alignSelf: 'center',
   },
@@ -295,7 +288,7 @@ const styles = StyleSheet.create({
   bodyTitle: {
     fontFamily:'Poppins-Regular',
     color: '#ffff',
-    fontWeight: 'bold',
+    
     fontSize: RFPercentage(3),
   },
   BodySubTitle: {
@@ -315,7 +308,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   bookandRecordVaccination: {
-    fontFamily:'Poppins-Regular',
     backgroundColor: '#ffff',
     width: '40%',
     justifyContent: 'center',
@@ -325,7 +317,6 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     shadowColor: '#000',
     shadowOffset: {
-      fontFamily:'Poppins-Regular',
       width: 0,
       height: 2,
     },

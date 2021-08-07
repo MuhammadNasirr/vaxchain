@@ -33,16 +33,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#F79150",
     alignItems: "center",
     justifyContent: "center",
-    fontFamily:'Poppins-Regular',
   },
-
-
   title: {
     fontSize: RFPercentage(5),
-    fontWeight: "bold",
+    fontFamily:'Poppins-Bold',
     color: "#ffff",
     fontFamily:'Poppins-Regular',
-    // marginBottom: 4,
   },
 
 });

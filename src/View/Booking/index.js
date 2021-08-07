@@ -220,7 +220,7 @@ export default function Booking({ navigation }) {
                         onPress={() => setState(pre => ({ ...pre, isBooking: true }))}
                         activeOpacity={0.6} style={styles.logInButton}
                     >
-                        <Text style={{ fontWeight: "bold", color: "#ffff", fontSize: 16 }}>Book now</Text>
+                        <Text style={{ fontFamily:'Poppins-Bold', color: "#ffff", fontSize: 16 }}>Book now</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -328,10 +328,9 @@ const styles = StyleSheet.create({
     HeaderTitle: {
         color: "#ffff",
         textAlign: "center",
-        fontWeight: "bold",
+        // fontFamily:'Poppins-Bold',
         fontSize: RFPercentage(2),
         alignSelf: "center",
-        fontFamily:'Poppins-Regular',
     },
     headerIconsView: {
         flexDirection: "row",
@@ -344,8 +343,8 @@ const styles = StyleSheet.create({
     body: { fontFamily:'Poppins-Regular',width: "100%", alignItems: "center", marginTop: -180 },
     bodyTitle: {
         color: "#ffff",
-        fontWeight: "bold",
-        fontSize: RFPercentage(3),fontFamily:'Poppins-Regular',
+        fontFamily:'Poppins-Bold',
+        fontSize: RFPercentage(3),
     },
     BodySubTitle: { color: "#ffff", fontSize: RFPercentage(1.8) },
     selectionView: {

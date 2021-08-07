@@ -55,7 +55,7 @@ export default function Login({ navigation }) {
 
           <TouchableOpacity activeOpacity={0.6} style={styles.logInButton}
             onPress={() => navigation.navigate("MainMenu")}>
-            <Text style={{ fontWeight: "bold", color: "#ffff" }}>Log In</Text>
+            <Text style={{ fontFamily: 'Poppins-Bold', color: "#fff", fontSize: 16 }}>Log In</Text>
           </TouchableOpacity>
           <View
             style={{
@@ -69,7 +69,7 @@ export default function Login({ navigation }) {
             }}
           >
             <Text
-              style={{ fontWeight: "bold", color: "#F5914E" }}
+              style={{ fontFamily: 'Poppins-Bold', color: "#F5914E" }}
               onPress={() => navigation.navigate("EmailSignUp")}
             >
               SignUp
@@ -87,27 +87,26 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-    fontFamily:'Poppins-Regular'
+    fontFamily: 'Poppins-Regular'
   },
 
-  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff",fontFamily:'Poppins-Regular' },
-  imageContainer: { width: "50%", height: 200 ,fontFamily:'Poppins-Regular'},
-  image: { width: "100%", height: "100%", resizeMode: "contain" ,fontFamily:'Poppins-Regular'},
-  screenTitleContainer: { width: "100%", alignItems: "center" ,fontFamily:'Poppins-Regular'},
+  scroll: { height: "100%", width: "100%", backgroundColor: "#ffff", fontFamily: 'Poppins-Regular' },
+  imageContainer: { width: "50%", height: 200, fontFamily: 'Poppins-Regular' },
+  image: { width: "100%", height: "100%", resizeMode: "contain", fontFamily: 'Poppins-Regular' },
+  screenTitleContainer: { width: "100%", alignItems: "center", fontFamily: 'Poppins-Regular' },
   title: {
     fontSize: RFPercentage(5),
-    fontWeight: "bold",
     color: "#F5914E",
     marginBottom: 4,
-    fontFamily:'Poppins-Regular'
+    fontFamily: 'Poppins-Bold'
   },
-  titleTagline: { textAlign: "center", fontWeight: "bold" ,fontFamily:'Poppins-Regular'},
+  titleTagline: { textAlign: "center", fontFamily: 'Poppins-Regular' },
   LoginForm: {
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
     marginTop: 50,
-    fontFamily:'Poppins-Regular'
+    fontFamily: 'Poppins-Regular'
   },
   input: {
     backgroundColor: "#F3F3F3",
@@ -115,25 +114,20 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 10,
     borderRadius: 10,
-    fontFamily:'Poppins-Regular'
+    fontFamily: 'Poppins-Regular'
   },
   passwordContainer: {
     backgroundColor: "#F3F3F3",
     width: "80%",
-    color:'black',
-    paddingVertical: 10,
+    color: 'black',
+    paddingVertical: 5,
     paddingHorizontal: 8,
     borderRadius: 10,
-     flexDirection: "row",
-     justifyContent: "space-between",
-     alignItems: "center",
-     fontFamily:'Poppins-Regular',
-    // backgroundColor: "#F3F3F3",
-    // width: "80%",
-    // paddingVertical: 15,
-    // paddingHorizontal: 10,
-    // borderRadius: 10,
-     marginTop: 20,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    fontFamily: 'Poppins-Regular',
+    marginTop: 20,
   },
   logInButton: {
     backgroundColor: "#F5914E",
@@ -143,12 +137,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 20,
-    fontFamily:'Poppins-Regular'
   },
   forgetPasswordText: {
     color: "#F5914E",
     fontSize: RFPercentage(1.4),
     width: "35%",
-    fontFamily:'Poppins-Regular'
+    fontFamily: 'Poppins-Regular'
   },
 });

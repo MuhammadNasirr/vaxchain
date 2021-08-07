@@ -19,11 +19,12 @@ export default function Notifications({ navigation }) {
 
       {/* body */}
 
-      <Text style={{fontFamily:'Poppins-Regular', marginTop: 20, marginBottom: 20, width: '90%', color: 'grey', fontSize: RFPercentage(1.8) }}>Today</Text>
+      <Text style={{ fontFamily: 'Poppins-Regular', marginTop: 20, marginBottom: 20, width: '90%', color: 'grey', fontSize: RFPercentage(1.8) }}>Today</Text>
 
 
       <View
-        style={{fontFamily:'Poppins-Regular',
+        style={{
+
           backgroundColor: '#ffff',
           width: '90%',
           alignItems: 'center',
@@ -34,28 +35,27 @@ export default function Notifications({ navigation }) {
 
         }}>
 
-        <View style={{fontFamily:'Poppins-Regular', width: '92%', marginTop: 15 }}>
+        <View style={{ width: '92%', marginTop: 15 }}>
 
 
           <View
-            style={{fontFamily:'Poppins-Regular',
-
+            style={{
               backgroundColor: '#ffff',
               paddingBottom: 5,
 
 
             }}>
-            <Text style={{fontFamily:'Poppins-Regular', fontSize: RFPercentage(1.8) }}>
-              Congratulation! your bookings has been confirmed <Text style={{fontFamily:'Poppins-Regular', color: '#F5914E', textDecorationLine: 'underline' }}> Click to view schedule</Text>
+            <Text style={{ fontFamily: 'Poppins-Regular', fontSize: RFPercentage(1.8) }}>
+              Congratulation! your bookings has been confirmed <Text style={{ fontFamily: 'Poppins-Regular', color: '#F5914E', textDecorationLine: 'underline' }}> Click to view schedule</Text>
             </Text>
-            <Text style={{fontFamily:'Poppins-Regular', marginTop: 20, color: 'grey', fontSize: RFPercentage(1.5) }}>7:30 PM</Text>
+            <Text style={{ fontFamily: 'Poppins-Regular', marginTop: 20, color: 'grey', fontSize: RFPercentage(1.5) }}>7:30 PM</Text>
           </View>
         </View>
       </View>
 
 
       <View
-        style={{fontFamily:'Poppins-Regular',
+        style={{
           backgroundColor: '#ffff',
           width: '90%',
           alignItems: 'center',
@@ -67,21 +67,18 @@ export default function Notifications({ navigation }) {
 
         }}>
 
-        <View style={{fontFamily:'Poppins-Regular', width: '92%', marginTop: 15 }}>
+        <View style={{ width: '92%', marginTop: 15 }}>
 
 
           <View
-            style={{fontFamily:'Poppins-Regular',
-
+            style={{
               backgroundColor: '#ffff',
               paddingBottom: 5,
-
-
             }}>
-            <Text style={{fontFamily:'Poppins-Regular', fontSize: RFPercentage(1.8) }}>
+            <Text style={{ fontFamily: 'Poppins-Regular', fontSize: RFPercentage(1.8) }}>
               Your Password has been Changed Sucessfully
             </Text>
-            <Text style={{fontFamily:'Poppins-Regular', marginTop: 20, color: 'grey', fontSize: RFPercentage(1.5) }}>7:30 PM</Text>
+            <Text style={{ fontFamily: 'Poppins-Regular', marginTop: 20, color: 'grey', fontSize: RFPercentage(1.5) }}>7:30 PM</Text>
           </View>
         </View>
       </View>
@@ -90,7 +87,7 @@ export default function Notifications({ navigation }) {
 
 
       <View
-        style={{fontFamily:'Poppins-Regular',
+        style={{
           backgroundColor: '#ffff',
           width: '90%',
           alignItems: 'center',
@@ -101,21 +98,21 @@ export default function Notifications({ navigation }) {
 
         }}>
 
-        <View style={{fontFamily:'Poppins-Regular', width: '92%', marginTop: 15 }}>
+        <View style={{ width: '92%', marginTop: 15 }}>
 
 
           <View
-            style={{fontFamily:'Poppins-Regular',
+            style={{
 
               backgroundColor: '#ffff',
               paddingBottom: 5,
 
 
             }}>
-            <Text style={{fontFamily:'Poppins-Regular', fontSize: RFPercentage(1.8) }}>
-              Congratulation! your friedn deula has created an account <Text style={{fontFamily:'Poppins-Regular', color: '#F5914E', textDecorationLine: 'underline' }}> Click here to clain your reward</Text>
+            <Text style={{ fontFamily: 'Poppins-Regular', fontSize: RFPercentage(1.8) }}>
+              Congratulation! your friedn deula has created an account <Text style={{ fontFamily: 'Poppins-Regular', color: '#F5914E', textDecorationLine: 'underline' }}> Click here to clain your reward</Text>
             </Text>
-            <Text style={{fontFamily:'Poppins-Regular', marginTop: 20, color: 'grey', fontSize: RFPercentage(1.5) }}>7:30 PM</Text>
+            <Text style={{ fontFamily: 'Poppins-Regular', marginTop: 20, color: 'grey', fontSize: RFPercentage(1.5) }}>7:30 PM</Text>
           </View>
         </View>
       </View>
@@ -126,7 +123,7 @@ export default function Notifications({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     // flex: 1,
     //  backgroundColor: "#ffff",
     alignItems: 'center',
@@ -140,16 +137,17 @@ const styles = StyleSheet.create({
   },
 
   scroll: {
-    fontFamily:'Poppins-Regular', height: '100%', width: '100%', backgroundColor: '#ffff' },
+    fontFamily: 'Poppins-Regular', height: '100%', width: '100%', backgroundColor: '#ffff'
+  },
   backgroundImage: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     flex: 1,
     width: '100%',
     height: '100%',
     resizeMode: 'cover',
   },
   Header: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     width: '100%',
     position: 'absolute',
     top: 40,
@@ -158,46 +156,49 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   drawericonView: {
-    fontFamily:'Poppins-Regular', width: '10%', alignItems: 'center' },
+    fontFamily: 'Poppins-Regular', width: '10%', alignItems: 'center'
+  },
   headerTitleView: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     justifyContent: 'center',
     alignItems: 'center',
     width: '70%',
   },
   HeaderTitle: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     color: '#ffff',
     textAlign: 'center',
-    fontWeight: 'bold',
+    
     fontSize: RFPercentage(2),
     alignSelf: 'center',
   },
   headerIconsView: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     flexDirection: 'row',
     width: '20%',
     justifyContent: 'space-around',
   },
 
   headerIcon: {
-    fontFamily:'Poppins-Regular', backgroundColor: '#ffff', borderRadius: 5, padding: 5 },
+    fontFamily: 'Poppins-Regular', backgroundColor: '#ffff', borderRadius: 5, padding: 5
+  },
   body: {
-    fontFamily:'Poppins-Regular', width: '100%', alignItems: 'center', marginTop: 100 },
+    fontFamily: 'Poppins-Regular', width: '100%', alignItems: 'center', marginTop: 100
+  },
   bodyTitle: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     color: '#ffff',
-    fontWeight: 'bold',
+    
     fontSize: RFPercentage(3),
   },
   BodySubTitle: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     color: '#ffff',
     fontSize: RFPercentage(1.8),
     marginBottom: 35,
   },
   selectionView: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     width: '85%',
     alignItems: 'center',
     paddingVertical: 20,
@@ -207,7 +208,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   bookandRecordVaccination: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     backgroundColor: '#ffff',
     width: '40%',
     justifyContent: 'center',
@@ -217,7 +218,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     shadowColor: '#000',
     shadowOffset: {
-      fontFamily:'Poppins-Regular',
+      fontFamily: 'Poppins-Regular',
       width: 0,
       height: 2,
     },
@@ -226,18 +227,20 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   bookandRecordVaccinationText: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     textAlign: 'center',
     color: '#F5914E',
     fontSize: RFPercentage(2),
     marginTop: 20,
   },
   qrCodeContainer: {
-    fontFamily:'Poppins-Regular', width: '100%', paddingVertical: 15 },
+    fontFamily: 'Poppins-Regular', width: '100%', paddingVertical: 15
+  },
   qrCodeHeading: {
-    fontFamily:'Poppins-Regular', color: '#F5914E', marginLeft: 10, fontWeight: 'bold' },
+    fontFamily: 'Poppins-Regular', color: '#F5914E', marginLeft: 10, fontWeight: 'bold'
+  },
   qrCodeView: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     width: '95%',
     backgroundColor: '#ffff',
     alignSelf: 'center',
@@ -248,7 +251,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     shadowColor: '#000',
     shadowOffset: {
-      fontFamily:'Poppins-Regular',
+      fontFamily: 'Poppins-Regular',
       width: 0,
       height: 1,
     },
@@ -257,9 +260,10 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   qrCode: {
-    fontFamily:'Poppins-Regular', alignItems: 'center', justifyContent: 'center' },
+    fontFamily: 'Poppins-Regular', alignItems: 'center', justifyContent: 'center'
+  },
   qrCodeText: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     fontSize: RFPercentage(1.3),
     textAlign: 'center',
     color: '#333333',

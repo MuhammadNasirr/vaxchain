@@ -33,7 +33,7 @@ export default function SelfieTake({ visible, onClose, isButton, icon, mainText,
           </View>
           <View style={{ width: '100%', alignItems: 'center' }}>
 
-            <Text style={{fontFamily:'Poppins-Regular', marginVertical: 10, fontSize: 24, textAlign: 'center', fontWeight: 'bold', color: '#F5914E', width: '70%' }}>
+            <Text style={{fontFamily:'Poppins-Regular', marginVertical: 10, fontSize: 24, textAlign: 'center',  color: '#F5914E', width: '70%' }}>
               How to Take the Correct Photo
             </Text>
             <Image source={require("../../assets/images/selfie1.png")} />
@@ -64,7 +64,7 @@ export default function SelfieTake({ visible, onClose, isButton, icon, mainText,
                 onClose()
               }}
               style={{ backgroundColor: '#F5914E', width: '80%', alignSelf: 'center', alignItems: 'center', paddingVertical: 12, borderRadius: 15, marginTop: 20 }}>
-              <Text style={{ fontFamily:'Poppins-Regular',color: '#ffff', fontWeight: 'bold', fontSize: 16, textTransform: 'uppercase' }}>{"GOT IT"}</Text>
+              <Text style={{ fontFamily:'Poppins-Regular',color: '#ffff',  fontSize: 16, textTransform: 'uppercase' }}>{"GOT IT"}</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
   HeaderTitle: {
     color: "#ffff",
     textAlign: "center",
-    fontWeight: "bold",
+    fontFamily:'Poppins-Bold',
     fontSize: RFPercentage(2),
     alignSelf: "center",
   },
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
   body: { width: "100%", alignItems: "center", marginTop: 100 },
   bodyTitle: {
     color: "#ffff",
-    fontWeight: "bold",
+    fontFamily:'Poppins-Bold',
     fontSize: RFPercentage(3),
   },
   BodySubTitle: { color: "#ffff", fontSize: RFPercentage(1.8) },

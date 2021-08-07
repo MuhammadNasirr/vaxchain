@@ -7,21 +7,23 @@ import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 export default function MobileOTP({ navigation }) {
   return (
     <ScrollView style={{
-      fontFamily:'Poppins-Regular', height: '100%', width: '100%', backgroundColor: '#ffff' }}>
+      height: '100%', width: '100%', backgroundColor: '#ffff'
+    }}>
       <View style={styles.container}>
 
         {/* Image Container */}
         <View style={{
-          fontFamily:'Poppins-Regular', width: '50%', height: 200 }}>
+          width: '50%', height: 200
+        }}>
         </View>
         {/* Screen Title */}
         <View style={{
-          fontFamily:'Poppins-Regular', width: '100%', alignItems: 'center' }}>
+          width: '100%', alignItems: 'center'
+        }}>
           <Text
             style={{
-              fontFamily:'Poppins-Regular',
+              fontFamily: 'Poppins-Bold',
               fontSize: RFPercentage(5),
-              fontWeight: 'bold',
               color: '#F5914E',
               textAlign: 'center',
               marginBottom: 4
@@ -34,33 +36,43 @@ export default function MobileOTP({ navigation }) {
         {/* Login form  */}
 
         <View style={{
-          fontFamily:'Poppins-Regular', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', width: '90%', marginTop: 50 }}>
+          alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', width: '90%', marginTop: 50
+        }}>
 
           <TextInput placeholderTextColor="#8D8D8D"
             color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{
-              fontFamily:'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+              fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2
+            }} />
           <TextInput placeholderTextColor="#8D8D8D"
             color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{
-              fontFamily:'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+              fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2
+            }} />
           <TextInput placeholderTextColor="#8D8D8D"
             color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{
-              fontFamily:'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+              fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2
+            }} />
           <TextInput placeholderTextColor="#8D8D8D"
             color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{
-              fontFamily:'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+              fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2
+            }} />
           <TextInput placeholderTextColor="#8D8D8D"
             color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{
-              fontFamily:'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+              fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2
+            }} />
           <TextInput placeholderTextColor="#8D8D8D"
             color='black' keyboardType='phone-pad' maxLength={1} placeholder="" style={{
-              fontFamily:'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2 }} />
+              fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '15%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 2
+            }} />
 
         </View>
-        <TouchableOpacity onPress={()=>navigation.navigate('BasicInformation')} style={{
-          fontFamily:'Poppins-Regular', backgroundColor: '#ffff', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
+        <TouchableOpacity onPress={() => navigation.navigate('BasicInformation')} style={{
+          fontFamily: 'Poppins-Regular', backgroundColor: '#ffff', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20
+        }}>
           <Text style={{
-            fontFamily:'Poppins-Regular', fontWeight: 'bold', color: 'black', textAlign: 'center' }}>Didn't receive the code ? send {'\n'} again in <Text style={{
-            fontFamily:'Poppins-Regular', color: '#F5914E' }}>32</Text> Seconds  </Text>
+            fontFamily: 'Poppins-Regular', color: 'black', textAlign: 'center'
+          }}>Didn't receive the code ? send {'\n'} again in <Text style={{
+            fontFamily: 'Poppins-Regular', color: '#F5914E'
+          }}>32</Text> Seconds  </Text>
         </TouchableOpacity>
 
 

@@ -37,14 +37,14 @@ export default function PhoneSignUp({ navigation }) {
             SignUp With Email.
           </Text>
           <TextInput
-          placeholderTextColor="#8D8D8D"
+            placeholderTextColor="#8D8D8D"
             color='black'
-          keyboardType='phone-pad' placeholder="Mobile Number"
+            keyboardType='phone-pad' placeholder="Mobile Number"
             style={[styles.input, { marginTop: 5 }]}
           />
 
           <TextInput
-          placeholderTextColor="#8D8D8D"
+            placeholderTextColor="#8D8D8D"
             color='black'
             keyboardType="default"
             placeholder="Username"
@@ -52,7 +52,7 @@ export default function PhoneSignUp({ navigation }) {
           />
 
           <TextInput
-          placeholderTextColor="#8D8D8D"
+            placeholderTextColor="#8D8D8D"
             color='black'
             keyboardType="default"
             secureTextEntry={true}
@@ -60,7 +60,7 @@ export default function PhoneSignUp({ navigation }) {
             style={styles.input}
           />
           <TextInput
-          placeholderTextColor="#8D8D8D"
+            placeholderTextColor="#8D8D8D"
             color='black'
             keyboardType="default"
             secureTextEntry={true}
@@ -71,12 +71,12 @@ export default function PhoneSignUp({ navigation }) {
           <TouchableOpacity
             activeOpacity={0.6}
             style={styles.singnUpButton}
-            onPress={()=>navigation.navigate('mobileOTP')}
+            onPress={() => navigation.navigate('mobileOTP')}
           >
-            <Text style={{ fontWeight: "bold", color: "#ffff" }}>Sign Up</Text>
+            <Text style={{ fontFamily:'Poppins-Bold', color: "#ffff" }}>Sign Up</Text>
           </TouchableOpacity>
           {/* <View style={{backgroundColor:'#ffff',width:'80%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}}>
-            <Text style={{fontWeight:'bold',color:'#F5914E'}}>SignUp</Text>    
+            <Text style={{color:'#F5914E'}}>SignUp</Text>    
         </View> */}
         </View>
       </View>
@@ -86,45 +86,49 @@ export default function PhoneSignUp({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
   scroll: {
-    fontFamily:'Poppins-Regular', height: "100%", width: "100%", backgroundColor: "#ffff" },
+    fontFamily: 'Poppins-Regular', height: "100%", width: "100%", backgroundColor: "#ffff"
+  },
   imageContainer: {
-    fontFamily:'Poppins-Regular', width: "50%", height: 200 },
+    fontFamily: 'Poppins-Regular', width: "50%", height: 200
+  },
   image: {
-    fontFamily:'Poppins-Regular', width: "100%", height: "100%", resizeMode: "contain" },
+    fontFamily: 'Poppins-Regular', width: "100%", height: "100%", resizeMode: "contain"
+  },
   screenTitleContainer: {
-    fontFamily:'Poppins-Regular', width: "100%", alignItems: "center" },
+    fontFamily: 'Poppins-Regular', width: "100%", alignItems: "center"
+  },
   title: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     fontSize: RFPercentage(5),
-    fontWeight: "bold",
+    fontFamily:'Poppins-Bold',
     color: "#F5914E",
     marginBottom: 4,
   },
   titleTagline: {
-    fontFamily:'Poppins-Regular', textAlign: "center", fontWeight: "bold" },
+    fontFamily: 'Poppins-Regular', textAlign: "center", fontWeight: "bold"
+  },
   singnUpContainer: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     alignItems: "center",
     justifyContent: "center",
     width: "80%",
     marginTop: 50,
   },
   emailorphonenumber: {
-    fontFamily:'Poppins-Regular',
-    fontWeight: "bold",
+    // fontFamily:'Poppins-Bold',
     color: "#F5914E",
     alignSelf: "flex-end",
     marginBottom: 10,
   },
   input: {
-    fontFamily:'Poppins-Regular',
+    fontFamily: 'Poppins-Regular',
     backgroundColor: "#F3F3F3",
     width: "100%",
     paddingVertical: 15,
@@ -132,7 +136,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: 20,
   },
-  singnUpButton:{
+  singnUpButton: {
     backgroundColor: "#F5914E",
     width: "100%",
     paddingVertical: 15,
@@ -155,7 +159,7 @@ const styles = StyleSheet.create({
 //   return (
 //     <ScrollView style={{height:'100%',width:'100%',backgroundColor:'#ffff'}}>
 //     <View style={styles.container}>
-        
+
 //         {/* Image Container */}
 //         <View style={{width:'50%',height:200}}>
 //             <Image source={require('../../assets/images/logo-v.png')} style={{width:'100%',height:'100%',resizeMode:'contain'}}/>
@@ -165,36 +169,36 @@ const styles = StyleSheet.create({
 //             <Text 
 //             style={{
 //                 fontSize:RFPercentage(5),
-//                 fontWeight:'bold',
+//                 
 //                 color:'#F5914E',
 //                 marginBottom:4
 //             }}
 //             >Welcome</Text>
-            
+
 //             <Text style={{textAlign:'center',fontWeight:'bold'}}>To your Health Vaccination Platform</Text>    
 //         </View>  
-        
+
 //         {/* Login form  */}
 
 //         <View style={{alignItems:'center',justifyContent:'center',width:'80%',marginTop:50}}>
-//         <Text style={{fontWeight:'bold',color:'#F5914E',alignSelf:'flex-end',marginBottom:10}} onPress={()=>navigation.navigate('EmailSignUp')}>SignUp With Email</Text>    
+//         <Text style={{color:'#F5914E',alignSelf:'flex-end',marginBottom:10}} onPress={()=>navigation.navigate('EmailSignUp')}>SignUp With Email</Text>    
 //             <TextInput keyboardType='phone-pad' placeholder="Mobile Number" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10}} />
-            
-            
+
+
 //             <TextInput keyboardType='default'  placeholder="Username" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} />
-            
+
 //             <TextInput keyboardType='default' secureTextEntry={true} placeholder="Assign Password" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} />
 //             <TextInput keyboardType='default' secureTextEntry={true} placeholder="Confirm Password" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} />
-            
+
 //         <TouchableOpacity activeOpacity={0.6} style={{backgroundColor:'#F5914E',width:'100%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}} onPress={()=>navigation.navigate('mobileOTP')}>
-//             <Text style={{fontWeight:'bold',color:'#ffff'}}>Sign Up</Text>    
+//             <Text style={{color:'#ffff'}}>Sign Up</Text>    
 //         </TouchableOpacity>    
 //         {/* <View style={{backgroundColor:'#ffff',width:'80%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}}>
-//             <Text style={{fontWeight:'bold',color:'#F5914E'}}>SignUp</Text>    
+//             <Text style={{color:'#F5914E'}}>SignUp</Text>    
 //         </View> */}
 //         </View>
-      
-      
+
+
 //     </View>
 //     </ScrollView>
 //   );
