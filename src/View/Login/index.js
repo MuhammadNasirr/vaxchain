@@ -43,25 +43,25 @@ export default function Login({ navigation }) {
               placeholder="Password"
               placeholderTextColor="#8D8D8D"
               color='black'
-              style={{ width: "65%",fontFamily: 'Rubik-Regular' }}
+              style={[styles.input, { width: "70%" }]}
             />
             <Text
               style={styles.forgetPasswordText}
               onPress={() => navigation.navigate("forgetPassword")}
             >
-              Forget Password ?
+              Forget Password?
             </Text>
           </View>
 
           <TouchableOpacity activeOpacity={0.6} style={styles.logInButton}
             onPress={() => navigation.navigate("MainMenu")}>
-            <Text style={{ fontFamily: 'Poppins-Bold', color: "#fff", fontSize: 16 }}>Log in</Text>
+            <Text style={{ fontFamily: 'Rubik-Bold', color: "#fff", fontSize: 18 }}>Log in</Text>
           </TouchableOpacity>
           <View
             style={{
               backgroundColor: "#ffff",
               width: "80%",
-              paddingVertical: 15,
+              height: 55,
               borderRadius: 10,
               justifyContent: "center",
               alignItems: "center",
@@ -69,7 +69,7 @@ export default function Login({ navigation }) {
             }}
           >
             <Text
-              style={{ fontFamily: 'Poppins-Bold', color: "#F5914E" }}
+              style={{ fontFamily: 'Rubik-Bold', fontSize: 18, color: "#F5914E" }}
               onPress={() => navigation.navigate("EmailSignUp")}
             >
               Sign Up
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     color: "#F5914E",
     marginBottom: 4,
     // fontFamily: 'Poppins-Bold'
-    fontFamily:'Rubik-Bold'
+    fontFamily: 'Rubik-Bold'
   },
   titleTagline: { textAlign: "center", },
   LoginForm: {
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: "#F3F3F3",
-    width: "80%",
+    width: "90%",
     paddingVertical: 15,
     paddingHorizontal: 10,
     borderRadius: 10,
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   },
   passwordContainer: {
     backgroundColor: "#F3F3F3",
-    width: "80%",
+    width: "90%",
     color: 'black',
     paddingVertical: 3,
     paddingHorizontal: 8,
@@ -132,8 +132,8 @@ const styles = StyleSheet.create({
   },
   logInButton: {
     backgroundColor: "#F5914E",
-    width: "80%",
-    height: 50,
+    width: "90%",
+    height: 55,
     borderRadius: 15,
     justifyContent: "center",
     alignItems: "center",

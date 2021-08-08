@@ -18,7 +18,7 @@ import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 import AppNavigator from "./src/navigation";
-
+import { NativeBaseProvider } from 'native-base';
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -30,7 +30,9 @@ const App: () => Node = () => {
   return (
     <SafeAreaView style={backgroundStyle} style={{ flex: 1 }}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppNavigator />
+      <NativeBaseProvider>
+        <AppNavigator />
+      </NativeBaseProvider>
     </SafeAreaView>
   );
 };

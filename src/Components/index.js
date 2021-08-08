@@ -4,6 +4,8 @@ import QRCodeModal from './Modals/QRCodeModal'
 import SelfieTake from './Modals/SelfieTake'
 import BookVaccinationConfirmPopup from './Modals/BookVaccinationConfirmPopup'
 import Header from './Header'
+import CalendarDay from './Calendar/CalendarDay'
+import CalendarHeader from './Calendar/CalendarHeader'
 
 export {
     CustomModal,
@@ -11,5 +13,7 @@ export {
     QRCodeModal,
     SelfieTake,
     BookVaccinationConfirmPopup,
-    Header
+    Header,
+    CalendarDay,
+    CalendarHeader
 }

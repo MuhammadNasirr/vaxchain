@@ -11,6 +11,7 @@ import {
 import { RFPercentage } from "react-native-responsive-fontsize";
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import CalendarIcon from '../../assets/images/calendar-three.png';
 
 export default function BasicInformationScreen1({ navigation }) {
   return (
@@ -30,29 +31,34 @@ export default function BasicInformationScreen1({ navigation }) {
           Basic Information
         </Text>
 
+        <Text style={{ fontFamily: 'Poppins-Regular', marginBottom: 30, width: '100%', color: 'grey', fontSize: 14 }}>
+          Please fill up to verify yourr basic Information to access your vaccine paspport or to book for Vaccination
+        </Text>
+
+
         <View style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}>
           <TextInput
-          placeholderTextColor="#8D8D8D"
+            placeholderTextColor="#8D8D8D"
             color='black'
             placeholder="First Name"
             style={{
-              fontFamily:'Poppins-Regular',
-              marginTop: 5, backgroundColor: "#F3F3F3",
+              fontFamily: 'Poppins-Regular',
+              backgroundColor: "#F3F3F3",
               width: "48%",
-              paddingVertical: 15,
               paddingHorizontal: 10,
               borderRadius: 10,
             }}
           />
 
           <TextInput
-          placeholderTextColor="#8D8D8D"
+            placeholderTextColor="#8D8D8D"
             color='black'
             placeholder="Last Name"
             style={{
-              marginTop: 5, backgroundColor: "#F3F3F3",
+              backgroundColor: "#F3F3F3",
+              fontFamily: 'Poppins-Regular',
               width: "48%",
-              paddingVertical: 15,
+              height: 55,
               paddingHorizontal: 10,
               borderRadius: 10,
             }}
@@ -62,42 +68,52 @@ export default function BasicInformationScreen1({ navigation }) {
 
         <View style={{ width: '100%', flexDirection: 'row', marginTop: 20, justifyContent: 'space-between' }}>
           <TextInput
-          placeholderTextColor="#8D8D8D"
+            placeholderTextColor="#8D8D8D"
             color='black'
             placeholder="Middle Name"
             style={{
+              fontFamily: 'Poppins-Regular',
               backgroundColor: "#F3F3F3",
               width: "48%",
-              paddingVertical: 15,
+              height: 55,
               paddingHorizontal: 10,
               borderRadius: 10,
             }}
           />
 
-          <TextInput
-          placeholderTextColor="#8D8D8D"
-            color='black'
-            placeholder="Date of Birth"
-            style={{
-              marginTop: 5, backgroundColor: "#F3F3F3",
-              width: "48%",
-              paddingVertical: 15,
-              paddingHorizontal: 10,
-              borderRadius: 10,
-            }}
-          />
+          <View style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            backgroundColor: "#F3F3F3",
+            width: "48%",
+            height: 55,
+            paddingHorizontal: 10,
+            borderRadius: 10,
+          }}>
+
+            <TextInput
+              placeholderTextColor="#8D8D8D"
+              color='black'
+              placeholder="Date of Birth"
+              style={{
+                width: '80%',
+                marginTop: 5,
+                fontFamily: 'Poppins-Regular',
+              }}
+            />
+            <TouchableOpacity>
+              <Image source={CalendarIcon} />
+            </TouchableOpacity>
+          </View>
 
         </View>
 
-
-
-
-
         <TextInput
-        placeholderTextColor="#8D8D8D"
-            color='black'
-          keyboardType="default"
+          placeholderTextColor="#8D8D8D"
+          color='black'
 
+          keyboardType="default"
           placeholder="Nationality"
           style={styles.input}
         />
@@ -108,8 +124,8 @@ export default function BasicInformationScreen1({ navigation }) {
           onPress={() => navigation.navigate('BasicInformationScreen2')}
 
         >
-          <Text style={{ fontFamily: "Poppins-Bold", color: "#ffff" }}>Continue</Text>
-          <AntDesign name="right" size={16} color="#ffff" style={{ alignSelf: 'center', marginLeft: 5 }} />
+          <Text style={{ fontFamily: "Rubik-Bold", color: "#fff", fontSize: 18 }}>Continue</Text>
+          <AntDesign name="right" size={16} color="#fff" style={{ alignSelf: 'center', marginLeft: 5, marginTop: 0 }} />
 
         </TouchableOpacity>
 
@@ -117,8 +133,7 @@ export default function BasicInformationScreen1({ navigation }) {
 
       <View style={{ width: '85%', marginTop: 'auto', marginBottom: 30, alignItems: 'flex-start', flexDirection: 'row', }}>
         <Ionicons name="alert-circle" size={20} color="#F5914E" />
-        <Text style={{ fontSize: 14, marginLeft: 10, color: 'grey' }}>
-
+        <Text style={{ fontSize: 14, fontFamily: 'Poppins-Regular', marginLeft: 10, color: 'grey' }}>
           This Information is used to identify Verification only and will be kept secure by Vaxchain in accordance with Republic act 10173 Data privacy act philippines</Text>
       </View>
     </View>
@@ -139,7 +154,7 @@ const styles = StyleSheet.create({
   screenTitleContainer: { width: "100%", alignItems: "center" },
   title: {
     fontSize: RFPercentage(5),
-    fontFamily:'Poppins-Bold',
+    fontFamily: 'Poppins-Bold',
     color: "#F5914E",
     marginBottom: 4,
 
@@ -148,7 +163,7 @@ const styles = StyleSheet.create({
   singnUpContainer: {
     alignItems: "center",
     justifyContent: "center",
-    width: "80%",
+    width: "90%",
     marginTop: 50,
 
   },
@@ -156,15 +171,16 @@ const styles = StyleSheet.create({
     color: "#F5914E",
     alignSelf: "flex-start",
     marginBottom: 15,
-    fontSize: 18,
-    fontFamily:'Poppins-Bold',
-    
+    fontSize: 22,
+    fontFamily: 'Poppins-Bold',
+
 
   },
   input: {
     backgroundColor: "#F3F3F3",
     width: "100%",
-    paddingVertical: 15,
+    fontFamily: 'Poppins-Regular',
+    height: 55,
     paddingHorizontal: 10,
     borderRadius: 10,
     marginTop: 20,
@@ -172,7 +188,7 @@ const styles = StyleSheet.create({
   singnUpButton: {
     backgroundColor: "#F5914E",
     width: "100%",
-    height: 50,
+    height: 55,
     borderRadius: 15,
     justifyContent: "center",
     alignItems: "center",
@@ -183,66 +199,3 @@ const styles = StyleSheet.create({
 
 
 
-
-// import React from 'react';
-// import { StyleSheet, Text, View,TouchableOpacity,Image , TextInput,ScrollView} from 'react-native';
-// import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
-
-
-// export default function App({navigation}) {
-//   return (
-//     <ScrollView style={{height:'100%',width:'100%',backgroundColor:'#ffff'}}>
-//     <View style={styles.container}>
-
-//         {/* Image Container */}
-//         <View style={{width:'50%',height:200}}>
-//             <Image source={require('../../assets/images/logo-v.png')} style={{width:'100%',height:'100%',resizeMode:'contain'}}/>
-//         </View>
-//         {/* Screen Title */}
-//         <View style={{width:'100%',alignItems:'center'}}>
-//             <Text 
-//             style={{
-//                 fontSize:RFPercentage(5),
-//                 
-//                 color:'#F5914E',
-//                 marginBottom:4
-//             }}
-//             >Welcome</Text>
-
-//             <Text style={{textAlign:'center',fontWeight:'bold'}}>To your Health Vaccination Platform</Text>    
-//         </View>  
-
-//         {/* Login form  */}
-
-//         <View style={{alignItems:'center',justifyContent:'center',width:'80%',marginTop:50}}>
-//         <Text style={{color:'#F5914E',alignSelf:'flex-end',marginBottom:10}} onPress={()=>navigation.navigate('EmailSignUp')}>SignUp With Email</Text>    
-//             <TextInput keyboardType='phone-pad' placeholder="Mobile Number" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10}} />
-
-
-//             <TextInput keyboardType='default'  placeholder="Username" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} />
-
-//             <TextInput keyboardType='default' secureTextEntry={true} placeholder="Assign Password" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} />
-//             <TextInput keyboardType='default' secureTextEntry={true} placeholder="Confirm Password" style={{backgroundColor:'#F3F3F3',width:'100%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} />
-
-//         <TouchableOpacity activeOpacity={0.6} style={{backgroundColor:'#F5914E',width:'100%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}} onPress={()=>navigation.navigate('mobileOTP')}>
-//             <Text style={{color:'#ffff'}}>Sign Up</Text>    
-//         </TouchableOpacity>    
-//         {/* <View style={{backgroundColor:'#ffff',width:'80%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}}>
-//             <Text style={{color:'#F5914E'}}>SignUp</Text>    
-//         </View> */}
-//         </View>
-
-
-//     </View>
-//     </ScrollView>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });

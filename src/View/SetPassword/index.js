@@ -1,22 +1,20 @@
 
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image, TextInput, ScrollView } from 'react-native';
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { RFPercentage } from "react-native-responsive-fontsize";
+import EyeIcon from "../../assets/images/eye.png";
 
 
 export default function SetPassword({ navigation }) {
     return (
 
         <View style={styles.container}>
-
-
-            {/* Screen Title */}
             <View style={{ width: '100%', alignItems: 'center', marginLeft: 30, marginTop: 40 }}>
                 <Text
                     style={{
                         fontFamily: 'Rubik-Bold',
                         fontSize: RFPercentage(3),
-                        
+
                         color: '#F5914E',
                         textAlign: 'center',
                         marginBottom: 4,
@@ -30,28 +28,55 @@ export default function SetPassword({ navigation }) {
 
             </View>
 
-            {/* Login form  */}
-
-            <View style={{ alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '50%' }}>
-                {/* <TextInput keyboardType='email-address' placeholder="Email Address" style={{fontFamily:'Poppins-Regular',backgroundColor:'#F3F3F3',width:'80%',paddingVertical:15,paddingHorizontal:10,borderRadius:10}} /> */}
-                {/* <View style={{fontFamily:'Poppins-Regular',flexDirection:'row', justifyContent:'space-between', alignItems:'center', backgroundColor:'#F3F3F3',width:'80%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} >
-                <TextInput keyboardType='default' secureTextEntry={true} placeholder="Password" style={{fontFamily:'Poppins-Regular',width:'65%'}}/>
-                <Text style={{fontFamily:'Poppins-Regular',color:'#F5914E',fontSize:RFPercentage(1.4),width:'35%'}} onPress={()=>navigation.navigate('forgetPassword')}>Forget Password ?</Text>    
-            </View> */}
-                <TextInput placeholderTextColor="#8D8D8D"
-                    color='black' keyboardType='default' placeholder="New Password" style={{ fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10 }} />
-                <TextInput placeholderTextColor="#8D8D8D"
-                    color='black' keyboardType='default' placeholder="Re-type New Password" style={{ fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10, marginTop: 20 }} />
-                <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: '#F5914E', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}
-                    onPress={() => {
-                        navigation.navigate('setPassword')
+            <View style={{ alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '20%' }}>
+                <View
+                    style={{
+                        backgroundColor: '#F3F3F3',
+                        flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+                        width: '90%', height: 55, paddingHorizontal: 10, borderRadius: 10
                     }}
                 >
-                    <Text style={{ fontFamily: 'Rubik-Bold',  color: '#ffff' }}>Set New Password</Text>
+
+                    <TextInput placeholderTextColor="#8D8D8D"
+                        color='black' keyboardType='default' placeholder="New Password"
+                        style={{
+                            fontFamily: 'Poppins-Regular',
+                            width: '90%'
+                        }}
+                    />
+                    <TouchableOpacity>
+                        <Image source={EyeIcon} />
+                    </TouchableOpacity>
+                </View>
+                <View
+                    style={{
+                        backgroundColor: '#F3F3F3', marginTop: 20,
+                        flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+                        width: '90%', height: 55, paddingHorizontal: 10, borderRadius: 10
+                    }}
+                >
+
+                    <TextInput placeholderTextColor="#8D8D8D"
+                        color='black' keyboardType='default' placeholder="Re-type New Password"
+                        style={{
+                            fontFamily: 'Poppins-Regular',
+                            width: '90%'
+                        }}
+                    />
+                    <TouchableOpacity>
+                        <Image source={EyeIcon} />
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: '#F5914E', width: '90%', height: 55, borderRadius: 15, justifyContent: 'center', alignItems: 'center', marginTop: 30 }}
+                    onPress={() => {
+                        navigation.navigate('Login')
+                    }}
+                >
+                    <Text style={{ fontFamily: 'Rubik-Bold', color: '#fff', fontSize: 18 }}>Set New Password</Text>
                 </TouchableOpacity>
 
             </View>
-         
+
 
 
         </View>
@@ -64,6 +89,5 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: 'center',
     },
 });

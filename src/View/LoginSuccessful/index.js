@@ -9,7 +9,7 @@ import {
   ScrollView,
 } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Thumb from '../../assets/images/thumb.png';
 
 export default function LoginSuccessful({ navigation }) {
   return (
@@ -27,11 +27,11 @@ export default function LoginSuccessful({ navigation }) {
           elevation: 1,
           marginVertical: 50
         }}>
-          <MaterialCommunityIcons name="thumb-up" size={RFPercentage(10)} color="#F5914E" />
-          <Text style={{ fontFamily: 'Poppins-Bold', fontSize: RFPercentage(3), color: '#F5914E', }}>congratulations!</Text>
+          <Image source={Thumb} />
+          <Text style={{ fontFamily: 'Poppins-Bold', fontSize: RFPercentage(3), color: '#F5914E', marginTop: 20 }}>congratulations!</Text>
           <Text style={{ fontFamily: 'Poppins-Regular', alignSelf: 'center', width: '80%', textAlign: 'center', marginTop: 10, color: 'grey' }}>your account is basic verified is now basic you can verify your account starting vaxchain pasportor book the vachination with local government unit </Text>
           <TouchableOpacity onPress={() => navigation.navigate('MainMenu')} activeOpacity={0.6} style={styles.singnUpButton}>
-            <Text style={{ fontFamily: 'Poppins-Bold', color: "#ffff" }}>Go to home</Text>
+            <Text style={{ fontFamily: 'Rubik-Bold', color: "#fff", fontSize: 18 }}>Go to home</Text>
           </TouchableOpacity>
         </View>
 
@@ -50,7 +50,7 @@ export default function LoginSuccessful({ navigation }) {
           <Text style={{ fontFamily: 'Poppins-Bold', fontSize: RFPercentage(3), color: '#F5914E', }}>Unlock Your Digital Wallet</Text>
           <Text style={{ fontFamily: 'Poppins-Regular', alignSelf: 'center', width: '80%', textAlign: 'center', marginTop: 10, color: 'grey' }}>your account is basic verified is now basic you can verify your account starting vaxchain pasportor book the vachination with local government unit </Text>
           <TouchableOpacity onPress={() => navigation.navigate('IDVerification')} activeOpacity={0.6} style={styles.singnUpButton}>
-            <Text style={{ fontFamily: 'Poppins-Bold', color: "#ffff" }}>Unlock Verify-Id</Text>
+            <Text style={{ fontFamily: 'Rubik-Bold', color: "#ffff", fontSize: 18 }}>Unlock - Verify ID</Text>
           </TouchableOpacity>
         </View>
 
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
     backgroundColor: "#F5914E",
     width: "80%",
-    height: 50,
+    height: 55,
     borderRadius: 15,
     justifyContent: "center",
     alignItems: "center",

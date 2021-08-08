@@ -10,8 +10,7 @@ export default function ForgetPassword({ navigation }) {
         <View style={styles.container}>
 
 
-            {/* Screen Title */}
-            <View style={{ width: '100%', alignItems: 'center', marginLeft: 30, marginTop: 40 }}>
+            <View style={{ width: '100%', marginLeft: 30, marginTop: 40 }}>
                 <Text
                     style={{
                         fontSize: RFPercentage(3),
@@ -23,32 +22,27 @@ export default function ForgetPassword({ navigation }) {
 
 
                     }}
-                > Forget Your Password ?</Text>
-                <Text style={{lineHeight:19, fontFamily: 'Rubik-Regular', alignSelf: 'flex-start', textAlign: 'justify', marginTop: 10, color: '#858585', fontWeight: '100',fontSize:RFPercentage(2) }}> No Worries. Enter Your registered email. and {'\n'} we will send you password recovery {'\n'} instructions.</Text>
+                > Forget Your Password?</Text>
+                <Text style={{ lineHeight: 25, fontFamily: 'Poppins-Regular', alignSelf: 'flex-start', textAlign: 'justify', marginTop: 10, color: '#858585', fontSize: RFPercentage(2) }}> No Worries. Enter Your registered email. and {'\n'} we will send you password recovery {'\n'} instructions.</Text>
 
 
             </View>
 
-            {/* Login form  */}
 
-            <View style={{ fontFamily: 'Poppins-Regular', alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '50%' }}>
+            <View style={{ fontFamily: 'Poppins-Regular', alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '20%' }}>
                 <TextInput placeholderTextColor="#8D8D8D"
-                    color='black' keyboardType='email-address' placeholder="Email Address" style={{ fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '80%', paddingVertical: 15, paddingHorizontal: 10, borderRadius: 10 ,fontFamily: 'Rubik-Regular'}} />
-                {/* <View style={{fontFamily:'Poppins-Regular',flexDirection:'row', justifyContent:'space-between', alignItems:'center', backgroundColor:'#F3F3F3',width:'80%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} >
-                <TextInput keyboardType='default' secureTextEntry={true} placeholder="Password" style={{fontFamily:'Poppins-Regular',width:'65%'}}/>
-                <Text style={{fontFamily:'Poppins-Regular',color:'#F5914E',fontSize:RFPercentage(1.4),width:'35%'}} onPress={()=>navigation.navigate('forgetPassword')}>Forget Password ?</Text>    
-            </View> */}
+                    color='black' keyboardType='email-address' placeholder="Email Address" style={{ fontFamily: 'Poppins-Regular', backgroundColor: '#F3F3F3', width: '90%', height: 55, paddingHorizontal: 10, borderRadius: 10, fontFamily: 'Rubik-Regular' }} />
 
-                <TouchableOpacity activeOpacity={0.6} style={{ fontFamily: 'Poppins-Regular', backgroundColor: '#F5914E', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}
+                <TouchableOpacity activeOpacity={0.6} style={{ fontFamily: 'Poppins-Regular', backgroundColor: '#F5914E', width: '90%', height: 55, borderRadius: 15, justifyContent: 'center', alignItems: 'center', marginTop: 30 }}
                     onPress={() => {
                         navigation.navigate('CheckEmail')
                     }}
                 >
-                    <Text style={{ fontFamily: 'Rubik-Bold', color: '#fff' }}>Sent reset email</Text>
+                    <Text style={{ fontFamily: 'Rubik-Bold', color: '#fff', fontSize: 18 }}>Send reset email</Text>
                 </TouchableOpacity>
 
             </View>
-            
+
 
         </View>
 
@@ -60,7 +54,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: 'center',
         fontFamily: 'Poppins-Regular',
     },
 

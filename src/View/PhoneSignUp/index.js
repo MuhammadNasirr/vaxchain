@@ -9,6 +9,8 @@ import {
   ScrollView,
 } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
 
 export default function PhoneSignUp({ navigation }) {
   return (
@@ -73,11 +75,16 @@ export default function PhoneSignUp({ navigation }) {
             style={styles.singnUpButton}
             onPress={() => navigation.navigate('mobileOTP')}
           >
-            <Text style={{ fontFamily:'Poppins-Bold', color: "#ffff" }}>Sign Up</Text>
+            <Text style={{ fontFamily: 'Poppins-Bold', color: "#fff", fontSize: 18 }}>Sign Up</Text>
           </TouchableOpacity>
           {/* <View style={{backgroundColor:'#ffff',width:'80%',paddingVertical:15,borderRadius:10,justifyContent:'center',alignItems:'center',marginTop:20}}>
             <Text style={{color:'#F5914E'}}>SignUp</Text>    
         </View> */}
+        </View>
+        <View style={{ width: '85%', marginTop: 50, marginBottom: 20, alignItems: 'flex-start', flexDirection: 'row', }}>
+          <Ionicons name="alert-circle" size={20} color="#F5914E" />
+          <Text style={{ fontSize: 14, fontFamily: 'Poppins-Regular', marginLeft: 10, color: 'grey' }}>
+            This Information is used to identify Verification only and will be kept secure by Vaxchain in accordance with Republic act 10173 Data privacy act philippines</Text>
         </View>
       </View>
     </ScrollView>
@@ -107,24 +114,24 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'Poppins-Regular',
     fontSize: RFPercentage(5.5),
-    fontFamily:'Rubik-Bold',
+    fontFamily: 'Rubik-Bold',
     color: "#F5914E",
     marginBottom: 4,
   },
-  
+
   titleTagline: {
-    // fontFamily: 'Poppins-Regular',
-    width: "100%", alignItems: "center" , textAlign: "center", 
+    fontFamily: 'Poppins-Regular',
+    width: "100%", alignItems: "center", textAlign: "center",
   },
   singnUpContainer: {
     fontFamily: 'Poppins-Regular',
     alignItems: "center",
     justifyContent: "center",
-    width: "80%",
+    width: "90%",
     marginTop: 50,
   },
   emailorphonenumber: {
-    // fontFamily:'Poppins-Bold',
+    fontFamily: 'Poppins-Regular',
     color: "#F5914E",
     alignSelf: "flex-end",
     marginBottom: 10,
@@ -133,7 +140,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
     backgroundColor: "#F3F3F3",
     width: "100%",
-    paddingVertical: 15,
+    height: 55,
     paddingHorizontal: 10,
     borderRadius: 10,
     marginTop: 20,
@@ -141,8 +148,8 @@ const styles = StyleSheet.create({
   singnUpButton: {
     backgroundColor: "#F5914E",
     width: "100%",
-    paddingVertical: 15,
-    borderRadius: 10,
+    height: 55,
+    borderRadius: 15,
     justifyContent: "center",
     alignItems: "center",
     marginTop: 20,

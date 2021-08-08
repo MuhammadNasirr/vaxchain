@@ -16,7 +16,7 @@ export default function CheckEmail({ navigation }) {
                     style={{
                         fontFamily: 'Rubik-Bold',
                         fontSize: RFPercentage(3),
-                        
+
                         color: '#F5914E',
                         textAlign: 'center',
                         marginBottom: 4,
@@ -24,33 +24,27 @@ export default function CheckEmail({ navigation }) {
 
                     }}
                 > Check your email</Text>
-                <Text style={{ fontFamily: 'Poppins-Regular', alignSelf: 'flex-start', textAlign: 'justify', marginTop: 10, color: 'grey', fontWeight: '100' }}> Recovery email with reset password {'\n'} instructions has been sent to {'\n'} joseabaadboifico@gmail.com </Text>
-                <Text style={{ fontFamily: 'Poppins-Regular', alignSelf: 'flex-start', textAlign: 'justify', marginTop: 30, color: 'grey', fontWeight: '100' }}> if you don't see the password recovery email {'\n'} in your inbox , check your spam folder</Text>
+                <Text style={{ fontFamily: 'Poppins-Regular', alignSelf: 'flex-start', textAlign: 'justify', marginTop: 10, color: 'grey' }}> Recovery email with reset password {'\n'} instructions has been sent to {'\n'} joseabaadboifico@gmail.com </Text>
+                <Text style={{ fontFamily: 'Poppins-Regular', alignSelf: 'flex-start', textAlign: 'justify', marginTop: 30, color: 'grey' }}> if you don't see the password recovery email {'\n'} in your inbox , check your spam folder</Text>
 
 
             </View>
 
-            {/* Login form  */}
 
-            <View style={{ alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '50%' }}>
-                {/* <TextInput keyboardType='email-address' placeholder="Email Address" style={{backgroundColor:'#F3F3F3',width:'80%',paddingVertical:15,paddingHorizontal:10,borderRadius:10}} /> */}
-                {/* <View style={{flexDirection:'row', justifyContent:'space-between', alignItems:'center', backgroundColor:'#F3F3F3',width:'80%',paddingVertical:15,paddingHorizontal:10,borderRadius:10,marginTop:20}} >
-                <TextInput keyboardType='default' secureTextEntry={true} placeholder="Password" style={{width:'65%'}}/>
-                <Text style={{color:'#F5914E',fontSize:RFPercentage(1.4),width:'35%'}} onPress={()=>navigation.navigate('forgetPassword')}>Forget Password ?</Text>    
-            </View> */}
+            <View style={{ alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '20%' }}>
 
-                <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: '#F5914E', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}
+                <TouchableOpacity activeOpacity={0.6} style={{ backgroundColor: '#F5914E', width: '90%', height: 55, borderRadius: 15, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}
                     onPress={() => {
                         navigation.navigate('SetPassword')
                     }}
                 >
-                    <Text style={{ fontFamily: 'Rubik-Bold',  color: '#ffff' }}>Open email app</Text>
+                    <Text style={{ fontFamily: 'Rubik-Bold', color: '#fff', fontSize: 18 }}>Open email app</Text>
                 </TouchableOpacity>
-                <View style={{ backgroundColor: '#ffff', width: '80%', paddingVertical: 15, borderRadius: 10, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
-                    <Text style={{ fontFamily: 'Rubik-Bold',  color: 'grey' }} onPress={() => navigation.navigate('EmailSignUp')}>Skip, I'll confirm Later</Text>
+                <View style={{ backgroundColor: '#ffff', width: '80%', height: 55, justifyContent: 'center', alignItems: 'center', marginTop: 20 }}>
+                    <Text style={{ fontFamily: 'Rubik-Bold', color: 'grey', fontSize: 18 }} onPress={() => navigation.navigate('EmailSignUp')}>Skip, I'll confirm later</Text>
                 </View>
             </View>
-          
+
 
 
         </View>
@@ -63,6 +57,5 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: 'center',
     },
 });
